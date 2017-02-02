@@ -23,8 +23,6 @@ namespace SingleArDconfigTest
 		
 		public static void run()
 		{
-			
-			
 			Flow1_Path1.Start();
 			Flow1_Path2.Start();
 		}
