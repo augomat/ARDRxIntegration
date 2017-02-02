@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>b00ccb8e-467d-4524-9320-e11af4ab42a7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -73,18 +74,6 @@
     <Compile Include="Flow1.cs">
       <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
-    <Compile Include="Flow1_Path1.Repository.cs">
-      <BoundTo>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</BoundTo>
-      <DependentUpon>Flow1_Path1.rxrec</DependentUpon>
-      <RepositoryCode>true</RepositoryCode>
-      <id>cf589b97-3368-42b9-a2d5-b4faa4427dda</id>
-    </Compile>
-    <Compile Include="Flow1_Path2.Repository.cs">
-      <BoundTo>3035e6b4-82df-4891-915c-731a7cba41e0</BoundTo>
-      <DependentUpon>Flow1_Path2.rxrec</DependentUpon>
-      <RepositoryCode>true</RepositoryCode>
-      <id>335297a7-4862-4250-a2f9-38f7af7dabc6</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>34c2a986-52e3-447f-8bd8-af2628fab87f</id>
     </Compile>
@@ -135,25 +124,15 @@
     <None Include="app.config">
       <id>0ada242f-b10f-4287-a1dd-4811d4ea9dd4</id>
     </None>
-    <None Include="Flow1_Path1.Repository.rximg">
-      <BoundTo>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</BoundTo>
-      <DependentUpon>Flow1_Path1.rxrec</DependentUpon>
-      <imageblob>true</imageblob>
-      <id>8523eaa0-d569-4379-b379-fed66ba45081</id>
-    </None>
     <None Include="Flow1_Path1.rxrec">
       <id>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</id>
       <recordtableid>7d27a681-d7d9-4786-93f5-0a7beabf0879</recordtableid>
-    </None>
-    <None Include="Flow1_Path2.Repository.rximg">
-      <BoundTo>3035e6b4-82df-4891-915c-731a7cba41e0</BoundTo>
-      <DependentUpon>Flow1_Path2.rxrec</DependentUpon>
-      <imageblob>true</imageblob>
-      <id>b795632c-b2d5-49ee-b698-cd307dc7b4d1</id>
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
     </None>
     <None Include="Flow1_Path2.rxrec">
       <id>3035e6b4-82df-4891-915c-731a7cba41e0</id>
       <recordtableid>5ac3e0c8-e5dd-4e8f-819d-0975c37f7432</recordtableid>
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
     </None>
     <None Include="Recording1.rxrec">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>

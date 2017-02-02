@@ -30,9 +30,9 @@ namespace SingleArDconfigTest
     public partial class Flow1_Path2 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the Flow1_Path2Repository repository.
+        /// Holds an instance of the SingleArDconfigTestRepository repository.
         /// </summary>
-        public static Flow1_Path2Repository repo = Flow1_Path2Repository.Instance;
+        public static SingleArDconfigTestRepository repo = SingleArDconfigTestRepository.Instance;
 
         static Flow1_Path2 instance = new Flow1_Path2();
 

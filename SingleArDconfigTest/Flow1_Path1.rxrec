@@ -2,7 +2,7 @@
 <recordtable
 rxversion="6.2"
 id="7d27a681-d7d9-4786-93f5-0a7beabf0879"
-embeddedrepository="True"
+embeddedrepository="False"
 mode="Global">
 	<name>
 		Flow1_Path1
@@ -42,22 +42,16 @@ mode="Global">
 		</userrecorditem>
 	</recorditems>
 	<repository
-	name="Path1Repository"
-	id="53e13dee-8ebf-48da-8b8e-9cc408cebd75"
-	rxversion="6.2">
+	name="SingleArDconfigTestRepository"
+	id="27029f27-b8d7-49ba-be3b-cd248430bdcf"
+	rxversion="6.2"
+	relativepath="SingleArDconfigTestRepository.rxrep">
 		<codegen
-		classname="Flow1_Path1Repository"
+		classname="SingleArDconfigTestRepository"
 		namespace="SingleArDconfigTest"/>
 		<rootfolder
-		name="Root"
-		id="be02b035-403c-4f1f-aa2c-ab7210b5ffad"
-		searchtimeout="0ms"
-		capname="unknown"
-		isrooted="True"
-		usecache="True">
-			<basepath/>
-		</rootfolder>
-		<variables/>
+		name="_rootdummy_"
+		id="62e9010b-f791-4bef-89ba-51e8eac460f6"/>
 	</repository>
 	<usercodefile
 	lang="CSharp">
