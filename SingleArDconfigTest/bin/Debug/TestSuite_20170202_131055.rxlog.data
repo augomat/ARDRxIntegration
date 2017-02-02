@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="17bdd024ce1b970"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesscount="2"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="gkapeller"
+		host="RXLAPTOP012"
+		rxversion="6.2.1.0"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1920x1080"
+		timestamp="2/2/2017 1:10:55 PM"
+		timestampiso="2017-02-02T12:10:55"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="1.21s"
+			durationms="1210"
+			type="test case"
+			rid="165df93a6a90112e"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testcasename="Flow1_Path1"
+			testcaseid=""
+			maxchildren="0">
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="1.21s"
+				durationms="1210"
+				type="test module"
+				rid="13ee1e64477fb000"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				modulename="Path1_Block1"
+				moduleid=""
+				moduletype="UserCode">
+				<detail>
+				</detail>
+				<item
+					timeRelativeToTestSuiteStartTime="00:00.005"
+					timeRelativeToTestModuleStartTime="00:00.005"
+					timeWallClock="13:10:55"
+					time="00:00.005"
+					level="Info"
+					category="User">
+					<message>
+						Path1 Block1
+					</message>
+					<metainfo
+						codefile="c:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\Flow1_Path1.UserCode.cs"
+						codeline="44"
+						loglvl="Info"/>
+				</item>
+			</activity>
+			<activity
+				result="Success"
+				duration="0ms"
+				durationms="0"
+				type="test module"
+				rid="2f714941e96e7364"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				modulename="Path1_Block2"
+				moduleid=""
+				moduletype="UserCode">
+				<detail>
+				</detail>
+				<item
+					timeRelativeToTestSuiteStartTime="00:01.210"
+					timeRelativeToTestModuleStartTime="00:00.000"
+					timeWallClock="13:10:56"
+					time="00:01.210"
+					level="Info"
+					category="User">
+					<message>
+						Path1 Block2
+					</message>
+					<metainfo
+						codefile="c:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\Flow1_Path1.UserCode.cs"
+						codeline="49"
+						loglvl="Info"/>
+				</item>
+			</activity>
+		</activity>
+		<activity
+			result="Success"
+			duration="15ms"
+			durationms="15"
+			type="test case"
+			rid="3c3676fdef8c900"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testcasename="Flow1_Path2"
+			testcaseid=""
+			maxchildren="0">
+			<detail>
+			</detail>
+			<activity
+				result="Success"
+				duration="15ms"
+				durationms="15"
+				type="test module"
+				rid="eb19554d5fda8"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				modulename="Flow1_Path2_Block1"
+				moduleid=""
+				moduletype="UserCode">
+				<detail>
+				</detail>
+				<item
+					timeRelativeToTestSuiteStartTime="00:01.226"
+					timeRelativeToTestModuleStartTime="00:00.015"
+					timeWallClock="13:10:56"
+					time="00:01.226"
+					level="Info"
+					category="User">
+					<message>
+						Flow1 Path2 Block1 (only block)
+					</message>
+					<metainfo
+						codefile="c:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\Flow1_Path2.UserCode.cs"
+						codeline="42"
+						loglvl="Info"/>
+				</item>
+			</activity>
+		</activity>
+	</activity>
+</report>

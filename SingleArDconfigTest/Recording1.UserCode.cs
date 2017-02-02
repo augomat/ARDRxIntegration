@@ -19,11 +19,10 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
-using Ranorex.Core.Reporting;
 
 namespace SingleArDconfigTest
 {
-    public partial class Flow1_Path1
+    public partial class Recording1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,24 +31,6 @@ namespace SingleArDconfigTest
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public static SingleArDconfigTestRepository sharedRepo = SingleArDconfigTestRepository.Instance;
-         
-        public void Path1Usermethod()
-        {
-        	TestReport.BeginTestCase("Flow1_Path1");
-        	
-        	TestReport.BeginTestModule("Path1_Block1");
-        	Report.Info("Path1 Block1");
-        	sharedRepo.Explorer.Start.MoveTo();
-        	TestReport.EndTestModule();
-        	
-        	TestReport.BeginTestModule("Path1_Block2");
-        	Report.Info("Path1 Block2");
-        	TestReport.EndTestModule();
-        	
-        	TestReport.EndTestCase();
         }
 
     }
