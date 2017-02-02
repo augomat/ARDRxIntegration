@@ -1,7 +1,0 @@
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\bin\Debug\SingleArDconfigTest.rxtmg
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\bin\Debug\SingleArDconfigTest.exe.config
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\bin\Debug\SingleArDconfigTest.exe
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\bin\Debug\SingleArDconfigTest.pdb
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\obj\x86\Debug\SingleArDconfigTest.csprojResolveAssemblyReference.cache
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\obj\x86\Debug\SingleArDconfigTest.exe
-C:\Users\gkapeller\Documents\Ranorex\RanorexStudio Projects\SingleArDconfigTest\SingleArDconfigTest\obj\x86\Debug\SingleArDconfigTest.pdb
