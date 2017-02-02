@@ -38,12 +38,36 @@ namespace SingleArDconfigTest
         {
         	TestReport.BeginTestCase("Flow1_Path2");
         	
-        	TestReport.BeginTestModule("Flow1_Path2_Block1");
-        	Report.Info("Flow1 Path2 Block1 (only block)");
-        	TestReport.EndTestModule();
-        	
-        	TestReport.EndTestCase();
+        	try {
+        		TestReport.BeginTestModule("Flow1_Path2_Block1");
+	        	Report.Info("Flow1 Path2 Block1 (only block)");
+	        	Report.Info("THis is it!");
+	        	Report.Info("THis is it!");
+	        	Report.Info("THis is it!");
+	        	Report.Info("THis is it!");
+	        	Report.Info("THis is it!");
+	        	Report.Info("THis is it!");
+	        	
+	        	var nonExistingElement = repo.Explorer.NonExistingElement;
+	        	//Validate.IsTrue(false);
+	        	
+	        	TestReport.EndTestModule();
+        	}
+			catch (Exception e) {
+        		RanorexCoreReflectionHelper.HandleError(e);
+        	}
+        	finally {
+        		TestReport.EndTestModule();
+        		TestReport.BeginTestCaseTeardown();
+        		
+        		TestReport.BeginTestModule("Flow1_Path2_Teardown");
+        		Report.Info("There goes the Teardown");
+        		TestReport.EndTestModule();
+        		
+        		TestReport.EndTestCaseTeardown();
+        		
+        		TestReport.EndTestCase();	
+        	}	
         }
-
     }
 }

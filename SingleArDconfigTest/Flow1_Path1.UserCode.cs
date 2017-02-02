@@ -34,15 +34,14 @@ namespace SingleArDconfigTest
             // Your recording specific initialization code goes here.
         }
 
-        public static SingleArDconfigTestRepository sharedRepo = SingleArDconfigTestRepository.Instance;
-         
         public void Path1Usermethod()
         {
         	TestReport.BeginTestCase("Flow1_Path1");
         	
         	TestReport.BeginTestModule("Path1_Block1");
         	Report.Info("Path1 Block1");
-        	sharedRepo.Explorer.Start.MoveTo();
+        	repo.Explorer.Start.MoveTo();
+        	Report.Screenshot(repo.Explorer.Start);
         	TestReport.EndTestModule();
         	
         	TestReport.BeginTestModule("Path1_Block2");

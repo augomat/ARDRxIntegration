@@ -86,14 +86,16 @@ namespace SingleArDconfigTest
         public partial class ExplorerAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _startInfo;
+            RepoItemInfo _nonexistingelementInfo;
 
             /// <summary>
             /// Creates a new Explorer  folder.
             /// </summary>
             public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "8d4410e0-951f-43f6-ae8c-a42129f5ad46", "")
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 5000, null, true, "8d4410e0-951f-43f6-ae8c-a42129f5ad46", "")
             {
                 _startInfo = new RepoItemInfo(this, "Start", "?/?/button[@accessiblename='Start']", 30000, null, "5c7a133f-b5ac-4a00-ade6-3cbcd4c82cde");
+                _nonexistingelementInfo = new RepoItemInfo(this, "NonExistingElement", "?/?/button[@accessiblename='NotGoingToBeFOund']", 1000, null, "f6bdd880-2f0b-43bc-9b2f-769c742fa843");
             }
 
             /// <summary>
@@ -141,6 +143,30 @@ namespace SingleArDconfigTest
                 get
                 {
                     return _startInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NonExistingElement item.
+            /// </summary>
+            [RepositoryItem("f6bdd880-2f0b-43bc-9b2f-769c742fa843")]
+            public virtual Ranorex.Button NonExistingElement
+            {
+                get
+                {
+                    return _nonexistingelementInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NonExistingElement item info.
+            /// </summary>
+            [RepositoryItemInfo("f6bdd880-2f0b-43bc-9b2f-769c742fa843")]
+            public virtual RepoItemInfo NonExistingElementInfo
+            {
+                get
+                {
+                    return _nonexistingelementInfo;
                 }
             }
         }

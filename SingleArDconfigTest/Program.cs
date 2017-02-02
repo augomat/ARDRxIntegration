@@ -19,6 +19,8 @@ using Ranorex.Core;
 using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
 
+using System.Reflection;
+
 namespace SingleArDconfigTest
 {
     class Program
@@ -32,24 +34,31 @@ namespace SingleArDconfigTest
             //    return Util.RestartWithUiAccess();
 
             Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
-            int error = 0;
-			
-            /*
-            try
-            {
-                error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
-            }
-            catch (Exception e)
-            {
-                Report.Error("Unexpected exception occurred: " + e.ToString());
-                error = -1;
-            }
-            return error;
-            */
+            
+            TestReport.EnableTracingScreenshots = true;
+            TestReport.TracingScreenshotMode = TestReport.ScreenshotMode.Foreground;
+            TestReport.TracingScreenshotCountLocal = 3;
+            TestReport.TracingScreenshotQuality = 40;
+            
+            TestReport.BeginTestSuite("Hallo");
+               
+			int error = 0;            
+           	Flow1.run();
            
-           Flow1.run();
-           
-           return error;
+           	return error; //TODO
         }
     }
+    
+    public static class RanorexCoreReflectionHelper
+	{
+	    public static Ranorex.Core.Testing.TestResult HandleError(Exception exc)
+	    {
+	        Assembly assembly = typeof(Ranorex.Core.Testing.TestCaseNode).Assembly;
+	        var m = assembly
+	            .GetType("Ranorex.Core.Testing.TestRunHelper")
+	            .GetMethod("HandleError", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+	
+	        return (Ranorex.Core.Testing.TestResult)m.Invoke(null, new object[] { exc });
+	    }
+	}
 }
