@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="SingleArDconfigTestRepository"
+id="27029f27-b8d7-49ba-be3b-cd248430bdcf"
+rxversion="6.2">
+  <codegen
+  classname="SingleArDconfigTestRepository"
+  namespace="SingleArDconfigTest"/>
+  <rootfolder
+  name="Root"
+  id="62e9010b-f791-4bef-89ba-51e8eac460f6"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

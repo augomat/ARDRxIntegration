@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="SingleArDconfigTest"
+      id="bfb96419-4a59-4ecb-952a-43226e3c8e8e"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="SingleArDconfigTest"
+      id="bfb96419-4a59-4ecb-952a-43226e3c8e8e"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

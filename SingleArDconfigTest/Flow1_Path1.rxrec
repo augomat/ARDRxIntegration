@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="7d27a681-d7d9-4786-93f5-0a7beabf0879"
+embeddedrepository="True"
+mode="Global">
+	<name>
+		Flow1_Path1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Flow1_Path1"
+	namespace="SingleArDconfigTest"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="SingleArDconfigTest"
+		classname="Flow1_Path1"
+		methodname="Path1Usermethod"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="91fa9d8c-8188-4631-b31f-9e711a0668cc"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="Path1Repository"
+	id="53e13dee-8ebf-48da-8b8e-9cc408cebd75"
+	rxversion="6.2">
+		<codegen
+		classname="Flow1_Path1Repository"
+		namespace="SingleArDconfigTest"/>
+		<rootfolder
+		name="Root"
+		id="be02b035-403c-4f1f-aa2c-ab7210b5ffad"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="True"
+		usecache="True">
+			<basepath/>
+		</rootfolder>
+		<variables/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Flow1_Path1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>
