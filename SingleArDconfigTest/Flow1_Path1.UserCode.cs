@@ -48,6 +48,7 @@ namespace SingleArDconfigTest
         	}
 			catch (Exception e) {
         		RanorexCoreReflectionHelper.HandleError(e);
+        		TestReport.SaveLocalScreenshotBuffer();
         	}
         	finally {
         		TestReport.EndTestModule();

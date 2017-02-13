@@ -35,13 +35,19 @@ namespace SingleArDconfigTest
 
             Keyboard.AbortKey = System.Windows.Forms.Keys.Pause; 
             
+            /* -- not necessary, only if we want to write report to another location
+  			TestReport.Clear();
+        	TestReport.Setup(Ranorex.ReportLevel.Info, "C:\\tmp\\Testreport.rxlog", false);
+        	*/
+        	/* -- not necessary, only if you want to change tracing screenshot settings
             TestReport.EnableTracingScreenshots = true;
-            TestReport.TracingScreenshotMode = TestReport.ScreenshotMode.Foreground;
+            TestReport.TracingScreenshotMode = TestReport.ScreenshotMode.Background;
             TestReport.TracingScreenshotCountLocal = 3;
             TestReport.TracingScreenshotQuality = 40;
-            
-            TestReport.BeginTestSuite("Hallo");
-               
+            */
+           
+            TestReport.BeginTestSuite("SingleARDConfigTest");
+           
 			int error = 0;            
            	Flow1.run();
            

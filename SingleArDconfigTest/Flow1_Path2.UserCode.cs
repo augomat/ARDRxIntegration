@@ -40,21 +40,46 @@ namespace SingleArDconfigTest
         	
         	try {
         		TestReport.BeginTestModule("Flow1_Path2_Block1");
+        		
 	        	Report.Info("Flow1 Path2 Block1 (only block)");
-	        	Report.Info("THis is it!");
-	        	Report.Info("THis is it!");
-	        	Report.Info("THis is it!");
-	        	Report.Info("THis is it!");
-	        	Report.Info("THis is it!");
-	        	Report.Info("THis is it!");
+	        	Report.Info("This is it!");
+	        	Delay.Milliseconds(200);
+	        	Report.Info("This is it!");
+	        	Delay.Milliseconds(200);
 	        	
-	        	var nonExistingElement = repo.Explorer.NonExistingElement;
-	        	//Validate.IsTrue(false);
+	        	var start = repo.Explorer.Start;
+	        	start.MoveTo();
+	        	
+	        	//-------------- copied from NotepadTest
+	        	Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Windows\\System32\\notepad.exe' with arguments '' in normal mode.");
+	            Host.Local.RunApplication("C:\\Windows\\System32\\notepad.exe", "", "C:\\Windows\\System32", false);
+	            
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.Text15' at 254;96.", repo.UntitledNotepad.Text15Info);
+	            repo.UntitledNotepad.Text15.Click("254;96");
+	            
+	            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'aaa' with focus on 'UntitledNotepad.Text15'.", repo.UntitledNotepad.Text15Info);
+	            repo.UntitledNotepad.Text15.PressKeys("aaa");
+	            
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.Edit' at 21;17.", repo.UntitledNotepad.EditInfo);
+	            repo.UntitledNotepad.Edit.Click("21;17");
+	            
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Notepad.UndoCtrlPlusZ' at 35;6.", repo.Notepad.UndoCtrlPlusZInfo);
+	            repo.Notepad.UndoCtrlPlusZ.Click("35;6");
+	            
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.File' at 5;14.", repo.UntitledNotepad.FileInfo);
+	            repo.UntitledNotepad.File.Click("5;14");
+	            
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Notepad.Exit' at 34;13.", repo.Notepad.ExitInfo);
+	            repo.Notepad.Exit.Click("34;13");
+	            //--------------
+	        	
+	            Validate.IsTrue(false);
 	        	
 	        	TestReport.EndTestModule();
         	}
 			catch (Exception e) {
-        		RanorexCoreReflectionHelper.HandleError(e);
+                    RanorexCoreReflectionHelper.HandleError(e); //TODO return result?!
+                    TestReport.SaveLocalScreenshotBuffer();       		
         	}
         	finally {
         		TestReport.EndTestModule();

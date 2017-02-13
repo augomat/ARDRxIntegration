@@ -2,7 +2,9 @@
   <Array name="active">
     <Element value="Program.cs" />
   </Array>
-  <Array name="bookmarks" />
+  <Array name="bookmarks">
+    <Element value="Breakpoint|C:\Users\gkapeller\Ranorex\Sideprojects\Integrations\Agile Designer\ArgRxReferenceExport\SingleArDconfigTest\Program.cs|47|4|True|Break||" />
+  </Array>
   <Array name="files">
     <Element value="Flow1.cs" />
     <Element value="Program.cs" />
