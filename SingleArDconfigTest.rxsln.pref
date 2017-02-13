@@ -9,6 +9,6 @@
       <string>7d27a681-d7d9-4786-93f5-0a7beabf0879</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SingleArDconfigTest[SingleArDconfigTest[Flow1_Path1.rxrec[]]]]&#xD;&#xA;Solution SingleArDconfigTest\SingleArDconfigTest\Flow1_Path1.rxrec\Flow1_Path1.cs&#xD;&#xA;Solution SingleArDconfigTest" />
+  <ProjectBrowserState value="[Solution SingleArDconfigTest[SingleArDconfigTest[Flow1_Path1.rxrec[]Flow1_Path2.rxrec[]]]]&#xD;&#xA;Solution SingleArDconfigTest\SingleArDconfigTest\Program.cs&#xD;&#xA;Solution SingleArDconfigTest" />
   <StartupProject value="{6732ADF4-0F25-4C71-A978-51991BD60006}" />
 </Properties>

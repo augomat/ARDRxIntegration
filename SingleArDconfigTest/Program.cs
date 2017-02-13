@@ -33,7 +33,7 @@ namespace SingleArDconfigTest
             //if (Util.IsRestartRequiredForWinAppAccess)
             //    return Util.RestartWithUiAccess();
 
-            Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
+            Keyboard.AbortKey = System.Windows.Forms.Keys.Pause; 
             
             TestReport.EnableTracingScreenshots = true;
             TestReport.TracingScreenshotMode = TestReport.ScreenshotMode.Foreground;

@@ -9,17 +9,17 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
 using Ranorex.Core;
+using Ranorex.Core.Reporting;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
-using Ranorex.Core.Reporting;
 
 namespace SingleArDconfigTest
 {
@@ -38,17 +38,29 @@ namespace SingleArDconfigTest
         {
         	TestReport.BeginTestCase("Flow1_Path1");
         	
-        	TestReport.BeginTestModule("Path1_Block1");
-        	Report.Info("Path1 Block1");
-        	repo.Explorer.Start.MoveTo();
-        	Report.Screenshot(repo.Explorer.Start);
-        	TestReport.EndTestModule();
-        	
-        	TestReport.BeginTestModule("Path1_Block2");
-        	Report.Info("Path1 Block2");
-        	TestReport.EndTestModule();
-        	
-        	TestReport.EndTestCase();
+        	try {
+        		TestReport.BeginTestModule("Flow1_Path1_Block1");
+	        	Report.Info("Flow1 Path Block1 (only block)");
+	        	
+	        	Validate.IsTrue(true);
+	        	
+	        	TestReport.EndTestModule();
+        	}
+			catch (Exception e) {
+        		RanorexCoreReflectionHelper.HandleError(e);
+        	}
+        	finally {
+        		TestReport.EndTestModule();
+        		TestReport.BeginTestCaseTeardown();
+        		
+        		TestReport.BeginTestModule("Flow1_Path1_Teardown");
+        		Report.Info("There goes the Teardown");
+        		TestReport.EndTestModule();
+        		
+        		TestReport.EndTestCaseTeardown();
+        		
+        		TestReport.EndTestCase();	
+        	}	
         }
 
     }

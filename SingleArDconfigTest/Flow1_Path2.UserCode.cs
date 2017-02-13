@@ -9,17 +9,17 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
 using Ranorex.Core;
+using Ranorex.Core.Reporting;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
-using Ranorex.Core.Reporting;
 
 namespace SingleArDconfigTest
 {
