@@ -43,8 +43,6 @@ namespace SingleArDconfigTest
 	        	Report.Info("Flow1 Path Block1 (only block)");
 	        	
 	        	Validate.IsTrue(true);
-	        	
-	        	TestReport.EndTestModule();
         	}
 			catch (Exception e) {
         		RanorexCoreReflectionHelper.HandleError(e);

@@ -74,8 +74,6 @@ namespace SingleArDconfigTest
 	            //--------------
 	        	
 	            Validate.IsTrue(false);
-	        	
-	        	TestReport.EndTestModule();
         	}
 			catch (Exception e) {
                     RanorexCoreReflectionHelper.HandleError(e); //TODO return result?!
