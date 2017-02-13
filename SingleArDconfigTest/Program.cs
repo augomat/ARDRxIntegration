@@ -46,25 +46,64 @@ namespace SingleArDconfigTest
             TestReport.TracingScreenshotQuality = 40;
             */
            
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0;
+           
+           	TestResult overallResult = TestResult.Skipped;
+			TestResult result = TestResult.Skipped;
+			
             TestReport.BeginTestSuite("SingleARDConfigTest");
+            
+            //TODO wrap into IDisposible class
+			Ranorex.Core.Reporting.ActivityStack.Begin(new TestFolderActivity("Flow 1", ""));
+           	result = Flow1.run(); 
+           	Ranorex.Core.Reporting.ActivityStack.End(RanorexCoreReflectionHelper.InferStatus(result));
+           	overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
            
-			int error = 0;            
-           	Flow1.run();
-           
-           	return error; //TODO
+           	Ranorex.Core.Reporting.ActivityStack.Begin(new TestFolderActivity("Flow 2", ""));
+           	result = Flow2.run();
+           	Ranorex.Core.Reporting.ActivityStack.End(RanorexCoreReflectionHelper.InferStatus(result));
+           	overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
+           	
+           	return (overallResult == TestResult.Passed) ? 1 : 0;
         }
     }
     
     public static class RanorexCoreReflectionHelper
 	{
-	    public static Ranorex.Core.Testing.TestResult HandleError(Exception exc)
-	    {
-	        Assembly assembly = typeof(Ranorex.Core.Testing.TestCaseNode).Assembly;
-	        var m = assembly
+    	private static MethodInfo HandleErrorMethod;
+    	private static MethodInfo InferResultMethod;
+    	private static MethodInfo InferStatusMethod;
+    	
+    	static RanorexCoreReflectionHelper()
+    	{
+	        HandleErrorMethod = typeof(Ranorex.Core.Testing.TestCaseNode).Assembly
 	            .GetType("Ranorex.Core.Testing.TestRunHelper")
 	            .GetMethod("HandleError", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
-	
-	        return (Ranorex.Core.Testing.TestResult)m.Invoke(null, new object[] { exc });
+	        
+	    	InferResultMethod = typeof(Ranorex.Core.Testing.TestSuite).Assembly
+	    		.GetType("Ranorex.Core.Testing.TestSuite")
+	    		.GetMethod("InferResult", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+	    	
+	    	InferStatusMethod = typeof(Ranorex.Core.Testing.TestSuite).Assembly
+	    		.GetType("Ranorex.Core.Testing.TestSuite")
+	    		.GetMethod("InferStatus", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+    	}
+    	
+	    public static Ranorex.Core.Testing.TestResult HandleError(Exception exc)
+	    {
+	        return (Ranorex.Core.Testing.TestResult)HandleErrorMethod.Invoke(null, new object[] { exc });
+	    }
+	    
+	    public static TestResult InferResult(TestResult overallResult, TestResult childResult)
+	    {
+	    	return (Ranorex.Core.Testing.TestResult)InferResultMethod.Invoke(null, new object[] { overallResult, childResult, null });
+	    }
+	    
+	    public static ActivityStatus InferStatus(TestResult result)
+	    {
+	    	return (Ranorex.Core.Reporting.ActivityStatus)InferStatusMethod.Invoke(null, new object[] { result });
 	    }
 	}
 }

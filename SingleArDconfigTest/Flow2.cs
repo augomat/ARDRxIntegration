@@ -14,28 +14,21 @@ using Ranorex.Core.Testing;
 namespace SingleArDconfigTest
 {
 	/// <summary>
-	/// Description of Flow1.
+	/// Description of Flow2
 	/// </summary>
-	public class Flow1
+	public class Flow2
 	{
-		public Flow1()
+		public Flow2()
 		{
 		}
 		
 		public static TestResult run()
 		{
-			//DEPRECATED
-			//Flow1_Path1.Start();
-			//Flow1_Path2.Start();
-			
 			TestResult overallResult = TestResult.Skipped;
 			TestResult result = TestResult.Skipped;
 			
 			// --- BEGIN ARD Pathcode ---
-			result = Flow1_Path1.Instance.Path1Usermethod();
-			overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
-			
-			result = Flow1_Path2.Instance.Path2Usermethod();
+			result = Flow2_Path1.Instance.Path1Usermethod();
 			overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
 			// --- END ARD Pathcode ---
 			

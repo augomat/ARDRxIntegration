@@ -9,21 +9,21 @@
 
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
 using Ranorex.Core;
-using Ranorex.Core.Reporting;
 using Ranorex.Core.Repository;
+using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
 
 namespace SingleArDconfigTest
 {
-    public partial class Flow1_Path1
+    public partial class Flow2_Path1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -36,19 +36,14 @@ namespace SingleArDconfigTest
 
         public TestResult Path1Usermethod()
         {
-        	TestReport.BeginTestCase("Flow1_Path1");
+        	TestReport.BeginTestCase("Flow2_Path1");
         	
         	TestResult testResult = TestResult.Skipped;
         	try {
-        		TestReport.BeginTestModule("Flow1_Path1_Block1");
+        		TestReport.BeginTestModule("Flow2_Path1_Block1");
 	        		// --- BEGIN ARD Blockcode ---
-		        	Report.Info("Flow1 Path Block1");
-		        	// --- END ARD Blockcode ---
-	        	TestReport.EndTestModule();
-	        	
-	        	TestReport.BeginTestModule("Flow1_Path1_Block2");
-	        		// --- BEGIN ARD Blockcode ---
-		        	Report.Info("Flow1 Path Block2");
+		        	Report.Info("Flow2 Path Block1");
+		        	Validate.IsTrue(false);
 		        	// --- END ARD Blockcode ---
 	        	TestReport.EndTestModule();
 	        	
@@ -64,9 +59,10 @@ namespace SingleArDconfigTest
         		
         		try 
         		{
-        			TestReport.BeginTestModule("Flow1_Path2_Teardown");
+        			TestReport.BeginTestModule("Flow2_Path1_Teardown");
 		        		// --- BEGIN ARD Blockcode ---
-		        		Report.Info("There goes the successful Teardown");
+		        		Report.Info("And our teardown does its job");	
+		        		Validate.IsTrue(true);
 		        		// --- END ARD Blockcode ---
 	        		TestReport.EndTestModule();
         		}
@@ -80,8 +76,8 @@ namespace SingleArDconfigTest
         			TestReport.EndTestCaseTeardown();
         			TestReport.EndTestCase();
         		}
-        	}
-			return testResult;        	
+        	}	
+			return testResult;         	
         }
 
     }

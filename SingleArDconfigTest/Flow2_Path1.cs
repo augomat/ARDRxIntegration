@@ -24,29 +24,29 @@ namespace SingleArDconfigTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Flow1_Path2 recording.
+    ///The Flow2_Path1 recording.
     /// </summary>
-    [TestModule("5ac3e0c8-e5dd-4e8f-819d-0975c37f7432", ModuleType.Recording, 1)]
-    public partial class Flow1_Path2 : ITestModule
+    [TestModule("de598701-b058-4b78-b062-d0f8ce80c0ce", ModuleType.Recording, 1)]
+    public partial class Flow2_Path1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SingleArDconfigTestRepository repository.
         /// </summary>
         public static SingleArDconfigTestRepository repo = SingleArDconfigTestRepository.Instance;
 
-        static Flow1_Path2 instance = new Flow1_Path2();
+        static Flow2_Path1 instance = new Flow2_Path1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Flow1_Path2()
+        public Flow2_Path1()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Flow1_Path2 Instance
+        public static Flow2_Path1 Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace SingleArDconfigTest
 
             Init();
 
-            Path2Usermethod();
+            Path1Usermethod();
             Delay.Milliseconds(0);
             
         }

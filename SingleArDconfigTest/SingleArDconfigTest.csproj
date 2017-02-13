@@ -75,6 +75,21 @@
     <Compile Include="Flow1.cs">
       <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
+    <Compile Include="Flow2.cs">
+      <id>e2e12a0e-4dd4-4b95-9887-b77970b2116a</id>
+    </Compile>
+    <Compile Include="Flow2_Path1.cs">
+      <BoundTo>e987dbf7-90e4-466a-bbfe-14132c0eff88</BoundTo>
+      <DependentUpon>Flow2_Path1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f0aa63f-6e00-4cef-bd7a-93b3e6558e24</id>
+    </Compile>
+    <Compile Include="Flow2_Path1.UserCode.cs">
+      <BoundTo>e987dbf7-90e4-466a-bbfe-14132c0eff88</BoundTo>
+      <DependentUpon>Flow2_Path1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16b3d255-1fc0-4233-89d2-bd52bc262dac</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>34c2a986-52e3-447f-8bd8-af2628fab87f</id>
     </Compile>
@@ -134,6 +149,11 @@
       <id>3035e6b4-82df-4891-915c-731a7cba41e0</id>
       <recordtableid>5ac3e0c8-e5dd-4e8f-819d-0975c37f7432</recordtableid>
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
+    </None>
+    <None Include="Flow2_Path1.rxrec">
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
+      <id>e987dbf7-90e4-466a-bbfe-14132c0eff88</id>
+      <recordtableid>de598701-b058-4b78-b062-d0f8ce80c0ce</recordtableid>
     </None>
     <None Include="NotepadTest.rxrec">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
