@@ -24,29 +24,29 @@ namespace SingleArDconfigTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The NotepadTest recording.
     /// </summary>
     [TestModule("d32faa90-c95c-4ca8-9d82-9a51b1d37601", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class NotepadTest : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SingleArDconfigTestRepository repository.
         /// </summary>
         public static SingleArDconfigTestRepository repo = SingleArDconfigTestRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static NotepadTest instance = new NotepadTest();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public NotepadTest()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static NotepadTest Instance
         {
             get { return instance; }
         }
@@ -73,12 +73,33 @@ namespace SingleArDconfigTest
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Windows\\System32\\notepad.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("C:\\Windows\\System32\\notepad.exe", "", "C:\\Windows\\System32", false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.Text15' at 254;96.", repo.UntitledNotepad.Text15Info, new RecordItemIndex(1));
+            repo.UntitledNotepad.Text15.Click("254;96");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'aaa' with focus on 'UntitledNotepad.Text15'.", repo.UntitledNotepad.Text15Info, new RecordItemIndex(2));
+            repo.UntitledNotepad.Text15.PressKeys("aaa");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.Edit' at 21;17.", repo.UntitledNotepad.EditInfo, new RecordItemIndex(3));
+            repo.UntitledNotepad.Edit.Click("21;17");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Notepad.UndoCtrlPlusZ' at 35;6.", repo.Notepad.UndoCtrlPlusZInfo, new RecordItemIndex(4));
+            repo.Notepad.UndoCtrlPlusZ.Click("35;6");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UntitledNotepad.File' at 5;14.", repo.UntitledNotepad.FileInfo, new RecordItemIndex(5));
+            repo.UntitledNotepad.File.Click("5;14");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Notepad.Exit' at 34;13.", repo.Notepad.ExitInfo, new RecordItemIndex(6));
+            repo.Notepad.Exit.Click("34;13");
+            
         }
 
 #region Image Feature Data

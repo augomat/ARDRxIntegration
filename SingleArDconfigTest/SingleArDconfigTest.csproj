@@ -102,15 +102,15 @@
       <UserCode>true</UserCode>
       <id>e9938610-145c-4eca-bc24-2272206ef362</id>
     </Compile>
-    <Compile Include="Recording1.cs">
+    <Compile Include="NotepadTest.cs">
       <BoundTo>e35738d4-98e9-48e8-8f69-f98f9861b624</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>NotepadTest.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c0032e34-9e8b-4b8a-baba-61f6fabd4751</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
+    <Compile Include="NotepadTest.UserCode.cs">
       <BoundTo>e35738d4-98e9-48e8-8f69-f98f9861b624</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>NotepadTest.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>43aef379-d175-442c-a2c9-6350c25383d1</id>
     </Compile>
@@ -135,7 +135,7 @@
       <recordtableid>5ac3e0c8-e5dd-4e8f-819d-0975c37f7432</recordtableid>
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="NotepadTest.rxrec">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
       <id>e35738d4-98e9-48e8-8f69-f98f9861b624</id>
       <recordtableid>d32faa90-c95c-4ca8-9d82-9a51b1d37601</recordtableid>

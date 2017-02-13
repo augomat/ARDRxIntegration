@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SingleArDconfigTest
 {
-    public partial class Recording1
+    public partial class NotepadTest
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

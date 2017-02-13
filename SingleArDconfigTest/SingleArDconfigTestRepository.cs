@@ -28,6 +28,8 @@ namespace SingleArDconfigTest
     {
         static SingleArDconfigTestRepository instance = new SingleArDconfigTestRepository();
         SingleArDconfigTestRepositoryFolders.ExplorerAppFolder _explorer;
+        SingleArDconfigTestRepositoryFolders.UntitledNotepadAppFolder _untitlednotepad;
+        SingleArDconfigTestRepositoryFolders.NotepadAppFolder _notepad;
 
         /// <summary>
         /// Gets the singleton class instance representing the SingleArDconfigTestRepository element repository.
@@ -45,6 +47,8 @@ namespace SingleArDconfigTest
             : base("SingleArDconfigTestRepository", "/", null, 0, false, "62e9010b-f791-4bef-89ba-51e8eac460f6", ".\\RepositoryImages\\SingleArDconfigTestRepository62e9010b.rximgres")
         {
             _explorer = new SingleArDconfigTestRepositoryFolders.ExplorerAppFolder(this);
+            _untitlednotepad = new SingleArDconfigTestRepositoryFolders.UntitledNotepadAppFolder(this);
+            _notepad = new SingleArDconfigTestRepositoryFolders.NotepadAppFolder(this);
         }
 
 #region Variables
@@ -71,6 +75,24 @@ namespace SingleArDconfigTest
         {
             get { return _explorer; }
         }
+
+        /// <summary>
+        /// The UntitledNotepad folder.
+        /// </summary>
+        [RepositoryFolder("1afe775b-028e-44b1-9e1e-d88a88fcd6a5")]
+        public virtual SingleArDconfigTestRepositoryFolders.UntitledNotepadAppFolder UntitledNotepad
+        {
+            get { return _untitlednotepad; }
+        }
+
+        /// <summary>
+        /// The Notepad folder.
+        /// </summary>
+        [RepositoryFolder("cf1b2e67-3d17-4a52-8078-5a70340278e8")]
+        public virtual SingleArDconfigTestRepositoryFolders.NotepadAppFolder Notepad
+        {
+            get { return _notepad; }
+        }
     }
 
     /// <summary>
@@ -86,7 +108,6 @@ namespace SingleArDconfigTest
         public partial class ExplorerAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _startInfo;
-            RepoItemInfo _nonexistingelementInfo;
 
             /// <summary>
             /// Creates a new Explorer  folder.
@@ -94,8 +115,7 @@ namespace SingleArDconfigTest
             public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Explorer", "/menubar[@processname='explorer']", parentFolder, 5000, null, true, "8d4410e0-951f-43f6-ae8c-a42129f5ad46", "")
             {
-                _startInfo = new RepoItemInfo(this, "Start", "?/?/button[@accessiblename='Start']", 30000, null, "5c7a133f-b5ac-4a00-ade6-3cbcd4c82cde");
-                _nonexistingelementInfo = new RepoItemInfo(this, "NonExistingElement", "?/?/button[@accessiblename='NotGoingToBeFOund']", 1000, null, "f6bdd880-2f0b-43bc-9b2f-769c742fa843");
+                _startInfo = new RepoItemInfo(this, "Start", "?/?/list[@accessiblename='Start']", 30000, null, "41336c74-669b-4308-bbe2-997037cbde96");
             }
 
             /// <summary>
@@ -125,19 +145,19 @@ namespace SingleArDconfigTest
             /// <summary>
             /// The Start item.
             /// </summary>
-            [RepositoryItem("5c7a133f-b5ac-4a00-ade6-3cbcd4c82cde")]
-            public virtual Ranorex.Button Start
+            [RepositoryItem("41336c74-669b-4308-bbe2-997037cbde96")]
+            public virtual Ranorex.List Start
             {
                 get
                 {
-                    return _startInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _startInfo.CreateAdapter<Ranorex.List>(true);
                 }
             }
 
             /// <summary>
             /// The Start item info.
             /// </summary>
-            [RepositoryItemInfo("5c7a133f-b5ac-4a00-ade6-3cbcd4c82cde")]
+            [RepositoryItemInfo("41336c74-669b-4308-bbe2-997037cbde96")]
             public virtual RepoItemInfo StartInfo
             {
                 get
@@ -145,28 +165,214 @@ namespace SingleArDconfigTest
                     return _startInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The UntitledNotepadAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1afe775b-028e-44b1-9e1e-d88a88fcd6a5")]
+        public partial class UntitledNotepadAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _text15Info;
+            RepoItemInfo _editInfo;
+            RepoItemInfo _fileInfo;
 
             /// <summary>
-            /// The NonExistingElement item.
+            /// Creates a new UntitledNotepad  folder.
             /// </summary>
-            [RepositoryItem("f6bdd880-2f0b-43bc-9b2f-769c742fa843")]
-            public virtual Ranorex.Button NonExistingElement
+            public UntitledNotepadAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("UntitledNotepad", "/form[@processname='notepad' and @class='Notepad' and @instance='1']", parentFolder, 30000, null, true, "1afe775b-028e-44b1-9e1e-d88a88fcd6a5", "")
+            {
+                _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", 30000, null, "d87f674a-aee1-4b2a-b5e2-524bf746e89e");
+                _editInfo = new RepoItemInfo(this, "Edit", "?/?/menuitem[@accessiblename='Edit']", 30000, null, "8899f17f-23fe-4ce6-b366-10813695027d");
+                _fileInfo = new RepoItemInfo(this, "File", "?/?/menuitem[@accessiblename='File']", 30000, null, "b46f1d3b-2b95-4751-80f5-4d92032fce77");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1afe775b-028e-44b1-9e1e-d88a88fcd6a5")]
+            public virtual Ranorex.Form Self
             {
                 get
                 {
-                    return _nonexistingelementInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
                 }
             }
 
             /// <summary>
-            /// The NonExistingElement item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("f6bdd880-2f0b-43bc-9b2f-769c742fa843")]
-            public virtual RepoItemInfo NonExistingElementInfo
+            [RepositoryItemInfo("1afe775b-028e-44b1-9e1e-d88a88fcd6a5")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _nonexistingelementInfo;
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text15 item.
+            /// </summary>
+            [RepositoryItem("d87f674a-aee1-4b2a-b5e2-524bf746e89e")]
+            public virtual Ranorex.Text Text15
+            {
+                get
+                {
+                    return _text15Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text15 item info.
+            /// </summary>
+            [RepositoryItemInfo("d87f674a-aee1-4b2a-b5e2-524bf746e89e")]
+            public virtual RepoItemInfo Text15Info
+            {
+                get
+                {
+                    return _text15Info;
+                }
+            }
+
+            /// <summary>
+            /// The Edit item.
+            /// </summary>
+            [RepositoryItem("8899f17f-23fe-4ce6-b366-10813695027d")]
+            public virtual Ranorex.MenuItem Edit
+            {
+                get
+                {
+                    return _editInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Edit item info.
+            /// </summary>
+            [RepositoryItemInfo("8899f17f-23fe-4ce6-b366-10813695027d")]
+            public virtual RepoItemInfo EditInfo
+            {
+                get
+                {
+                    return _editInfo;
+                }
+            }
+
+            /// <summary>
+            /// The File item.
+            /// </summary>
+            [RepositoryItem("b46f1d3b-2b95-4751-80f5-4d92032fce77")]
+            public virtual Ranorex.MenuItem File
+            {
+                get
+                {
+                    return _fileInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The File item info.
+            /// </summary>
+            [RepositoryItemInfo("b46f1d3b-2b95-4751-80f5-4d92032fce77")]
+            public virtual RepoItemInfo FileInfo
+            {
+                get
+                {
+                    return _fileInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NotepadAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cf1b2e67-3d17-4a52-8078-5a70340278e8")]
+        public partial class NotepadAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _undoctrlpluszInfo;
+            RepoItemInfo _exitInfo;
+
+            /// <summary>
+            /// Creates a new Notepad  folder.
+            /// </summary>
+            public NotepadAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Notepad", "/contextmenu[@processname='notepad']", parentFolder, 30000, null, false, "cf1b2e67-3d17-4a52-8078-5a70340278e8", "")
+            {
+                _undoctrlpluszInfo = new RepoItemInfo(this, "UndoCtrlPlusZ", "?/?/menuitem[@accessiblename='UndoCtrl+Z']", 30000, null, "9de57f23-cd41-453b-8a67-baca5e08b2c5");
+                _exitInfo = new RepoItemInfo(this, "Exit", "?/?/menuitem[@accessiblename='Exit']", 30000, null, "3e2bd18f-4ccb-42bb-adb0-a7274b86854a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cf1b2e67-3d17-4a52-8078-5a70340278e8")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cf1b2e67-3d17-4a52-8078-5a70340278e8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UndoCtrlPlusZ item.
+            /// </summary>
+            [RepositoryItem("9de57f23-cd41-453b-8a67-baca5e08b2c5")]
+            public virtual Ranorex.MenuItem UndoCtrlPlusZ
+            {
+                get
+                {
+                    return _undoctrlpluszInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UndoCtrlPlusZ item info.
+            /// </summary>
+            [RepositoryItemInfo("9de57f23-cd41-453b-8a67-baca5e08b2c5")]
+            public virtual RepoItemInfo UndoCtrlPlusZInfo
+            {
+                get
+                {
+                    return _undoctrlpluszInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Exit item.
+            /// </summary>
+            [RepositoryItem("3e2bd18f-4ccb-42bb-adb0-a7274b86854a")]
+            public virtual Ranorex.MenuItem Exit
+            {
+                get
+                {
+                    return _exitInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Exit item info.
+            /// </summary>
+            [RepositoryItemInfo("3e2bd18f-4ccb-42bb-adb0-a7274b86854a")]
+            public virtual RepoItemInfo ExitInfo
+            {
+                get
+                {
+                    return _exitInfo;
                 }
             }
         }
