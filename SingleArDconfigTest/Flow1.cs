@@ -27,10 +27,6 @@ namespace SingleArDconfigTest
 		
 		public TestResult run()
 		{
-			//DEPRECATED
-			//Flow1_Path1.Start();
-			//Flow1_Path2.Start();
-			
 			TestResult overallResult = TestResult.Skipped;
 			TestResult result = TestResult.Skipped;
 			
