@@ -279,3 +279,5 @@ __pycache__/
 
 # Ranorex
 Reports/
+*.pref
+*.rxuser
