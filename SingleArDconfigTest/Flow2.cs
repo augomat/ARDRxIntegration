@@ -16,13 +16,16 @@ namespace SingleArDconfigTest
 	/// <summary>
 	/// Description of Flow2
 	/// </summary>
-	public class Flow2
+	public class Flow2 : IFlow
 	{
 		public Flow2()
 		{
 		}
 		
-		public static TestResult run()
+		string IFlow.FlowName { get { return "Flow 2"; } set { } }
+		string IFlow.FlowComment { get { return "Flow 2 comment"; } set { } }
+		
+		public TestResult run()
 		{
 			TestResult overallResult = TestResult.Skipped;
 			TestResult result = TestResult.Skipped;

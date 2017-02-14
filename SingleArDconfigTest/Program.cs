@@ -34,43 +34,53 @@ namespace SingleArDconfigTest
             //    return Util.RestartWithUiAccess();
 
             Keyboard.AbortKey = System.Windows.Forms.Keys.Pause; 
-            
-            /* -- not necessary, only if we want to write report to another location
-  			TestReport.Clear();
-        	TestReport.Setup(Ranorex.ReportLevel.Info, "C:\\tmp\\Testreport.rxlog", false);
-        	*/
-        	/* -- not necessary, only if you want to change tracing screenshot settings
-            TestReport.EnableTracingScreenshots = true;
-            TestReport.TracingScreenshotMode = TestReport.ScreenshotMode.Background;
-            TestReport.TracingScreenshotCountLocal = 3;
-            TestReport.TracingScreenshotQuality = 40;
-            */
            
+            // General speed settings, will not affect replay of individual modules
             Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 0;
            
-           	TestResult overallResult = TestResult.Skipped;
-			TestResult result = TestResult.Skipped;
-			
-            TestReport.BeginTestSuite("SingleARDConfigTest");
+            TestReport.BeginTestSuite("SingleARDconfigTest");
             
-            //TODO wrap into IDisposible class
-			Ranorex.Core.Reporting.ActivityStack.Begin(new TestFolderActivity("Flow 1", ""));
-           	result = Flow1.run(); 
-           	Ranorex.Core.Reporting.ActivityStack.End(RanorexCoreReflectionHelper.InferStatus(result));
-           	overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
-           
-           	Ranorex.Core.Reporting.ActivityStack.Begin(new TestFolderActivity("Flow 2", ""));
-           	result = Flow2.run();
-           	Ranorex.Core.Reporting.ActivityStack.End(RanorexCoreReflectionHelper.InferStatus(result));
-           	overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
-           	
-           	return (overallResult == TestResult.Passed) ? 1 : 0;
+            var flowExecutor = new FlowExecuter();           
+            flowExecutor.Run(new Flow1());
+            flowExecutor.Run(new Flow2());
+            
+           	return (flowExecutor.overallResult == TestResult.Passed) ? 1 : 0;
         }
     }
     
-    public static class RanorexCoreReflectionHelper
+#region RxHelperClasses
+
+	internal interface IFlow
+	{
+		string FlowName { get; set; }
+		string FlowComment { get; set; }
+            
+		TestResult run();
+	}
+
+    internal sealed class FlowExecuter {
+		
+		public TestResult overallResult { get; set; }
+		
+		public FlowExecuter()
+		{
+			overallResult = TestResult.Skipped;
+		}
+        	
+    	public void Run(IFlow Flow) 
+    	{
+    		Ranorex.Core.Reporting.ActivityStack.Begin(new TestFolderActivity(Flow.FlowName, Flow.FlowComment));
+    		
+			TestResult result = Flow.run();
+			
+           	Ranorex.Core.Reporting.ActivityStack.End(RanorexCoreReflectionHelper.InferStatus(result));
+           	overallResult = RanorexCoreReflectionHelper.InferResult(overallResult, result);
+    	}
+    }
+    
+    internal static class RanorexCoreReflectionHelper
 	{
     	private static MethodInfo HandleErrorMethod;
     	private static MethodInfo InferResultMethod;
@@ -106,4 +116,6 @@ namespace SingleArDconfigTest
 	    	return (Ranorex.Core.Reporting.ActivityStatus)InferStatusMethod.Invoke(null, new object[] { result });
 	    }
 	}
+#endregion
+
 }

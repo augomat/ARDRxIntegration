@@ -16,13 +16,16 @@ namespace SingleArDconfigTest
 	/// <summary>
 	/// Description of Flow1.
 	/// </summary>
-	public class Flow1
+	public class Flow1 : IFlow 
 	{
 		public Flow1()
 		{
 		}
 		
-		public static TestResult run()
+		string IFlow.FlowName { get { return "Flow 1"; } set { } }
+		string IFlow.FlowComment { get { return "Flow 1 comment"; } set { } }
+		
+		public TestResult run()
 		{
 			//DEPRECATED
 			//Flow1_Path1.Start();
