@@ -34,6 +34,9 @@ namespace SingleArDconfigTest
             // Your recording specific initialization code goes here.
         }
 
+        /*
+         * Path with 1 block/module, fails in the block/module itself 
+         */
         public TestResult Path1Usermethod()
         {
         	TestReport.BeginTestCase("Flow2_Path1");

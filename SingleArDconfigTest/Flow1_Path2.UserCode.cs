@@ -34,6 +34,9 @@ namespace SingleArDconfigTest
             // Your recording specific initialization code goes here.
         }
 
+        /*
+         * Path with 1 block/module, automates notepad and then fails in the teardown
+         */
         public TestResult Path2Usermethod()
         {
         	TestReport.BeginTestCase("Flow1_Path2");
