@@ -181,7 +181,7 @@ namespace SingleArDconfigTest
             /// Creates a new UntitledNotepad  folder.
             /// </summary>
             public UntitledNotepadAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("UntitledNotepad", "/form[@processname='notepad' and @class='Notepad' and @instance='1']", parentFolder, 30000, null, true, "1afe775b-028e-44b1-9e1e-d88a88fcd6a5", "")
+                    base("UntitledNotepad", "/form[@processname='notepad' and @class='Notepad']", parentFolder, 30000, null, true, "1afe775b-028e-44b1-9e1e-d88a88fcd6a5", "")
             {
                 _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", 30000, null, "d87f674a-aee1-4b2a-b5e2-524bf746e89e");
                 _editInfo = new RepoItemInfo(this, "Edit", "?/?/menuitem[@accessiblename='Edit']", 30000, null, "8899f17f-23fe-4ce6-b366-10813695027d");

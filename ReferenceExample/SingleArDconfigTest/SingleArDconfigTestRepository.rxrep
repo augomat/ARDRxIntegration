@@ -94,7 +94,6 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 		id="1afe775b-028e-44b1-9e1e-d88a88fcd6a5"
 		searchtimeout="30000ms"
 		capname="form"
-		refpath="/form[@title='Untitled - Notepad' and @processname='notepad' and @class='Notepad' and @instance='1']"
 		addcaps="form,nativewindow"
 		isrooted="True"
 		usecache="True">
@@ -103,33 +102,30 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="d87f674a-aee1-4b2a-b5e2-524bf746e89e"
 			searchtimeout="30000ms"
 			capname="text"
-			refpath="/form[@title='Untitled - Notepad' and @processname='notepad' and @class='Notepad' and @instance='1']/text[@controlid='15']"
 			addcaps="text,nativewindow"
 			refimgid="2ad04c19-32bd-4cbd-b821-2731bcf98977">
-				/form[@processname='notepad' and @class='Notepad' and @instance='1']/text[@controlid='15']
+				/form[@processname='notepad' and @class='Notepad']/text[@controlid='15']
 			</item>
 			<item
 			name="Edit"
 			id="8899f17f-23fe-4ce6-b366-10813695027d"
 			searchtimeout="30000ms"
 			capname="menuitem"
-			refpath="/form[@title='Untitled - Notepad' and @processname='notepad' and @class='Notepad' and @instance='1']/menubar[@accessiblename='Application']/menuitem[@accessiblename='Edit']"
 			addcaps="menuitem,accessible"
 			refimgid="31ce4e84-2162-4793-bd5d-2b0e948feb29">
-				/form[@processname='notepad' and @class='Notepad' and @instance='1']/?/?/menuitem[@accessiblename='Edit']
+				/form[@processname='notepad' and @class='Notepad']/?/?/menuitem[@accessiblename='Edit']
 			</item>
 			<item
 			name="File"
 			id="b46f1d3b-2b95-4751-80f5-4d92032fce77"
 			searchtimeout="30000ms"
 			capname="menuitem"
-			refpath="/form[@title='Untitled - Notepad' and @processname='notepad' and @class='Notepad' and @instance='1']/menubar[@accessiblename='Application']/menuitem[@accessiblename='File']"
 			addcaps="menuitem,accessible"
 			refimgid="cb15bf4b-7ae8-4c4e-af6b-7a92112f4024">
-				/form[@processname='notepad' and @class='Notepad' and @instance='1']/?/?/menuitem[@accessiblename='File']
+				/form[@processname='notepad' and @class='Notepad']/?/?/menuitem[@accessiblename='File']
 			</item>
 			<basepath>
-				/form[@processname='notepad' and @class='Notepad' and @instance='1']
+				/form[@processname='notepad' and @class='Notepad']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
