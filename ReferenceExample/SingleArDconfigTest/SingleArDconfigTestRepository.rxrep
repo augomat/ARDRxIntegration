@@ -1,7 +1,8 @@
-﻿<repository
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
 name="SingleArDconfigTestRepository"
 id="27029f27-b8d7-49ba-be3b-cd248430bdcf"
-rxversion="6.2">
+rxversion="7.0">
 	<codegen
 	classname="SingleArDconfigTestRepository"
 	namespace="SingleArDconfigTest"/>

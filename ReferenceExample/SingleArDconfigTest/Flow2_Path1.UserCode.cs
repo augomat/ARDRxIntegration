@@ -39,7 +39,7 @@ namespace SingleArDconfigTest
          */
         public TestResult Path1Usermethod()
         {
-        	TestReport.BeginTestCase("Flow2_Path1");
+        	TestReport.BeginTestCaseContainer("Flow2_Path1");
         	
         	TestResult testResult = TestResult.Skipped;
         	try {
@@ -58,7 +58,7 @@ namespace SingleArDconfigTest
         		TestReport.SaveLocalScreenshotBuffer();
         	}
         	finally {
-        		TestReport.BeginTestCaseTeardown();
+        		TestReport.BeginTestContainerTeardown();
         		
         		try 
         		{
@@ -76,8 +76,8 @@ namespace SingleArDconfigTest
 	        	}
         		finally
         		{
-        			TestReport.EndTestCaseTeardown();
-        			TestReport.EndTestCase();
+        			TestReport.EndTestContainerTeardown();
+        			TestReport.EndTestContainer();
         		}
         	}	
 			return testResult;         	

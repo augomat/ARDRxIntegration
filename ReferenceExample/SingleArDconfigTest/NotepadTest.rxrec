@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-rxversion="6.2"
+rxversion="7.0"
 id="d32faa90-c95c-4ca8-9d82-9a51b1d37601"
 embeddedrepository="False"
 mode="Desktop">
@@ -82,8 +82,7 @@ mode="Desktop">
 					</attribute>
 					<attribute
 					name="text"
-					type="System.String">
-					</attribute>
+					type="System.String"/>
 					<attribute
 					name="apphung"
 					type="System.Boolean">
@@ -131,8 +130,7 @@ mode="Desktop">
 					</attribute>
 					<attribute
 					name="windowtext"
-					type="System.String">
-					</attribute>
+					type="System.String"/>
 					<dynamicattribute
 					name="AccessibleDefaultAction"
 					type="System.String"
@@ -357,8 +355,7 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 					</attribute>
 					<attribute
 					name="text"
-					type="System.String">
-					</attribute>
+					type="System.String"/>
 					<attribute
 					name="apphung"
 					type="System.Boolean">
@@ -406,8 +403,7 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 					</attribute>
 					<attribute
 					name="windowtext"
-					type="System.String">
-					</attribute>
+					type="System.String"/>
 					<dynamicattribute
 					name="AccessibleDefaultAction"
 					type="System.String"

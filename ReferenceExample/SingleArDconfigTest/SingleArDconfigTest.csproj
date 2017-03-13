@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>SingleArDconfigTest</RootNamespace>
     <AssemblyName>SingleArDconfigTest</AssemblyName>
-    <RanorexVersion>6.2</RanorexVersion>
+    <RanorexVersion>7.0</RanorexVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>b00ccb8e-467d-4524-9320-e11af4ab42a7</projectdefaultrepository>

@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="6.2">
+rxversion="7.0">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -318,6 +318,8 @@ rxversion="6.2">
 	<plugins.rawtext.whitelist>
 		<rawtextconfig/>
 	</plugins.rawtext.whitelist>
+	<Endpoints.Data>
+	</Endpoints.Data>
 	<plugins.win32.EnableBasicDelphiSupport>
 		True
 	</plugins.win32.EnableBasicDelphiSupport>
@@ -381,6 +383,8 @@ rxversion="6.2">
 	<plugins.wpfnative.tree.skipanddescend>
 		System.Windows.Controls.Primitives.CalendarItem;System.Windows.Controls.Grid|System.Windows.Controls.Primitives.CalendarItem|System.Windows.Controls.Calendar;System.Windows.Controls.Grid|System.Windows.Controls.Border|System.Windows.Controls.Calendar;System.Windows.Controls.Primitives.DataGridCellsPresenter;System.Windows.Controls.Grid|System.Windows.Controls.ScrollViewer|System.Windows.Controls.DataGrid;System.Windows.Controls.Primitives.SelectiveScrollingGrid|System.Windows.Controls.Border|System.Windows.Controls.DataGridRow;System.Windows.Controls.DataGridCellsPanel|System.Windows.Controls.ItemsPresenter|System.Windows.Controls.DataGridRow;System.Windows.Controls.DataGridCellsPanel|System.Windows.Controls.ItemsPresenter|System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter;System.Windows.Controls.Grid|System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter|System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter;System.Windows.Controls.Grid|System.Windows.Controls.Primitives.DataGridColumnHeader|System.Windows.Controls.Primitives.DataGridColumnHeader;System.Windows.Controls.DockPanel|System.Windows.Controls.FlowDocumentReader|System.Windows.Controls.FlowDocumentReader;System.Windows.Controls.Grid|System.Windows.Controls.DockPanel|System.Windows.Controls.FlowDocumentReader;System.Windows.Controls.Decorator;System.Windows.Controls.ContentPresenter;System.Windows.Documents.AdornerLayer;System.Windows.Shapes.Shape|System.Windows.Controls.Primitives.ButtonBase;System.Windows.Controls.Grid|System.Windows.Controls.Button|System.Windows.Controls.Button;System.Windows.Controls.Grid|System.Windows.Controls.Grid|System.Windows.Controls.Button;System.Windows.Shapes.Shape|System.Windows.Controls.Grid|System.Windows.Controls.Button;System.Windows.Controls.Grid|System.Windows.Controls.Primitives.ToggleButton|System.Windows.Controls.Primitives.ToggleButton;System.Windows.Controls.Grid|System.Windows.Controls.ScrollViewer|System.Windows.Controls.Primitives.TextBoxBase;System.Windows.Controls.Grid|System.Windows.Controls.Border|System.Windows.Controls.Slider;System.Windows.Controls.Primitives.Track|System.Windows.Controls.Grid|System.Windows.Controls.Slider;System.Windows.Shapes.Path|System.Windows.Controls.Grid|System.Windows.Controls.Primitives.Thumb;System.Windows.Shapes.Rectangle|System.Windows.Controls.Primitives.Thumb|System.Windows.Controls.Primitives.Thumb;System.Windows.Controls.Grid|System.Windows.Controls.Border|System.Windows.Controls.DatePicker;System.Windows.Controls.ScrollViewer;System.Windows.Controls.ItemsPresenter;System.Windows.Controls.StackPanel||System.Windows.Controls.TreeView;System.Windows.Controls.Grid||System.Windows.Controls.TreeView;System.Windows.Controls.StackPanel|System.Windows.Controls.Grid|System.Windows.Controls.TreeView;System.Windows.Shapes.Rectangle||System.Windows.Controls.TreeView;System.Windows.Controls.Grid|System.Windows.Controls.TreeViewItem;System.Windows.Controls.Grid|System.Windows.Controls.ScrollViewer|System.Windows.Controls.ListBox;System.Windows.Controls.Grid|System.Windows.Controls.ToolBar|System.Windows.Controls.ToolBar;System.Windows.Controls.DockPanel|System.Windows.Controls.Border|System.Windows.Controls.ToolBar;System.Windows.Controls.Grid|System.Windows.Controls.GroupBox|System.Windows.Controls.GroupBox;System.Windows.Controls.Grid||System.Windows.Controls.Primitives.PopupRoot;System.Windows.Controls.StackPanel||System.Windows.Controls.Primitives.PopupRoot;System.Windows.Controls.VirtualizingStackPanel||System.Windows.Controls.Primitives.PopupRoot;System.Windows.Controls.Grid|System.Windows.Controls.Border|System.Windows.Controls.MenuItem;System.Windows.Controls.ContextMenu|System.Windows.Documents.NonLogicalAdornerDecorator|System.Windows.Controls.Primitives.PopupRoot;System.Windows.Controls.Ribbon.Primitives.RibbonMenuItemsPanel||System.Windows.Controls.Primitives.PopupRoot;|System.Windows.Controls.Primitives.ScrollBar;System.Windows.Controls.Grid|SpreadsheetGear.Windows.Controls.ColumnHeader;System.Windows.Controls.Grid|SpreadsheetGear.Windows.Controls.RowHeader;System.Windows.Controls.TextBlock|System.Windows.Controls.ContentPresenter|System.Windows.Controls.TabItem;System.Windows.Controls.Grid|System.Windows.Controls.TabItem|System.Windows.Controls.TabItem;System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.RibbonTextBox|System.Windows.Controls.Ribbon.RibbonTextBox;System.Windows.Controls.Grid|System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.RibbonTextBox;System.Windows.Controls.Grid|System.Windows.Controls.ScrollViewer|System.Windows.Controls.Ribbon.RibbonTextBox;System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel|System.Windows.Controls.ItemsPresenter|System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl;System.Windows.Controls.Grid|System.Windows.Controls.ScrollViewer|System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl;System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.Ribbon|System.Windows.Controls.Ribbon.Ribbon;System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel||System.Windows.Controls.Ribbon.Ribbon;System.Windows.Controls.ContentControl|System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.Ribbon;System.Windows.Controls.DockPanel|System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.Ribbon;System.Windows.Controls.StackPanel|System.Windows.Controls.Border|System.Windows.Controls.Ribbon.RibbonButton;System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.RibbonTwoLineText|System.Windows.Controls.Ribbon.RibbonTwoLineText;System.Windows.Controls.DockPanel|System.Windows.Controls.Grid|System.Windows.Controls.Ribbon.RibbonTwoLineText;System.Windows.Controls.Grid|Xceed.Wpf.DataGrid.DataGridControl|Xceed.Wpf.DataGrid.DataGridControl;Xceed.Wpf.DataGrid.Views.TableflowViewItemsHost|System.Windows.Controls.Grid|Xceed.Wpf.DataGrid.DataGridControl;
 	</plugins.wpfnative.tree.skipanddescend>
+	<plugins.wpfnative.flags>
+	</plugins.wpfnative.flags>
 	<plugins.wpf.ExpensiveAttributesEnabled>
 		True
 	</plugins.wpf.ExpensiveAttributesEnabled>
@@ -454,4 +458,10 @@ rxversion="6.2">
 	<plugin.cef.enabledebugcapability>
 		False
 	</plugin.cef.enabledebugcapability>
+	<plugin.webdriver.commandtimeout>
+		10000ms
+	</plugin.webdriver.commandtimeout>
+	<plugin.webdriver.domfetchmode>
+		WhenChanged
+	</plugin.webdriver.domfetchmode>
 </configuration>

@@ -22,7 +22,7 @@ namespace SingleArDconfigTest
     /// <summary>
     /// The class representing the SingleArDconfigTestRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.0")]
     [RepositoryFolder("62e9010b-f791-4bef-89ba-51e8eac460f6")]
     public partial class SingleArDconfigTestRepository : RepoGenBaseFolder
     {
@@ -98,7 +98,7 @@ namespace SingleArDconfigTest
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.0")]
     public partial class SingleArDconfigTestRepositoryFolders
     {
         /// <summary>

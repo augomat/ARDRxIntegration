@@ -39,7 +39,7 @@ namespace SingleArDconfigTest
          */
         public TestResult Path2Usermethod()
         {
-        	TestReport.BeginTestCase("Flow1_Path2");
+        	TestReport.BeginTestCaseContainer("Flow1_Path2");
         	
         	TestResult testResult = TestResult.Skipped;
         	try {
@@ -50,9 +50,6 @@ namespace SingleArDconfigTest
 		        	Delay.Milliseconds(200);
 		        	Report.Info("This is it!");
 		        	Delay.Milliseconds(200);
-		        	
-		        	var start = repo.Explorer.Start;
-		        	start.MoveTo();
 		        	
 		        	// copied from NotepadTest
 		        	Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Windows\\System32\\notepad.exe' with arguments '' in normal mode.");
@@ -86,7 +83,7 @@ namespace SingleArDconfigTest
                 TestReport.SaveLocalScreenshotBuffer();
         	}
         	finally {
-        		TestReport.BeginTestCaseTeardown();
+        		TestReport.BeginTestContainerTeardown();
         		
         		try 
         		{
@@ -104,8 +101,8 @@ namespace SingleArDconfigTest
 	        	}
         		finally
         		{
-        			TestReport.EndTestCaseTeardown();
-        			TestReport.EndTestCase();
+        			TestReport.EndTestContainerTeardown();
+        			TestReport.EndTestContainer();
         		}
         	}	
 			return testResult; 
