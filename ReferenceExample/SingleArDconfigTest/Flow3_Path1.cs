@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: user
- * Date: 3/23/2017
- * Time: 12:37 AM
+ * Date: 3/22/2017
+ * Time: 11:37 PM
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -23,15 +23,15 @@ using Ranorex.Core.Testing;
 namespace SingleArDconfigTest
 {
     /// <summary>
-    /// Description of Flow2_Path1.
+    /// Description of Flow3_Path1.
     /// </summary>
-    [TestModule("09DF8553-36DF-4807-B193-62CBE5425928", ModuleType.UserCode, 1)]
-    public class Flow2_Path1 : ITestModule
+    [TestModule("D7E819C1-CA0B-4308-A599-DFCB243C644F", ModuleType.UserCode, 1)]
+    public class Flow3_Path1 : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Flow2_Path1()
+        public Flow3_Path1()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -44,17 +44,18 @@ namespace SingleArDconfigTest
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
-            TestReport.BeginTestCaseContainer("Flow2_Path1");
-
+        	var repo = SingleArDconfigTestRepository.Instance;
+       		
+        	TestReport.BeginTestCaseContainer("Flow3_Path1");
+        	
         	try {
-        		TestReport.BeginTestModule("Flow2_Path1_Block1");
+        		TestReport.BeginTestModule("Flow3_Path1_Block1");
 	        		// --- BEGIN ARD Blockcode ---
-		        	Report.Info("Flow2 Path Block1");
-		        	Validate.IsTrue(false);
+		        	Report.Info("Flow3 Path Block1");
 		        	// --- END ARD Blockcode ---
 	        	TestReport.EndTestModule();
         	}
-			catch (Exception) {
+        	catch (Exception) {
         		TestReport.EndTestModule();
         	}
         	finally {
@@ -62,10 +63,9 @@ namespace SingleArDconfigTest
         		
         		try 
         		{
-        			TestReport.BeginTestModule("Flow2_Path1_Teardown");
+        			TestReport.BeginTestModule("Flow3_Path2_Teardown");
 		        		// --- BEGIN ARD Blockcode ---
-		        		Report.Info("And our teardown does its job");	
-		        		Validate.IsTrue(true);
+		        		Report.Info("There goes the successful Teardown");
 		        		// --- END ARD Blockcode ---
 	        		TestReport.EndTestModule();
         		}
@@ -77,7 +77,7 @@ namespace SingleArDconfigTest
         			TestReport.EndTestContainerTeardown();
         			TestReport.EndTestCaseContainer();
         		}
-        	}	
+        	}
         }
     }
 }

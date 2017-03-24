@@ -14,18 +14,18 @@ using Ranorex.Core.Testing;
 namespace SingleArDconfigTest
 {
 	/// <summary>
-	/// Description of Flow2
+	/// Description of Flow1.
 	/// </summary>
-	public class Flow2
+	public class Flow3 
 	{
-		public Flow2()
+		public Flow3()
 		{
 		}
 		
 		public void Run()
 		{
 			// --- BEGIN ARD Pathcode ---
-			TestModuleRunner.Run(new Flow2_Path1());
+			TestModuleRunner.Run(new Flow3_Path1());
 			// --- END ARD Pathcode ---
 		}
 	}

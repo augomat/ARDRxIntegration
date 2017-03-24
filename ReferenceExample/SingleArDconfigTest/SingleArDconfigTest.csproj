@@ -47,6 +47,7 @@
     <Reference Include="Ranorex.Plugin.Qt" />
     <Reference Include="Ranorex.Plugin.RawText" />
     <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Test" />
     <Reference Include="Ranorex.Plugin.Uia" />
     <Reference Include="Ranorex.Plugin.Web" />
     <Reference Include="Ranorex.Plugin.WebDriver" />
@@ -72,50 +73,29 @@
     <Compile Include="AssemblyInfo.cs">
       <id>368374b4-64fe-4966-b186-30de673d3eff</id>
     </Compile>
+    <Compile Include="Flow2_Path1.cs">
+      <id>177adab7-b60a-4323-ab0f-b963d782462f</id>
+    </Compile>
+    <Compile Include="Flow3.cs">
+      <id>50e0c769-ec5d-4205-861a-295626b0182f</id>
+    </Compile>
     <Compile Include="Flow1.cs">
       <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
     <Compile Include="Flow2.cs">
       <id>e2e12a0e-4dd4-4b95-9887-b77970b2116a</id>
     </Compile>
-    <Compile Include="Flow2_Path1.cs">
-      <BoundTo>e987dbf7-90e4-466a-bbfe-14132c0eff88</BoundTo>
-      <DependentUpon>Flow2_Path1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5f0aa63f-6e00-4cef-bd7a-93b3e6558e24</id>
+    <Compile Include="Flow1_Path1.cs">
+      <id>98228f74-8615-4f9f-aa17-64dde85d2ab4</id>
     </Compile>
-    <Compile Include="Flow2_Path1.UserCode.cs">
-      <BoundTo>e987dbf7-90e4-466a-bbfe-14132c0eff88</BoundTo>
-      <DependentUpon>Flow2_Path1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>16b3d255-1fc0-4233-89d2-bd52bc262dac</id>
+    <Compile Include="Flow1_Path2.cs">
+      <id>6d4e69bf-de53-444e-9bfa-6cf2353ac3eb</id>
+    </Compile>
+    <Compile Include="Flow3_Path1.cs">
+      <id>93d0597e-b2d8-48fa-9daf-fd4614f1bbe6</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>34c2a986-52e3-447f-8bd8-af2628fab87f</id>
-    </Compile>
-    <Compile Include="Flow1_Path1.cs">
-      <BoundTo>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</BoundTo>
-      <DependentUpon>Flow1_Path1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>4ebb0555-fb05-422a-8758-1e46272ae8ec</id>
-    </Compile>
-    <Compile Include="Flow1_Path1.UserCode.cs">
-      <BoundTo>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</BoundTo>
-      <DependentUpon>Flow1_Path1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b254194b-c08b-4dba-8407-4b797b02de94</id>
-    </Compile>
-    <Compile Include="Flow1_Path2.cs">
-      <BoundTo>3035e6b4-82df-4891-915c-731a7cba41e0</BoundTo>
-      <DependentUpon>Flow1_Path2.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>348a9674-8144-44b4-8197-a1c720ff2e42</id>
-    </Compile>
-    <Compile Include="Flow1_Path2.UserCode.cs">
-      <BoundTo>3035e6b4-82df-4891-915c-731a7cba41e0</BoundTo>
-      <DependentUpon>Flow1_Path2.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e9938610-145c-4eca-bc24-2272206ef362</id>
     </Compile>
     <Compile Include="NotepadTest.cs">
       <BoundTo>e35738d4-98e9-48e8-8f69-f98f9861b624</BoundTo>
@@ -139,21 +119,6 @@
   <ItemGroup>
     <None Include="app.config">
       <id>0ada242f-b10f-4287-a1dd-4811d4ea9dd4</id>
-    </None>
-    <None Include="Flow1_Path1.rxrec">
-      <id>0d21ac12-a46f-442b-8c16-a0fdd4f044a8</id>
-      <recordtableid>7d27a681-d7d9-4786-93f5-0a7beabf0879</recordtableid>
-      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
-    </None>
-    <None Include="Flow1_Path2.rxrec">
-      <id>3035e6b4-82df-4891-915c-731a7cba41e0</id>
-      <recordtableid>5ac3e0c8-e5dd-4e8f-819d-0975c37f7432</recordtableid>
-      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
-    </None>
-    <None Include="Flow2_Path1.rxrec">
-      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
-      <id>e987dbf7-90e4-466a-bbfe-14132c0eff88</id>
-      <recordtableid>de598701-b058-4b78-b062-d0f8ce80c0ce</recordtableid>
     </None>
     <None Include="NotepadTest.rxrec">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>

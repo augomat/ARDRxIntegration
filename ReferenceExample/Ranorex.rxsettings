@@ -73,7 +73,8 @@ rxversion="7.0">
 				source="self"
 				attribute="class"
 				match="^WindowsForms10.Window"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb YUI (Yahoo User Interface Library)"
@@ -86,12 +87,14 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="^yui(_\d+)"
-				negate="False"/>
+				negate="False">
+				</condition>
 				<condition
 				source="self"
 				attribute="id"
 				match="^yui-gen.*"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb JS Frameworks (ExtJS, Sencha, Ozone Widget ,...)"
@@ -104,12 +107,14 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="^ext-.*\d+.*"
-				negate="False"/>
+				negate="False">
+				</condition>
 				<condition
 				source="self"
 				attribute="id"
 				match="^[a-z]+-\d{4}(-[a-z]*(-\d*)?)?"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb jQuery"
@@ -122,7 +127,8 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="^ui-id-\d+"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb ASP.net"
@@ -135,7 +141,8 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="^ctl00(\$|_)(.*(\$|_))"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb GWT"
@@ -148,12 +155,14 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="^gwt-uid-\d+.*"
-				negate="False"/>
+				negate="False">
+				</condition>
 				<condition
 				source="self"
 				attribute="id"
 				match="^isc_.+"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWeb MS Dynamics CRM"
@@ -166,7 +175,8 @@ rxversion="7.0">
 				source="self"
 				attribute="id"
 				match="[a-zA-Z_]+_\{[0-9 A-F-]+\}_\d+"
-				negate="False"/>
+				negate="False">
+				</condition>
 			</rule>
 			<rule
 			name="RxWin32 Random ControlIds"
@@ -174,7 +184,8 @@ rxversion="7.0">
 			capability="nativewindow"
 			attribute="controlid"
 			setweight="0"
-			conditionsoperator="or"/>
+			conditionsoperator="or">
+			</rule>
 		</rxpathweights>
 	</rxpath.weights>
 	<rxpath.enableuidsearch>
@@ -189,124 +200,164 @@ rxversion="7.0">
 		defcapcost="20">
 			<cap
 			name="unknown"
-			cost="10"/>
+			cost="10">
+			</cap>
 			<cap
 			name="container"
-			cost="20"/>
+			cost="20">
+			</cap>
 			<cap
 			name="cell"
-			cost="10"/>
+			cost="10">
+			</cap>
 			<cap
 			name="text"
-			cost="10"/>
+			cost="10">
+			</cap>
 			<cap
 			name="treeitem"
-			cost="20"/>
+			cost="20">
+			</cap>
 			<cap
 			name="listitem"
-			cost="40"/>
+			cost="40">
+			</cap>
 			<cap
 			name="row"
-			cost="40"/>
+			cost="40">
+			</cap>
 			<cap
 			name="column"
-			cost="40"/>
+			cost="40">
+			</cap>
 			<cap
 			name="button"
-			cost="40"/>
+			cost="40">
+			</cap>
 			<cap
 			name="form"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="toolbar"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="list"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="tree"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="tabpage"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="combobox"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="table"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="scrollbar"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="titlebar"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="flexobject"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="airwindow"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="mobiledevice"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="mobileapp"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="mobilewebdocument"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="excelworksheet"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="sapwindow"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="webdocument"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="windowsapp"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="formtag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="selecttag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="frametag"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="iframetag"
-			cost="80"/>
+			cost="80">
+			</cap>
 			<cap
 			name="oltag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="ultag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="tabletag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="sectiontag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="navtag"
-			cost="60"/>
+			cost="60">
+			</cap>
 			<cap
 			name="maptag"
-			cost="50"/>
+			cost="50">
+			</cap>
 			<cap
 			name="articletag"
-			cost="50"/>
+			cost="50">
+			</cap>
 			<cap
 			name="menutag"
-			cost="50"/>
+			cost="50">
+			</cap>
 			<cap
 			name="webelement"
-			cost="20"/>
+			cost="20">
+			</cap>
 		</pathbuildoptions>
 	</rxpath.pathbuildoptions>
 	<spy.CompleteAncestorSnapshot>
@@ -316,7 +367,8 @@ rxversion="7.0">
 		True
 	</plugins.win32.enablebitbridge>
 	<plugins.rawtext.whitelist>
-		<rawtextconfig/>
+		<rawtextconfig>
+		</rawtextconfig>
 	</plugins.rawtext.whitelist>
 	<Endpoints.Data>
 	</Endpoints.Data>
@@ -357,6 +409,9 @@ rxversion="7.0">
 	</plugins.wpfnative.applicationtrees>
 	<plugins.wpfnative.proc.ignorelist>
 	</plugins.wpfnative.proc.ignorelist>
+	<plugins.wpfnative.tree.WpfImprovedAlreadyForcedAsDefault>
+		True
+	</plugins.wpfnative.tree.WpfImprovedAlreadyForcedAsDefault>
 	<plugins.wpfnative.item.filter.attributes.prefixlist>
 		AreAnyTouches;IsKeyboard;IsMouse;IsStylus;IsFocused;IsVisible;IsEnabled;Ranorex;
 	</plugins.wpfnative.item.filter.attributes.prefixlist>
@@ -464,4 +519,16 @@ rxversion="7.0">
 	<plugin.webdriver.domfetchmode>
 		WhenChanged
 	</plugin.webdriver.domfetchmode>
+	<plugin.webdriver.autoupdatewindowsize>
+		2000ms
+	</plugin.webdriver.autoupdatewindowsize>
+	<plugin.webdriver.autoupdatewindowsizemultiplier>
+		3
+	</plugin.webdriver.autoupdatewindowsizemultiplier>
+	<plugin.webdriver.tabautomation>
+		False
+	</plugin.webdriver.tabautomation>
+	<plugin.webdriver.attachToOpenSessions>
+		True
+	</plugin.webdriver.attachToOpenSessions>
 </configuration>
