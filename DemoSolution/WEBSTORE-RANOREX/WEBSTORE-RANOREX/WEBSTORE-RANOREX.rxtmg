@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="WEBSTORE-RANOREX"
+      id="7df06003-6909-404f-814f-bc31242a2ce7"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="WEBSTORE-RANOREX"
+      id="7df06003-6909-404f-814f-bc31242a2ce7"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
