@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1422285A-8B0E-4AFD-9CE4-BAA25AEB421E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AGILE_DESIGNER</RootNamespace>
+    <AssemblyName>AGD</AssemblyName>
+    <RanorexVersion>7.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>d4644ece-70d9-4540-83e3-9623d2eb6c51</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AGD.cs">
+      <BoundTo>d4644ece-70d9-4540-83e3-9623d2eb6c51</BoundTo>
+      <DependentUpon>AGD.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>aebe21da-e8bf-4e42-8e34-066d59feb149</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>09c37040-c78d-4643-abc8-a4bfa060d337</id>
+    </Compile>
+    <Compile Include="Modelled Tests\CreateNewFlow\CreateNewFlow.cs">
+      <id>531fb7ee-2c8e-4c46-b9d4-978f1ef15001</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\EditGlobalProperties.cs">
+      <id>f7b0d997-1055-423a-9f58-35a6b221ced7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All1.cs">
+      <id>b12f25b0-02ba-4703-a430-993e1182564d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All10.cs">
+      <id>4c69d36f-5f86-4079-968f-b577d12f6e1c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All100.cs">
+      <id>1dc91b02-0471-46cd-8501-ca3c9647adf6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All101.cs">
+      <id>7b8b6909-f292-43e1-a440-11d3580d97a0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All102.cs">
+      <id>5126cc36-dfd4-463d-8cde-026b99f5aa6f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All103.cs">
+      <id>b794d4bd-6325-43b9-b2fe-b05d60440280</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All104.cs">
+      <id>2c75e27e-4e55-4457-9b89-ff79baed4ef1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All105.cs">
+      <id>4385d667-6050-4e7b-a17b-c2c1f83ee94c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All106.cs">
+      <id>e860d40b-51dc-463a-9dbc-54f5b688646b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All107.cs">
+      <id>9bd8023c-99cb-4e3f-a886-df2d0dd7fd8d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All108.cs">
+      <id>c7909d13-b62a-4431-8e2c-d2014362589b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All109.cs">
+      <id>9387bfab-db18-4385-a476-b2a3fa9fe8c1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All11.cs">
+      <id>c15d0496-a4e0-4477-a186-f442ed1fae2d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All110.cs">
+      <id>74edde59-ea78-461d-81f3-0ae381995178</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All111.cs">
+      <id>763704a3-6972-41fb-b637-950957297667</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All112.cs">
+      <id>a16f0efe-4ead-4cea-9909-5d7032c6778d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All113.cs">
+      <id>3cb137bf-6a90-4c37-8b2e-2c25269c1565</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All114.cs">
+      <id>25d08175-ac88-466e-a76a-546d516ee848</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All115.cs">
+      <id>dd939dc7-2d46-4c08-b940-0729f4531b4b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All116.cs">
+      <id>8762cd67-b97c-422a-adef-7f1e2d9b0192</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All117.cs">
+      <id>9fd32b64-de14-4f91-bac2-00ca7dd3ca09</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All118.cs">
+      <id>130d1f9f-d6e9-4e52-9d77-112a6403fc98</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All119.cs">
+      <id>4c35ea8a-6c95-4421-87ac-a867bc25883f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All12.cs">
+      <id>bf54049a-234d-4279-9ddb-0cea765bb8c1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All120.cs">
+      <id>1afa64db-60b3-4afc-980b-82b3f12c3750</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All121.cs">
+      <id>22eca4ec-4010-4888-8925-fcae5c6391eb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All122.cs">
+      <id>21f592a9-17cd-44fb-abaf-869af01e28ce</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All123.cs">
+      <id>fbfc9009-64ed-4f5e-b9ad-2c52e0b7e424</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All124.cs">
+      <id>e96dee8f-961b-4707-aea2-5cb4c4971dc5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All125.cs">
+      <id>431fe9d9-cf42-4dc6-a259-02aade8af7c0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All126.cs">
+      <id>a0ac4eb3-ef0a-4094-a655-d5f42ace10ef</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All127.cs">
+      <id>66af1d8c-f803-4bb9-b60e-e29dab5c1f68</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All128.cs">
+      <id>03fa9d55-bf09-4fcd-b3ea-e1bbd13a194d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All129.cs">
+      <id>84b7050f-7481-4ac8-af50-f1b1d3c85464</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All13.cs">
+      <id>468b826b-9782-4282-ba49-8b396ce4c5cc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All130.cs">
+      <id>3bc593d4-10cc-4375-913c-fc9474c3168c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All131.cs">
+      <id>e06b10ac-f255-461d-9bf9-15b1ebd1a522</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All132.cs">
+      <id>75411a33-e446-46c6-8f3f-6ded8beaf985</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All133.cs">
+      <id>d613838d-477d-4d2c-aafa-f392ef3b9f15</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All134.cs">
+      <id>cffdb379-badf-4a19-9cfe-aecb4b1e9c28</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All135.cs">
+      <id>5664bb6c-7d03-465d-a20f-a84aea1cc2af</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All136.cs">
+      <id>8f983862-8346-41e0-9109-0c272b733b59</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All137.cs">
+      <id>39a3705b-d9b3-4f5e-8843-6051b570e3d0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All138.cs">
+      <id>976ea13f-c252-4741-876b-a5e95c77161e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All139.cs">
+      <id>0b9a168a-bb23-47c2-b409-39c4b7e8aa41</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All14.cs">
+      <id>4670cf7b-806a-47db-b063-12200df1aa8c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All140.cs">
+      <id>29bd4727-9baf-41d9-b68e-7ad9b653e90e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All141.cs">
+      <id>d962b3d8-e331-4d2e-9cdd-4e224c09e6c7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All142.cs">
+      <id>4c3b7f9f-490b-44ad-a46e-b85dfde5d36e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All143.cs">
+      <id>d182e825-7329-458f-b032-4b39fbb2afd3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All144.cs">
+      <id>cbac4d59-1fc6-4da9-93c2-79364514c4d8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All145.cs">
+      <id>0b055874-4fe5-42ca-ada7-33afd5ce625b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All146.cs">
+      <id>f1743f44-b843-473b-8fa6-d088f88d6457</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All147.cs">
+      <id>79ff2589-2438-4829-9a04-0de8c260056f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All148.cs">
+      <id>0ea9de13-efb1-4a9f-94e5-a273626b2312</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All149.cs">
+      <id>065232cb-5a46-4e17-9ea0-2797463fb76d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All15.cs">
+      <id>ce99d296-2b1b-4001-9c5a-75f5d4de44c3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All150.cs">
+      <id>671c4418-6df3-4404-91a8-53e17b6edf27</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All151.cs">
+      <id>ed2ce0da-be40-4bc9-9790-50e2bfba0448</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All152.cs">
+      <id>132c3f11-9646-4033-804e-bd76d5c2f565</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All153.cs">
+      <id>ed94b840-8cc3-4f94-ba4b-360b8195d2cf</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All154.cs">
+      <id>54588265-38ae-4e50-801a-2742749817c0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All155.cs">
+      <id>d79840c4-4bf1-4ff7-ad0d-b618ccd84bb1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All156.cs">
+      <id>c6915eea-0125-4bc6-9d50-1efaee230535</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All157.cs">
+      <id>57f5cc6b-ba14-436e-aa39-0b0b5c1a3348</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All158.cs">
+      <id>079b86b1-2ec0-48d3-9d41-62a079e6f01d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All159.cs">
+      <id>95d83d50-8d77-4dad-bc7e-3b4d2e2c9bc5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All16.cs">
+      <id>394056fd-7664-42d4-b1b9-8137aba79fbf</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All160.cs">
+      <id>e1ffabee-29fa-4a05-b04f-6e0cbf4ca63e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All161.cs">
+      <id>edb1ec1d-3e0e-4f97-988b-e2c1d84bc05b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All162.cs">
+      <id>65ef1d96-8841-49ae-851c-0c55744280a7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All163.cs">
+      <id>fd34dcff-120c-4f88-8ed7-0de99260c747</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All164.cs">
+      <id>45e56948-776e-4c0c-b830-e933abcb6453</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All165.cs">
+      <id>0dd2b40c-8cec-4c65-8ee2-3607aec89a5b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All166.cs">
+      <id>da43357a-3bcf-4f1d-9fdf-ada188ffbf15</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All167.cs">
+      <id>1e550507-98a9-4f29-8534-038f7784e6b8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All168.cs">
+      <id>642b040d-0abc-4f45-bbd8-c5c641bfa970</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All169.cs">
+      <id>082b79e6-af36-4899-a48b-fd8eb5c769c0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All17.cs">
+      <id>8e24fb1e-db14-4f86-8e85-6dad63f9115c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All170.cs">
+      <id>fdbe392d-e633-451c-b039-91d8aa1bd008</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All171.cs">
+      <id>228e591a-19e2-4974-9afa-f9e1b92f1339</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All172.cs">
+      <id>0345d492-9a9d-41b3-bea4-6dee41d9be3b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All173.cs">
+      <id>5c1380c3-0818-422b-a722-d7f7da119097</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All174.cs">
+      <id>33737461-0223-4758-9c30-dbe0e99ca0e5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All175.cs">
+      <id>1615cafc-1618-4a19-807e-3c265fb3784d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All176.cs">
+      <id>afeba8ff-b802-44e1-9e6a-f304416aac34</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All177.cs">
+      <id>d88c13f0-1b42-48c6-9696-51778ad30163</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All178.cs">
+      <id>42c90383-e244-4c81-a10c-387dddb67585</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All179.cs">
+      <id>ee38282a-e1ad-406e-9ca3-1b695c733f92</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All18.cs">
+      <id>bbd96d85-163c-4961-b172-144186aba3b7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All180.cs">
+      <id>5ae1af9b-a87a-490d-867a-afd39c48757b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All181.cs">
+      <id>1d220003-972d-4589-80f8-a6f0c977a9a9</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All182.cs">
+      <id>f7b35638-6c06-4d24-afa1-86220d316a83</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All183.cs">
+      <id>364570cc-4263-4e47-ae5a-bda1e26ef047</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All184.cs">
+      <id>706e6712-4d6e-4b65-a9c3-de793dc1e688</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All185.cs">
+      <id>69b565b5-c035-4db8-b14b-df73ab850937</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All186.cs">
+      <id>cda86ac3-664f-4419-af62-99e643b7abe7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All187.cs">
+      <id>d82d50be-feed-45e6-802d-77b9dd1dde06</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All188.cs">
+      <id>da3e6c26-013e-43af-b285-03a6b7c7ec25</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All189.cs">
+      <id>5ac14ed2-c3bd-4678-b7df-9c2b8e8429c2</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All19.cs">
+      <id>6fcea1a8-36e0-4234-92ec-260a2f0ffdc6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All190.cs">
+      <id>2152ff11-f032-4073-9aff-3f10d1879da7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All191.cs">
+      <id>068e500d-314e-4d90-bb88-4e920313f5be</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All192.cs">
+      <id>948edd7f-bc90-41b7-b922-286919185d3b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All193.cs">
+      <id>4f03cf5e-186f-459c-88fd-c1bd56c24fa4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All194.cs">
+      <id>15328df7-c68b-46dd-8f3c-7aa9f2fb31e1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All195.cs">
+      <id>86b0ab89-c97b-4c26-9534-6e4b2efcfd1d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All196.cs">
+      <id>c1335a56-c5d6-4b3f-b430-84b92c134f8d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All197.cs">
+      <id>d973c4e9-c5e8-4cd3-a6a9-697f252262bb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All198.cs">
+      <id>32e7e867-1f94-4469-b1b1-b93b1f727176</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All199.cs">
+      <id>cbf91dd8-cbb5-42d2-af55-659f86327ebf</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All2.cs">
+      <id>4778e070-30aa-43b2-976f-dc3d4a4462dd</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All20.cs">
+      <id>850468bc-bee2-4cdd-8dee-60f933c769ec</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All200.cs">
+      <id>7281f48b-9bda-486b-812b-bbf5b403e94b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All201.cs">
+      <id>d661c7f6-cd94-470a-afae-11bb127b3f35</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All202.cs">
+      <id>b51514bf-900f-47f3-a822-c90f57c4a5af</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All203.cs">
+      <id>818bfa6e-c4ab-4376-a32b-7bbe4cfd692e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All204.cs">
+      <id>3f926ed1-f0d3-4867-829c-9df6083a4406</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All205.cs">
+      <id>d6689e3e-13f0-41eb-827d-b577fb758468</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All206.cs">
+      <id>2afda058-e065-4a75-80c8-3ce4f3a27ab7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All207.cs">
+      <id>a701b5be-6142-4974-a060-1ffdaef7d96e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All208.cs">
+      <id>69834730-0fb6-4d58-bad4-fcb1a9bd4fc9</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All209.cs">
+      <id>49ae85f6-89a7-4e00-a1ed-455eb8006dca</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All21.cs">
+      <id>a206eb81-f5e4-449e-a550-b4c367b88efc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All210.cs">
+      <id>7d4608e7-95de-41f2-8bf0-4e073ff75dbc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All211.cs">
+      <id>817b49e3-1fa8-478c-b006-feb30c533c6c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All212.cs">
+      <id>66cc8650-96e1-47f1-9913-22fdfc860e9e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All213.cs">
+      <id>f283623f-af70-4ffb-8e8d-8ca6c1c6a06b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All214.cs">
+      <id>d95bee6c-80e8-40f3-988e-9dae1506a52c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All215.cs">
+      <id>91ef0c75-425b-4eee-9a1e-b41a306b0888</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All216.cs">
+      <id>f81a8006-0332-4c65-92c5-1a70650f4525</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All217.cs">
+      <id>2dd61a5a-11bc-4b7b-afb0-b043e9773526</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All218.cs">
+      <id>3f15d482-c67c-4113-81bc-714dd42fb470</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All219.cs">
+      <id>b8e9bdfc-c821-447a-af32-9192c3d13d75</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All22.cs">
+      <id>2f8661cb-c2f6-4e53-8630-8fdc45723dd4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All220.cs">
+      <id>e38011d6-f0e3-4ae2-9712-e71ddb3b9dc8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All221.cs">
+      <id>e05f7978-ea86-4cd2-8e63-e0c7b5533068</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All222.cs">
+      <id>7819cb07-dc39-4645-92bd-a9677da88441</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All223.cs">
+      <id>72f5ae9f-8d0d-4237-839d-7964d3272310</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All224.cs">
+      <id>ec52cf10-3f22-425c-bb3f-917bc9df174f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All225.cs">
+      <id>d695437d-b4b4-470f-8d6c-adf22c976aba</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All226.cs">
+      <id>93752778-b909-4e79-b4a1-dd9fec856274</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All227.cs">
+      <id>d603613e-710b-4d9d-89ab-7a7416a561f0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All228.cs">
+      <id>5acdc16f-c65f-46f9-a8da-3aec62611add</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All229.cs">
+      <id>44bc768b-6843-444b-85d7-977890795022</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All23.cs">
+      <id>8ea46ad0-9434-48d8-8ff2-fc4a9decc2c6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All230.cs">
+      <id>c534ea1f-a1a0-4ac8-839a-4fd03d482100</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All231.cs">
+      <id>ee57fe0d-381a-4072-846e-bddce0ae221c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All232.cs">
+      <id>17a61686-85f4-4a81-bf33-16c30444e6a4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All233.cs">
+      <id>434f440a-ebe4-4da0-87fc-a0ee29018eef</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All234.cs">
+      <id>c5c9fc64-9b25-47ec-8592-1272f9c539d1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All235.cs">
+      <id>134829b9-8b1b-4034-bc48-0559df8c8616</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All236.cs">
+      <id>586b45f6-caf8-4ff0-8255-a8c6eea8b51e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All237.cs">
+      <id>d74065c6-36b8-451d-8953-709a92421376</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All238.cs">
+      <id>1e36350b-858d-4539-af66-50168d26a616</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All239.cs">
+      <id>6d700986-6a4d-4eef-a4f8-0322e241a2c5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All24.cs">
+      <id>49b08adb-8a58-4827-85fe-102790bcb9f4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All240.cs">
+      <id>923039a5-c64a-4596-aa7a-34b8371b2073</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All241.cs">
+      <id>a68a8522-800e-4aa7-a17e-c6d52d4c8791</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All242.cs">
+      <id>5090e304-92e7-440b-ac92-bf1b9cfbd03a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All243.cs">
+      <id>0e0737db-8341-4767-be19-9018533aaeb3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All244.cs">
+      <id>ce7accf7-6fe6-473e-adcc-08ec846d0e8a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All245.cs">
+      <id>c572de3c-f8f2-4704-ad13-0225ace3fd05</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All246.cs">
+      <id>b2fe9806-9ed3-42b0-95da-793214561c0f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All247.cs">
+      <id>50bf4e0d-a38f-4be4-abb6-840d45ee9915</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All248.cs">
+      <id>d9718360-0cbe-48b2-b898-0ccbbe616125</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All249.cs">
+      <id>e53af38d-d2c0-4171-8fed-da72779630b5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All25.cs">
+      <id>71a39617-dc9e-458d-9548-182f8dadc97b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All250.cs">
+      <id>838dacde-5bef-47c2-b63d-557cdd569e6a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All251.cs">
+      <id>01c56d50-44f2-49ac-8c4b-b352fbb07050</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All252.cs">
+      <id>19a35890-7746-42aa-ba0e-66845f6fe8ac</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All253.cs">
+      <id>cb691f4e-2a49-44b4-b834-38cd19c6166c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All254.cs">
+      <id>e9fc2b35-ea65-428c-a646-a8ba9d86cbe6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All255.cs">
+      <id>cf0f60b3-bc65-45bd-a2e5-287f9a1a9666</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All256.cs">
+      <id>5dca702f-c6c1-4c82-a083-3113d501304e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All257.cs">
+      <id>85a02d9a-16df-4a6b-904e-d6361a878e33</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All258.cs">
+      <id>63c3acaf-d428-4fc0-8009-7ee025839b40</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All259.cs">
+      <id>429086b9-4bed-4809-98a2-d2b47899308d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All26.cs">
+      <id>9c55ab38-d5bf-40db-91bb-e3e8300d3499</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All260.cs">
+      <id>3989bc94-8bd1-4c4e-98bd-4a49160f59ac</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All261.cs">
+      <id>340d8cca-d41e-4b24-9dec-0f0b90eaf4c4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All262.cs">
+      <id>ea83ef6a-0e3e-4249-b622-e23b03c4e4c4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All263.cs">
+      <id>6c8ee48b-5dff-4387-b06b-d1913ce15b55</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All264.cs">
+      <id>0005e302-a30d-4020-bf88-ece6af246cc1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All265.cs">
+      <id>5b6e83fd-9685-46ce-aaf4-642c2adddacf</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All266.cs">
+      <id>ae7c7f4f-a093-4043-aa40-340cd791bc77</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All267.cs">
+      <id>4f8358d8-1d48-405f-a688-2c844c6881f8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All268.cs">
+      <id>033b00b8-d80f-4ea0-b6aa-42e97e87623a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All269.cs">
+      <id>8646349f-7cb3-463e-a342-5e56391449cc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All27.cs">
+      <id>8719b435-a4a1-40d4-aaf1-c19d2850a760</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All270.cs">
+      <id>b25cc5c1-6c08-44d6-8378-475901b101b3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All271.cs">
+      <id>58db3587-a70e-4d64-b24b-7280114ece62</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All272.cs">
+      <id>a7412140-1232-47eb-bc67-7e97cd2cb4ed</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All273.cs">
+      <id>55ef97a0-251b-45ef-8c1e-a7fc4ada7ab8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All274.cs">
+      <id>eb7885ff-f0ad-46f7-80e1-7d6280248e0f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All275.cs">
+      <id>4ea8aaec-0f1a-405c-b6d4-7aeb32095816</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All276.cs">
+      <id>5c00490f-6d29-475a-88c5-5a88d4943626</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All277.cs">
+      <id>9fc7280d-3016-4919-a06f-95b707d08962</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All278.cs">
+      <id>bdcdcd3d-c04b-4705-bc7f-094c0ea69513</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All279.cs">
+      <id>24ad6124-8906-4af3-89c4-059354368acb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All28.cs">
+      <id>7dda1e18-f3b5-4a17-981b-f4e5940ef3b8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All280.cs">
+      <id>2d7788d3-b8c9-4e57-a120-da142efee7a8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All281.cs">
+      <id>01417cf3-b18b-4997-9b09-74cf41d31616</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All282.cs">
+      <id>3033bab0-e251-4241-beba-b423a5dc58a6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All283.cs">
+      <id>ed042505-794b-4741-bdf9-a71dfacaf6e6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All284.cs">
+      <id>bdb9bae0-79b8-4de1-8cac-deedb533470a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All285.cs">
+      <id>911bfea7-8e23-41d5-b328-e854e6f48aa5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All286.cs">
+      <id>1d945a47-92a4-473f-94c5-48c501936f86</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All287.cs">
+      <id>219b7c22-a5fe-4c7c-9d07-51668d5e5186</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All288.cs">
+      <id>9989b3d6-4218-433f-9b81-d10fae0575e0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All289.cs">
+      <id>67c583c4-6c7b-4d6f-969d-cc1789dc8762</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All29.cs">
+      <id>81aa38f1-58c4-47d4-9647-d6a43c89736b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All290.cs">
+      <id>6e983723-6f4a-46ce-b557-26dd6349ad87</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All291.cs">
+      <id>756b2e34-5fa5-49b4-930a-4265d3506c0d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All292.cs">
+      <id>450890d0-faa7-470c-b368-c739d0ddde1d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All293.cs">
+      <id>823a033e-8ae0-4163-8e54-0c57d14ee20c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All294.cs">
+      <id>e628e169-ae4f-4d30-8587-dae8d10c2de3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All295.cs">
+      <id>448e0f78-bce6-4965-a191-3f25db3ddb74</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All296.cs">
+      <id>7cfed2a9-f0d9-486f-a37e-e980c6eea4c2</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All297.cs">
+      <id>199f6e86-ba40-4ba0-a071-529e760ef389</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All298.cs">
+      <id>e1908780-6d4e-44d7-8278-f5604b331661</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All299.cs">
+      <id>f49693dd-3e94-43fe-a3b9-29cf5a2fbbf2</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All3.cs">
+      <id>556f5f74-a7cf-4cd7-9d9a-e4bbdcbf3bcb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All30.cs">
+      <id>1d3d1a03-6d06-46ff-8b8b-a4ec857e5753</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All300.cs">
+      <id>1b53a8b2-2b83-411b-aee8-f9590d55101c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All301.cs">
+      <id>fac802a4-58bf-4571-b46c-5764e06ec59a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All302.cs">
+      <id>7663cc2e-6af9-4563-9da0-b9f32cac209e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All303.cs">
+      <id>a96cca86-64be-4cde-931d-7318f7192a42</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All304.cs">
+      <id>9b6b56da-10aa-4f48-a60d-2402586bd370</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All305.cs">
+      <id>541078a4-1a69-4e4e-8356-825a4cc71498</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All306.cs">
+      <id>b7a692e8-6c93-4a28-b224-41895ae7d08c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All307.cs">
+      <id>fc30780e-893e-4520-a9cc-89b9937fa9e5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All308.cs">
+      <id>98370847-1f05-4724-9152-72c58d881214</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All309.cs">
+      <id>bab5ee0d-0b79-4644-bc2a-e7ac88d7b968</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All31.cs">
+      <id>e337d88e-da8a-4b71-96e8-2c75e8a72e4d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All310.cs">
+      <id>2797ce12-bf20-46ed-9a4e-e5b13e9c1229</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All311.cs">
+      <id>76a7e8e1-afd4-4034-b04e-da43e18806e2</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All312.cs">
+      <id>b1ba3bd3-ab35-4623-b905-264042b7a5b9</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All313.cs">
+      <id>700157bc-5929-47aa-8e48-597811bf3399</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All314.cs">
+      <id>52a7ed2c-ba55-4bee-b585-6d81d43d5340</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All315.cs">
+      <id>2ec90ff2-b98c-4265-bb53-a2cdc6b6bc0b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All316.cs">
+      <id>219cba48-3d95-46f5-8d56-24b7d593ffbb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All317.cs">
+      <id>1e1f79fb-95a3-4a1c-bc61-bd136e26d19f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All318.cs">
+      <id>cfa9ba4e-7a01-4612-a6b4-338ddb54c7d9</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All319.cs">
+      <id>9c6a1f28-4ac9-4fc4-aa67-82406ced62b1</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All32.cs">
+      <id>a050457e-b157-406f-a325-c2bcf58ad5a0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All320.cs">
+      <id>8787757c-01b0-4522-92e2-dbc7189586c8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All321.cs">
+      <id>0f9dc3fe-b280-400d-aa43-a9bf0d4011e0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All322.cs">
+      <id>596159e2-b4a2-4cc8-9e3b-23691e7e7e8f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All323.cs">
+      <id>5d59ef21-5fe5-47f4-9a36-97aa5c22c783</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All324.cs">
+      <id>7e3731ce-b2a5-41fe-ad46-6daac963f441</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All325.cs">
+      <id>7d4f2f7e-37b2-4981-b25a-e4ab4f8681cb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All326.cs">
+      <id>8fc300dc-15af-4a15-b509-73c70d90df09</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All327.cs">
+      <id>e9851cc6-596d-449e-8804-0d55549ca0c5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All328.cs">
+      <id>cb19501e-2f6b-4ab4-bc70-de3a097ecd00</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All329.cs">
+      <id>6f6f3e54-ebe7-434e-a649-30dd8a01ef5f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All33.cs">
+      <id>729b5c4b-c12d-4a04-9865-ca10eb4ab7f6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All330.cs">
+      <id>cd24e7dd-633d-4a1f-981a-4929bacaf932</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All331.cs">
+      <id>54564aa4-7963-4451-adeb-829d0dc6a816</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All332.cs">
+      <id>6a05fd96-5ed8-437d-b947-4793a797fa22</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All333.cs">
+      <id>f5ca067a-f9d7-4609-a70e-41370a951417</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All334.cs">
+      <id>3443ece8-570d-4ee2-aba8-7d167de5d943</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All335.cs">
+      <id>94b4b67e-b571-44ed-8a1f-479ae300159a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All336.cs">
+      <id>3a8b6978-0faa-4dcd-8685-6c033fac889b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All337.cs">
+      <id>adb0b6f5-dd2d-468f-b4c8-ccbf54794147</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All338.cs">
+      <id>0b708414-7c60-4ddf-8a20-7bb1e39cb7fe</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All339.cs">
+      <id>5c697fd0-fc70-4b61-bc4e-ac2541627f45</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All34.cs">
+      <id>17fa069c-b87c-4e3f-99c6-08e4d9174e8e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All340.cs">
+      <id>4f3df689-8be4-4817-8211-3ce51a5a33f5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All341.cs">
+      <id>62d7bf0c-4632-46e5-b42b-6b51851ca291</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All342.cs">
+      <id>0477a646-f0c3-485a-a807-701ed1219216</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All35.cs">
+      <id>44e08c10-74b1-472b-a335-adf96700d69f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All36.cs">
+      <id>189995c3-cd18-40c8-b0e8-9c2b675e7efb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All37.cs">
+      <id>82d23690-74b3-46c7-a45d-533445095a80</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All38.cs">
+      <id>058c2f6b-e64f-42de-9aa9-f168b34e95d4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All39.cs">
+      <id>bc4e1cb3-c190-4eec-80b9-7a78ce1d9391</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All4.cs">
+      <id>8f933216-2132-454c-9307-f0f2b560b540</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All40.cs">
+      <id>458bc144-588c-4143-87ca-1c91b292cdb8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All41.cs">
+      <id>901b98d2-be71-4479-8d59-08d6bdfc7e62</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All42.cs">
+      <id>f764cdf4-147f-4d90-9c6d-7480347273e9</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All43.cs">
+      <id>07108124-9245-4d8d-a15e-0a5343125994</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All44.cs">
+      <id>313c49ab-bf9e-4cdc-9ec6-218d93730546</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All45.cs">
+      <id>6b444324-908a-4b92-b1b9-4cab43c9d69e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All46.cs">
+      <id>e821401d-a0d1-4942-9058-82e4c0ff7196</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All47.cs">
+      <id>c189debe-0085-4dd6-bb02-4ae5bc64ad0e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All48.cs">
+      <id>e5729106-90ea-4e2d-9887-91b7886da7b0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All49.cs">
+      <id>527fe02e-b575-4e3d-9257-afa4c113b7c5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All5.cs">
+      <id>d960fec0-b921-4736-8731-68bfc499db88</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All50.cs">
+      <id>ccef25fc-7e3e-4014-a219-d35421a42832</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All51.cs">
+      <id>9ebb61af-2e96-43ec-874b-e945515524e2</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All52.cs">
+      <id>948eb92c-8419-45ef-8f22-cb8b93855893</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All53.cs">
+      <id>bb752f69-a087-44ff-af84-342be4d4c5f6</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All54.cs">
+      <id>8c51e731-52eb-49ad-99ae-c4593d168e5a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All55.cs">
+      <id>f2dfdbc7-40a4-4a30-b28b-9a7573931622</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All56.cs">
+      <id>1581c45e-3663-4fb5-8f6c-b38029587855</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All57.cs">
+      <id>5e92a26b-78fb-4b49-9164-f4f793db7713</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All58.cs">
+      <id>88a90545-17f1-40b8-9434-aa147671333f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All59.cs">
+      <id>0778d84a-020a-45bd-bd5b-b6ef94835cae</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All6.cs">
+      <id>107353c9-e212-41a1-a532-6d016024f32f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All60.cs">
+      <id>1e4454cf-e175-46fc-95ba-674c1cdff903</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All61.cs">
+      <id>3d2985bf-1536-47ff-9ad6-802f1aba264e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All62.cs">
+      <id>428cd924-869e-4f35-99f4-1588e6a12a1a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All63.cs">
+      <id>8d1911d8-f447-4a20-ad35-292d3c3cf904</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All64.cs">
+      <id>1a9877e1-3825-4c1a-9917-7052d14903a4</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All65.cs">
+      <id>03f8f271-c4ec-4b2b-9cb0-521355461593</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All66.cs">
+      <id>ac4a3bb8-7d24-4c33-b07b-0706afdbecdc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All67.cs">
+      <id>0b133ac6-3894-4287-b007-22346faf14c7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All68.cs">
+      <id>558d9002-9f85-41df-8efe-5a8ff4cd5483</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All69.cs">
+      <id>cdd46573-58fe-47fb-b44f-6f6f1c980394</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All7.cs">
+      <id>8d9430ca-62c3-45c2-a96d-a7f3cbc9b1cc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All70.cs">
+      <id>c596de80-baf2-4784-8560-d10040b2c7e0</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All71.cs">
+      <id>95648fd4-f6c5-4071-ad00-6108e4f26c9a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All72.cs">
+      <id>35312517-0846-477c-8a6a-97e6c55ce87b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All73.cs">
+      <id>d95d32bf-0fab-49b9-9024-81a13f402bc3</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All74.cs">
+      <id>96a0f6be-2e95-4916-aed7-32ad01dc4f6b</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All75.cs">
+      <id>a32a8036-dfee-4f93-b3a2-36777d5f3e10</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All76.cs">
+      <id>eea757ca-0f80-481f-a151-27b46b8b8b55</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All77.cs">
+      <id>fee7c2d3-829d-4b3c-82cd-5f43b3eacf28</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All78.cs">
+      <id>c718c3ce-9250-4fd7-ad0f-b5dd63c663bc</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All79.cs">
+      <id>d923fe11-1491-4e62-b636-a13bb4fe501e</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All8.cs">
+      <id>4d4a4ce3-590f-4ae6-ae3e-0d58a3bbeef8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All80.cs">
+      <id>fca7e35f-4a22-45ae-940c-bfa6a1260deb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All81.cs">
+      <id>8ff41909-6990-4214-99c5-506f661a57ca</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All82.cs">
+      <id>82720a50-512a-430d-8482-1c83f7a37f2a</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All83.cs">
+      <id>1221cf4c-a881-434e-83d6-cdde0a96e0be</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All84.cs">
+      <id>9359f9c1-7738-41ce-a1b8-55d6999d2510</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All85.cs">
+      <id>c244a871-a04c-4630-a490-85002b831bbf</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All86.cs">
+      <id>b9fe777a-435b-4d7d-bbf0-5b82530908fb</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All87.cs">
+      <id>a22f8e8c-50de-4acc-a0e7-7f45434f05d8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All88.cs">
+      <id>1fac2e52-d4e9-4b58-bd3c-eeb384a744a5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All89.cs">
+      <id>ae9acf78-fdeb-41fb-b977-46964c777695</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All9.cs">
+      <id>94f7005c-59b6-4a9d-9037-41af6e197bb8</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All90.cs">
+      <id>bea929ee-6be0-4cdb-90e3-89277679a0c5</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All91.cs">
+      <id>d2ca1277-7361-4b88-9d91-97b9f73afd12</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All92.cs">
+      <id>f560d1f8-d8e9-4236-805f-ad3a42f4b21f</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All93.cs">
+      <id>5792aff9-c0f2-4170-94e3-7288b857d7f7</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All94.cs">
+      <id>b25ab6f0-1f11-40a8-bb0b-1a956158047d</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All95.cs">
+      <id>2b64998e-5759-4ad7-aa2c-8bc5d0ceaf14</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All96.cs">
+      <id>094a3ce9-3cf1-471d-a6b9-7540e6cdf0ae</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All97.cs">
+      <id>3096929c-674f-4d05-9c4c-68cf09a7375c</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All98.cs">
+      <id>7b899c94-2fe4-44e2-bbb8-8add84459673</id>
+    </Compile>
+    <Compile Include="Modelled Tests\EditGlobalProperties\GeneralTab\All99.cs">
+      <id>1e6ecbbf-8f88-427b-9296-0a5feae7d415</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6033b85c-44ee-4792-b468-32cb201666f1</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Setups\Create_Empty_Flowchart.cs">
+      <id>ff84561c-a331-45a3-8ce0-73625f73171c</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Setups\Open_Agile_Designer.cs">
+      <id>9f068087-782c-47a7-a9b2-d213f5e3f0bd</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Teardowns\Close_Agile_Designer.cs">
+      <id>bf63aca7-06a8-4d48-ad09-fa71f151c5db</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Teardowns\Close_Current_Flowchart.cs">
+      <id>3517c730-68fe-40e2-847d-167599305646</id>
+    </Compile>
+    <None Include="AGD.rximg">
+      <BoundTo>d4644ece-70d9-4540-83e3-9623d2eb6c51</BoundTo>
+      <DependentUpon>AGD.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>975c819d-ec46-44d6-91a2-5b3aaaf3b569</id>
+    </None>
+    <None Include="AGD.rxrep">
+      <id>d4644ece-70d9-4540-83e3-9623d2eb6c51</id>
+      <repoid>12965985-001b-4fc9-9478-ac31971d8846</repoid>
+      <reporootid>7e3f000e-6d3c-40c4-9263-cd95141a91ce</reporootid>
+    </None>
+    <None Include="app.config">
+      <id>446b8a33-8b9b-4de6-924f-2135528d0032</id>
+    </None>
+    <Content Include="AGD.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a0cb8d61-a1ac-4ad1-8f25-0e932f6bc79d</id>
+    </Content>
+    <Content Include="AGD.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c6466cf2-8df9-4c45-a3d1-c6c2a3e648e3</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modelled Tests">
+      <id>8b91a236-531f-438e-a910-7fc7df06a272</id>
+    </Folder>
+    <Folder Include="Modelled Tests\CreateNewFlow">
+      <id>24baa4a4-8502-4894-9f3c-a98e2e9fc2c8</id>
+    </Folder>
+    <Folder Include="Modelled Tests\EditGlobalProperties">
+      <id>2a9b3589-a8dc-496d-b539-aa00a494f69d</id>
+    </Folder>
+    <Folder Include="Modelled Tests\EditGlobalProperties\GeneralTab">
+      <id>02153e40-1fb5-44b4-b495-dd195c9ee421</id>
+    </Folder>
+    <Folder Include="Setup &amp; Teardown">
+      <id>aa73906e-7754-45b1-9154-0d1593fc7d43</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>cb449ca8-67b4-4243-a4a5-948db639769c</id>
+    </Folder>
+    <Folder Include="Setup &amp; Teardown\Setups">
+      <id>1e67fee8-4d04-4238-815e-1b8a566020a9</id>
+    </Folder>
+    <Folder Include="Setup &amp; Teardown\Teardowns">
+      <id>f88d2df5-dde5-40dc-a4fe-2a85b2739bcc</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

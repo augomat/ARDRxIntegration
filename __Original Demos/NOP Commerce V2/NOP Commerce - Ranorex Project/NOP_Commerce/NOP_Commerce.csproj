@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{D7A86AA1-68B9-4E32-ABBD-4DD444B00C78}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NOP_Commerce</RootNamespace>
+    <AssemblyName>NOP_Commerce</AssemblyName>
+    <RanorexVersion>7.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>11ea346c-be7e-4284-b453-5d958a215420</projectdefaultrepository>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>d5c199a0-a88a-48e2-8b9e-b1fe5eb9a340</id>
+    </Compile>
+    <Compile Include="Login\Login1.cs">
+      <id>9e8e7a93-87a3-42bc-ac66-87a27a0b4ee1</id>
+    </Compile>
+    <Compile Include="Login\Login2.cs">
+      <id>d8ea7893-07fd-45b6-8afc-c6a140387efa</id>
+    </Compile>
+    <Compile Include="Login\Login3.cs">
+      <id>967180ed-c9ee-4c38-a253-ee1ab78ee57a</id>
+    </Compile>
+    <Compile Include="Login\Login4.cs">
+      <id>5ca3b3b0-1c88-4847-97d4-137be29a90a1</id>
+    </Compile>
+    <Compile Include="Login\Login5.cs">
+      <id>43153392-05e6-44ca-b708-ad019207c798</id>
+    </Compile>
+    <Compile Include="Login\Login6.cs">
+      <id>f17f4551-a067-4ed5-8b00-9fba214cf1bd</id>
+    </Compile>
+    <Compile Include="Login\Login7.cs">
+      <id>44dd71a7-daf3-4509-be34-6c4d76c8afaa</id>
+    </Compile>
+    <Compile Include="Login\UserCodeModule1.cs">
+      <id>efb2b052-2dba-4203-a1a3-4515e33b710f</id>
+    </Compile>
+    <Compile Include="Login_InvalidUsername.cs">
+      <BoundTo>21079b31-5b71-44ce-b043-3ed27199e580</BoundTo>
+      <DependentUpon>Login_InvalidUsername.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8914756-7b81-4b47-9dad-b6ba9538f4b8</id>
+    </Compile>
+    <Compile Include="Login_InvalidUsername.UserCode.cs">
+      <BoundTo>21079b31-5b71-44ce-b043-3ed27199e580</BoundTo>
+      <DependentUpon>Login_InvalidUsername.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1f09717-ee50-4955-8f81-5d042e896fba</id>
+    </Compile>
+    <Compile Include="NOP_CommerceRepository.cs">
+      <BoundTo>11ea346c-be7e-4284-b453-5d958a215420</BoundTo>
+      <DependentUpon>NOP_CommerceRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>3d87acb1-9a93-4d24-bb85-de2341614e53</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>827764d3-9496-4cb3-bc2f-0ae6e910c07a</id>
+    </Compile>
+    <Compile Include="ClickEachShoppingSection.cs">
+      <BoundTo>264728f1-d026-40cc-97c7-8ddd14d22a1c</BoundTo>
+      <DependentUpon>ClickEachShoppingSection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9bf16d14-1cde-4de9-864a-e3eeb2f3d232</id>
+    </Compile>
+    <Compile Include="ClickEachShoppingSection.UserCode.cs">
+      <BoundTo>264728f1-d026-40cc-97c7-8ddd14d22a1c</BoundTo>
+      <DependentUpon>ClickEachShoppingSection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3da95e62-44e5-44b3-ac02-fa6a001ed390</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Close_Browser.cs">
+      <id>15fdc728-3472-4e38-b9e7-d8cf1f23012b</id>
+    </Compile>
+    <Compile Include="Setup &amp; Teardown\Open_Browser.cs">
+      <id>a5fb7114-166f-41a7-9acc-87928b8fec96</id>
+    </Compile>
+    <Compile Include="UserCodeModule1_MalformedUsername.cs">
+      <id>7658449d-de7f-48fc-a625-f102445e1389</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>b4de7c15-fbfa-4d6b-8ac2-16c49c0002ad</id>
+    </None>
+    <None Include="Login_InvalidUsername.rxrec">
+      <BoundTo>11ea346c-be7e-4284-b453-5d958a215420</BoundTo>
+      <id>21079b31-5b71-44ce-b043-3ed27199e580</id>
+      <recordtableid>26cc14b0-dfc9-4568-a132-bade94a865e3</recordtableid>
+    </None>
+    <None Include="NOP_CommerceRepository.rximg">
+      <BoundTo>11ea346c-be7e-4284-b453-5d958a215420</BoundTo>
+      <DependentUpon>NOP_CommerceRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>5c2d1914-cce2-4aab-9ad3-d62e90b4c93d</id>
+    </None>
+    <None Include="NOP_CommerceRepository.rxrep">
+      <id>11ea346c-be7e-4284-b453-5d958a215420</id>
+      <repoid>a27f8e4f-c4ce-4f8c-8658-077ab8153b4f</repoid>
+      <reporootid>193dace1-cd92-49b6-8105-f8556e3b7caa</reporootid>
+    </None>
+    <None Include="ClickEachShoppingSection.rxrec">
+      <BoundTo>11ea346c-be7e-4284-b453-5d958a215420</BoundTo>
+      <id>264728f1-d026-40cc-97c7-8ddd14d22a1c</id>
+      <recordtableid>f9b16b80-8c21-489f-a8dd-69234e603fb8</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NOP_Commerce.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9e989cf4-5ab6-4308-9db0-22189f660063</id>
+    </Content>
+    <Content Include="NOP_Commerce.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>5b76c714-2604-47da-a448-f2dd9816a411</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Login">
+      <id>c39bf570-9aa4-4849-affb-3a8fa8c21156</id>
+    </Folder>
+    <Folder Include="Setup &amp; Teardown">
+      <id>a7f86e3d-b82b-43ad-987b-d280465ac12f</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.0">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			id="d2b82b0f-0a34-4a0a-8d4f-5a35a2d15b84"
+			name="NOP_Commerce">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="d2b82b0f-0a34-4a0a-8d4f-5a35a2d15b84"
+			name="NOP_Commerce">
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>

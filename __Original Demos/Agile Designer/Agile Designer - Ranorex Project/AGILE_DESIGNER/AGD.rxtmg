@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.0">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroupdef
+			id="43ae2fcf-bf0c-4e6a-baed-afda2db19949"
+			name="EditGlobalProperties">
+			</modulegroupdef>
+			<modulegroups
+			id="79b66ff5-43f0-43c4-9fa5-81ec05787974"
+			name="AGD">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="79b66ff5-43f0-43c4-9fa5-81ec05787974"
+			name="AGD">
+				<modulegroupdef
+				id="43ae2fcf-bf0c-4e6a-baed-afda2db19949"
+				name="EditGlobalProperties">
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>
