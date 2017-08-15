@@ -63,128 +63,128 @@ rxversion="7.0">
 	<rxpath.weights>
 		<rxpathweights>
 			<rule
-			name="RxWinForms ControlNet11 Classnames"
-			enabled="True"
-			capability="nativewindow"
 			attribute="class"
-			setweight="0"
-			conditionsoperator="and">
+			capability="nativewindow"
+			conditionsoperator="and"
+			enabled="True"
+			name="RxWinForms ControlNet11 Classnames"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="class"
 				match="^WindowsForms10.Window"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb YUI (Yahoo User Interface Library)"
-			enabled="True"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="True"
+			name="RxWeb YUI (Yahoo User Interface Library)"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="^yui(_\d+)"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 				<condition
-				source="self"
 				attribute="id"
 				match="^yui-gen.*"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb JS Frameworks (ExtJS, Sencha, Ozone Widget ,...)"
-			enabled="True"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="True"
+			name="RxWeb JS Frameworks (ExtJS, Sencha, Ozone Widget ,...)"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="^ext-.*\d+.*"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 				<condition
-				source="self"
 				attribute="id"
 				match="^[a-z]+-\d{4}(-[a-z]*(-\d*)?)?"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb jQuery"
-			enabled="True"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="True"
+			name="RxWeb jQuery"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="^ui-id-\d+"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb ASP.net"
-			enabled="False"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="False"
+			name="RxWeb ASP.net"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="^ctl00(\$|_)(.*(\$|_))"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb GWT"
-			enabled="True"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="True"
+			name="RxWeb GWT"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="^gwt-uid-\d+.*"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 				<condition
-				source="self"
 				attribute="id"
 				match="^isc_.+"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWeb MS Dynamics CRM"
-			enabled="True"
-			capability="webelement"
 			attribute="id"
-			setweight="0"
-			conditionsoperator="or">
+			capability="webelement"
+			conditionsoperator="or"
+			enabled="True"
+			name="RxWeb MS Dynamics CRM"
+			setweight="0">
 				<condition
-				source="self"
 				attribute="id"
 				match="[a-zA-Z_]+_\{[0-9 A-F-]+\}_\d+"
-				negate="False">
+				negate="False"
+				source="self">
 				</condition>
 			</rule>
 			<rule
-			name="RxWin32 Random ControlIds"
-			enabled="False"
-			capability="nativewindow"
 			attribute="controlid"
-			setweight="0"
-			conditionsoperator="or">
+			capability="nativewindow"
+			conditionsoperator="or"
+			enabled="False"
+			name="RxWin32 Random ControlIds"
+			setweight="0">
 			</rule>
 		</rxpathweights>
 	</rxpath.weights>
@@ -193,170 +193,170 @@ rxversion="7.0">
 	</rxpath.enableuidsearch>
 	<rxpath.pathbuildoptions>
 		<pathbuildoptions
-		q="0.5"
+		defcapcost="20"
+		kattr="0.5"
 		kcap="1.0"
 		ksib="10.0"
-		kattr="0.5"
-		defcapcost="20">
+		q="0.5">
 			<cap
-			name="unknown"
-			cost="10">
+			cost="10"
+			name="unknown">
 			</cap>
 			<cap
-			name="container"
-			cost="20">
+			cost="20"
+			name="container">
 			</cap>
 			<cap
-			name="cell"
-			cost="10">
+			cost="10"
+			name="cell">
 			</cap>
 			<cap
-			name="text"
-			cost="10">
+			cost="10"
+			name="text">
 			</cap>
 			<cap
-			name="treeitem"
-			cost="20">
+			cost="20"
+			name="treeitem">
 			</cap>
 			<cap
-			name="listitem"
-			cost="40">
+			cost="40"
+			name="listitem">
 			</cap>
 			<cap
-			name="row"
-			cost="40">
+			cost="40"
+			name="row">
 			</cap>
 			<cap
-			name="column"
-			cost="40">
+			cost="40"
+			name="column">
 			</cap>
 			<cap
-			name="button"
-			cost="40">
+			cost="40"
+			name="button">
 			</cap>
 			<cap
-			name="form"
-			cost="60">
+			cost="60"
+			name="form">
 			</cap>
 			<cap
-			name="toolbar"
-			cost="60">
+			cost="60"
+			name="toolbar">
 			</cap>
 			<cap
-			name="list"
-			cost="60">
+			cost="60"
+			name="list">
 			</cap>
 			<cap
-			name="tree"
-			cost="60">
+			cost="60"
+			name="tree">
 			</cap>
 			<cap
-			name="tabpage"
-			cost="60">
+			cost="60"
+			name="tabpage">
 			</cap>
 			<cap
-			name="combobox"
-			cost="60">
+			cost="60"
+			name="combobox">
 			</cap>
 			<cap
-			name="table"
-			cost="60">
+			cost="60"
+			name="table">
 			</cap>
 			<cap
-			name="scrollbar"
-			cost="60">
+			cost="60"
+			name="scrollbar">
 			</cap>
 			<cap
-			name="titlebar"
-			cost="60">
+			cost="60"
+			name="titlebar">
 			</cap>
 			<cap
-			name="flexobject"
-			cost="80">
+			cost="80"
+			name="flexobject">
 			</cap>
 			<cap
-			name="airwindow"
-			cost="80">
+			cost="80"
+			name="airwindow">
 			</cap>
 			<cap
-			name="mobiledevice"
-			cost="80">
+			cost="80"
+			name="mobiledevice">
 			</cap>
 			<cap
-			name="mobileapp"
-			cost="80">
+			cost="80"
+			name="mobileapp">
 			</cap>
 			<cap
-			name="mobilewebdocument"
-			cost="80">
+			cost="80"
+			name="mobilewebdocument">
 			</cap>
 			<cap
-			name="excelworksheet"
-			cost="80">
+			cost="80"
+			name="excelworksheet">
 			</cap>
 			<cap
-			name="sapwindow"
-			cost="80">
+			cost="80"
+			name="sapwindow">
 			</cap>
 			<cap
-			name="webdocument"
-			cost="80">
+			cost="80"
+			name="webdocument">
 			</cap>
 			<cap
-			name="windowsapp"
-			cost="80">
+			cost="80"
+			name="windowsapp">
 			</cap>
 			<cap
-			name="formtag"
-			cost="60">
+			cost="60"
+			name="formtag">
 			</cap>
 			<cap
-			name="selecttag"
-			cost="60">
+			cost="60"
+			name="selecttag">
 			</cap>
 			<cap
-			name="frametag"
-			cost="80">
+			cost="80"
+			name="frametag">
 			</cap>
 			<cap
-			name="iframetag"
-			cost="80">
+			cost="80"
+			name="iframetag">
 			</cap>
 			<cap
-			name="oltag"
-			cost="60">
+			cost="60"
+			name="oltag">
 			</cap>
 			<cap
-			name="ultag"
-			cost="60">
+			cost="60"
+			name="ultag">
 			</cap>
 			<cap
-			name="tabletag"
-			cost="60">
+			cost="60"
+			name="tabletag">
 			</cap>
 			<cap
-			name="sectiontag"
-			cost="60">
+			cost="60"
+			name="sectiontag">
 			</cap>
 			<cap
-			name="navtag"
-			cost="60">
+			cost="60"
+			name="navtag">
 			</cap>
 			<cap
-			name="maptag"
-			cost="50">
+			cost="50"
+			name="maptag">
 			</cap>
 			<cap
-			name="articletag"
-			cost="50">
+			cost="50"
+			name="articletag">
 			</cap>
 			<cap
-			name="menutag"
-			cost="50">
+			cost="50"
+			name="menutag">
 			</cap>
 			<cap
-			name="webelement"
-			cost="20">
+			cost="20"
+			name="webelement">
 			</cap>
 		</pathbuildoptions>
 	</rxpath.pathbuildoptions>

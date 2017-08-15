@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
-rxversion="7.0"
-id="d32faa90-c95c-4ca8-9d82-9a51b1d37601"
 embeddedrepository="False"
-mode="Desktop">
+id="d32faa90-c95c-4ca8-9d82-9a51b1d37601"
+mode="Desktop"
+rxversion="7.0">
 	<name>
 		NotepadTest
 	</name>
@@ -24,52 +24,60 @@ mode="Desktop">
 	</useDefaultItemLogging>
 	<codegen
 	classname="NotepadTest"
-	namespace="SingleArDconfigTest"/>
-	<variables/>
+	namespace="SingleArDconfigTest">
+	</codegen>
+	<variables>
+	</variables>
 	<recorditems>
 		<runapprecorditem
 		enabled="True"
-		optional="False"
-		maximized="False">
-			<comment/>
-			<bindings/>
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<filename>
 				C:\Windows\System32\notepad.exe
 			</filename>
 			<workingdir>
 				C:\Windows\System32
 			</workingdir>
-			<args/>
+			<args>
+			</args>
 		</runapprecorditem>
 		<mouseitem
-		enabled="True"
-		optional="False"
-		duration="500ms"
-		searchpropertyid="7a56a60c-c660-4f36-945c-17dec0c1b47b"
 		action="Click"
 		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="254;96"
 		movetime="300ms"
+		optional="False"
+		searchpropertyid="7a56a60c-c660-4f36-945c-17dec0c1b47b"
 		sx="310"
 		sy="427"
-		loc="254;96">
-			<comment/>
-			<bindings/>
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="d87f674a-aee1-4b2a-b5e2-524bf746e89e">
+			id="d87f674a-aee1-4b2a-b5e2-524bf746e89e"
+			sourcename="Recorder">
 				<element
-				role="text"
-				prefcap="text"
 				capabilities="nativewindow"
-				flavor="win32"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="True"
 				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="True"
 				index="0"
+				prefcap="text"
 				rect="56,331,1184,708"
-				snapElem="">
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="selectionlength"
 					type="System.Int32">
@@ -82,7 +90,8 @@ mode="Desktop">
 					</attribute>
 					<attribute
 					name="text"
-					type="System.String"/>
+					type="System.String">
+					</attribute>
 					<attribute
 					name="apphung"
 					type="System.Boolean">
@@ -126,56 +135,67 @@ mode="Desktop">
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Overlapped, HorizontalScrollBar, VerticalScrollBar, Visible, Child
+						Tiled, HorizontalScrollBar, VerticalScrollBar, Visible, ChildWindow
 					</attribute>
 					<attribute
 					name="windowtext"
-					type="System.String"/>
+					type="System.String">
+					</attribute>
 					<dynamicattribute
+					description="The default action of the accessible object."
 					name="AccessibleDefaultAction"
-					type="System.String"
-					description="The default action of the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleDescription"
-					type="System.String"
 					description="The description of the accessible object."
-					truncationlength="-1"/>
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleHelp"
-					type="System.String"
 					description="The help string of the accessible object."
-					truncationlength="-1"/>
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
 					name="AccessibleHelpTopic"
-					type="System.String"
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
 					name="AccessibleKeyboardShortcut"
-					type="System.String"
-					description="The keyboard shortcut of the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleName"
-					type="System.String"
 					description="The name of the accessible object."
+					name="AccessibleName"
 					readonly="False"
-					truncationlength="-1"/>
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The role of the accessible object."
 					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-					description="The role of the accessible object."/>
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The state of the accessible object."
 					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-					description="The state of the accessible object."/>
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleValue"
-					type="System.String"
 					description="The value of the accessible object."
+					name="AccessibleValue"
 					readonly="False"
-					truncationlength="-1"/>
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicaction
-					displayName="AccessibleDoDefaultAction"
-					description="Invokes the default action of the accessible object."/>
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
 				</element>
 				<path>
 					/form[@processname='notepad' and @class='Notepad' and @instance='1']/text[@controlid='15']
@@ -319,30 +339,32 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
+		KeySequence="aaa"
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		duration="100ms"
-		searchpropertyid="2f3146c2-15d6-4ef1-9604-3d3c4fb222ce"
-		KeySequence="aaa"
-		presstime="100ms">
-			<comment/>
-			<bindings/>
+		presstime="100ms"
+		searchpropertyid="2f3146c2-15d6-4ef1-9604-3d3c4fb222ce">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="d87f674a-aee1-4b2a-b5e2-524bf746e89e">
+			id="d87f674a-aee1-4b2a-b5e2-524bf746e89e"
+			sourcename="Recorder">
 				<element
-				role="text"
-				prefcap="text"
 				capabilities="nativewindow"
-				flavor="win32"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="True"
 				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="True"
 				index="0"
+				prefcap="text"
 				rect="56,331,1184,708"
-				snapElem="">
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="selectionlength"
 					type="System.Int32">
@@ -355,7 +377,8 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 					</attribute>
 					<attribute
 					name="text"
-					type="System.String"/>
+					type="System.String">
+					</attribute>
 					<attribute
 					name="apphung"
 					type="System.Boolean">
@@ -399,56 +422,67 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Overlapped, HorizontalScrollBar, VerticalScrollBar, Visible, Child
+						Tiled, HorizontalScrollBar, VerticalScrollBar, Visible, ChildWindow
 					</attribute>
 					<attribute
 					name="windowtext"
-					type="System.String"/>
+					type="System.String">
+					</attribute>
 					<dynamicattribute
+					description="The default action of the accessible object."
 					name="AccessibleDefaultAction"
-					type="System.String"
-					description="The default action of the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleDescription"
-					type="System.String"
 					description="The description of the accessible object."
-					truncationlength="-1"/>
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleHelp"
-					type="System.String"
 					description="The help string of the accessible object."
-					truncationlength="-1"/>
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
 					name="AccessibleHelpTopic"
-					type="System.String"
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
 					name="AccessibleKeyboardShortcut"
-					type="System.String"
-					description="The keyboard shortcut of the accessible object."/>
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleName"
-					type="System.String"
 					description="The name of the accessible object."
+					name="AccessibleName"
 					readonly="False"
-					truncationlength="-1"/>
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The role of the accessible object."
 					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-					description="The role of the accessible object."/>
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
 					<dynamicattribute
+					description="The state of the accessible object."
 					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-					description="The state of the accessible object."/>
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
 					<dynamicattribute
-					name="AccessibleValue"
-					type="System.String"
 					description="The value of the accessible object."
+					name="AccessibleValue"
 					readonly="False"
-					truncationlength="-1"/>
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
 					<dynamicaction
-					displayName="AccessibleDoDefaultAction"
-					description="Invokes the default action of the accessible object."/>
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
 				</element>
 				<path>
 					/form[@processname='notepad' and @class='Notepad' and @instance='1']/text[@controlid='15']
@@ -542,34 +576,37 @@ igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 			</helperscreenshot>
 		</keysequenceitem>
 		<mouseitem
-		enabled="True"
-		optional="False"
-		duration="500ms"
-		searchpropertyid="43e26975-2ed5-42ca-a567-3dfb133c0ca5"
 		action="Click"
 		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="21;17"
 		movetime="300ms"
+		optional="False"
+		searchpropertyid="43e26975-2ed5-42ca-a567-3dfb133c0ca5"
 		sx="109"
 		sy="328"
-		loc="21;17">
-			<comment/>
-			<bindings/>
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="8899f17f-23fe-4ce6-b366-10813695027d">
+			id="8899f17f-23fe-4ce6-b366-10813695027d"
+			sourcename="Recorder">
 				<element
-				role="menuitem"
-				prefcap="menuitem"
 				capabilities="accessible"
-				flavor="msaa"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="False"
 				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
 				index="1"
+				prefcap="menuitem"
 				rect="88,311,34,19"
-				snapElem="">
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -664,34 +701,37 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
-		enabled="True"
-		optional="False"
-		duration="500ms"
-		searchpropertyid="242d74ea-8faf-45d8-a92c-ae8010d20ee0"
 		action="Click"
 		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="35;6"
 		movetime="300ms"
+		optional="False"
+		searchpropertyid="242d74ea-8faf-45d8-a92c-ae8010d20ee0"
 		sx="126"
 		sy="339"
-		loc="35;6">
-			<comment/>
-			<bindings/>
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="9de57f23-cd41-453b-8a67-baca5e08b2c5">
+			id="9de57f23-cd41-453b-8a67-baca5e08b2c5"
+			sourcename="Recorder">
 				<element
-				role="menuitem"
-				prefcap="menuitem"
 				capabilities="accessible"
-				flavor="msaa"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="True"
 				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
 				index="0"
+				prefcap="menuitem"
 				rect="91,333,176,22"
-				snapElem="">
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -918,34 +958,37 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
-		enabled="True"
-		optional="False"
-		duration="500ms"
-		searchpropertyid="e88f7bae-77f4-489c-b2a4-566b54e56f4c"
 		action="Click"
 		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="5;14"
 		movetime="300ms"
+		optional="False"
+		searchpropertyid="e88f7bae-77f4-489c-b2a4-566b54e56f4c"
 		sx="61"
 		sy="325"
-		loc="5;14">
-			<comment/>
-			<bindings/>
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="b46f1d3b-2b95-4751-80f5-4d92032fce77">
+			id="b46f1d3b-2b95-4751-80f5-4d92032fce77"
+			sourcename="Recorder">
 				<element
-				role="menuitem"
-				prefcap="menuitem"
 				capabilities="accessible"
-				flavor="msaa"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="False"
 				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
 				index="0"
+				prefcap="menuitem"
 				rect="56,311,32,19"
-				snapElem="">
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -1037,34 +1080,37 @@ r1v/AMe0X+4P5V30dmefPdElFFFbEBRRRQAUUUUAFFFFABRRRQB//9k=
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
-		enabled="True"
-		optional="False"
-		duration="500ms"
-		searchpropertyid="b0fd4ede-1ca6-43fd-a661-10722b1f828b"
 		action="Click"
 		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="34;13"
 		movetime="300ms"
+		optional="False"
+		searchpropertyid="b0fd4ede-1ca6-43fd-a661-10722b1f828b"
 		sx="93"
 		sy="492"
-		loc="34;13">
-			<comment/>
-			<bindings/>
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			sourcename="Recorder"
-			id="3e2bd18f-4ccb-42bb-adb0-a7274b86854a">
+			id="3e2bd18f-4ccb-42bb-adb0-a7274b86854a"
+			sourcename="Recorder">
 				<element
-				role="menuitem"
-				prefcap="menuitem"
 				capabilities="accessible"
-				flavor="msaa"
-				visible="True"
-				valid="True"
-				enabled="True"
-				hasfocus="True"
 				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
 				index="8"
+				prefcap="menuitem"
 				rect="59,479,188,22"
-				snapElem="">
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
 					name="checked"
 					type="System.Boolean">
@@ -1265,20 +1311,23 @@ oAKKKKACiiigD//Z
 		</mouseitem>
 	</recorditems>
 	<repository
-	name="SingleArDconfigTestRepository"
 	id="27029f27-b8d7-49ba-be3b-cd248430bdcf"
-	rxversion="6.2"
-	relativepath="SingleArDconfigTestRepository.rxrep">
+	name="SingleArDconfigTestRepository"
+	relativepath="SingleArDconfigTestRepository.rxrep"
+	rxversion="7.0">
 		<codegen
 		classname="SingleArDconfigTestRepository"
-		namespace="SingleArDconfigTest"/>
+		namespace="SingleArDconfigTest">
+		</codegen>
 		<rootfolder
-		name="_rootdummy_"
-		id="62e9010b-f791-4bef-89ba-51e8eac460f6"/>
+		id="62e9010b-f791-4bef-89ba-51e8eac460f6"
+		name="_rootdummy_">
+		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
 		NotepadTest.UserCode.cs
 	</usercodefile>
-	<references/>
+	<references>
+	</references>
 </recordtable>
