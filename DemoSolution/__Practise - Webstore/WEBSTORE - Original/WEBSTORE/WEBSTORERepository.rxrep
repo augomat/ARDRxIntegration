@@ -467,16 +467,6 @@ rxversion="7.1">
 					/dom[@domain='grid-tools-downloads.com']//div[#'layout']//nav/ul/?/?/a[@innertext='About']
 				</item>
 			</folder>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="5685eecc-eede-48cd-9608-4c107de8e003"
-			name="TotalAmount"
-			refimgid="590c1b10-0ba2-4f4d-a410-1c155ba1cbad"
-			refpath="/dom[1]//span[#'totalAmount']"
-			searchtimeout="30000ms">
-				/dom[@domain='grid-tools-downloads.com']//span[#'totalAmount']
-			</item>
 			<basepath>
 				/dom[@domain='grid-tools-downloads.com']
 			</basepath>

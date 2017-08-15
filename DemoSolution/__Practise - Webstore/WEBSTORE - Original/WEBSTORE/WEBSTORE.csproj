@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{4F97A840-6B7F-484E-B127-D4A19F79C3D0}</ProjectGuid>
+    <ProjectGuid>{6732ADF4-0F25-4C71-A978-51991BD60006}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -11,7 +11,8 @@
     <RanorexVersion>7.1</RanorexVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>f85b04b7-b683-4979-b2df-4ec32e690b19</projectdefaultrepository>
+    <projectdefaultrepository>b00ccb8e-467d-4524-9320-e11af4ab42a7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -34,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Libs.Util" />
     <Reference Include="Ranorex.Plugin.Cef" />
     <Reference Include="Ranorex.Plugin.ChromeWeb" />
     <Reference Include="Ranorex.Plugin.Flex" />
@@ -45,6 +47,7 @@
     <Reference Include="Ranorex.Plugin.Qt" />
     <Reference Include="Ranorex.Plugin.RawText" />
     <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Test" />
     <Reference Include="Ranorex.Plugin.Uia" />
     <Reference Include="Ranorex.Plugin.Web" />
     <Reference Include="Ranorex.Plugin.WebDriver" />
@@ -68,59 +71,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
-      <id>cac74c71-7603-4b41-9ba5-4600f3ae4c10</id>
+      <id>368374b4-64fe-4966-b186-30de673d3eff</id>
     </Compile>
     <Compile Include="Program.cs">
-      <id>fb660cc1-0c33-48e6-9511-ee173755a75f</id>
+      <id>34c2a986-52e3-447f-8bd8-af2628fab87f</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>c4b7e901-ddd1-4d75-b676-2da7e51c998a</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>84f84c35-67d4-4197-a5ac-ebfa6592090a</id>
+    <Compile Include="WEBSTORE.cs">
+      <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>c4b7e901-ddd1-4d75-b676-2da7e51c998a</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e6abe3a5-c4dc-4123-9640-110dbcf7cdc1</id>
+    <Compile Include="Script1.cs">
+      <id>a138b929-d725-4ee5-9231-23fa29519692</id>
     </Compile>
     <Compile Include="WEBSTORERepository.cs">
-      <BoundTo>f85b04b7-b683-4979-b2df-4ec32e690b19</BoundTo>
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
       <DependentUpon>WEBSTORERepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>c658af50-01a4-4a7f-837a-44ee457ce371</id>
+      <id>17cf12af-40ff-46a3-9095-0cd1cffc3b8a</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
-      <id>389a7a08-7948-4c5d-8c61-f52e3b92d016</id>
-    </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>f85b04b7-b683-4979-b2df-4ec32e690b19</BoundTo>
-      <id>c4b7e901-ddd1-4d75-b676-2da7e51c998a</id>
-      <recordtableid>970bc6f6-f093-41ae-95f1-d64d6b70e887</recordtableid>
+      <id>0ada242f-b10f-4287-a1dd-4811d4ea9dd4</id>
     </None>
     <None Include="WEBSTORERepository.rximg">
-      <BoundTo>f85b04b7-b683-4979-b2df-4ec32e690b19</BoundTo>
-      <DependentUpon>WEBSTORERepository.rxrep</DependentUpon>
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
+      <DependentUpon>SingleArDconfigTestRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
-      <id>a5e74c63-ffc9-4797-928c-b0c4f469acea</id>
+      <id>741aae69-5bec-4f66-8cb7-7d7fd8c94b1c</id>
     </None>
     <None Include="WEBSTORERepository.rxrep">
-      <id>f85b04b7-b683-4979-b2df-4ec32e690b19</id>
+      <id>b00ccb8e-467d-4524-9320-e11af4ab42a7</id>
       <repoid>d399a665-6f01-4d60-8211-114914c5c543</repoid>
-      <reporootid>95b2958e-aca1-489a-a66c-cedf310d3359</reporootid>
+      <reporootid>065034de-eca3-4561-a3a1-b06d88c4e9a9</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="WEBSTORE.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>69efa2fe-3c66-40a6-98ae-4e4571b1b727</id>
-    </Content>
-    <Content Include="WEBSTORE.rxtst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>6d338db0-12d4-4db1-b534-997a4c5d65ce</id>
+      <id>602226a2-a58a-44af-b080-82cc19c4aa0a</id>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

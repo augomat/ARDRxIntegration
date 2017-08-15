@@ -92,7 +92,6 @@ namespace WEBSTORE
             WEBSTORERepositoryFolders.Page5_Order_FinalisedFolder _page5_order_finalised;
             WEBSTORERepositoryFolders.Page_AboutPageFolder _page_aboutpage;
             WEBSTORERepositoryFolders.NavigationFolder _navigation;
-            RepoItemInfo _totalamountInfo;
 
             /// <summary>
             /// Creates a new WEBSTORE  folder.
@@ -107,7 +106,6 @@ namespace WEBSTORE
                 _page5_order_finalised = new WEBSTORERepositoryFolders.Page5_Order_FinalisedFolder(this);
                 _page_aboutpage = new WEBSTORERepositoryFolders.Page_AboutPageFolder(this);
                 _navigation = new WEBSTORERepositoryFolders.NavigationFolder(this);
-                _totalamountInfo = new RepoItemInfo(this, "TotalAmount", ".//span[#'totalAmount']", 30000, null, "5685eecc-eede-48cd-9608-4c107de8e003");
             }
 
             /// <summary>
@@ -131,30 +129,6 @@ namespace WEBSTORE
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TotalAmount item.
-            /// </summary>
-            [RepositoryItem("5685eecc-eede-48cd-9608-4c107de8e003")]
-            public virtual Ranorex.SpanTag TotalAmount
-            {
-                get
-                {
-                    return _totalamountInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TotalAmount item info.
-            /// </summary>
-            [RepositoryItemInfo("5685eecc-eede-48cd-9608-4c107de8e003")]
-            public virtual RepoItemInfo TotalAmountInfo
-            {
-                get
-                {
-                    return _totalamountInfo;
                 }
             }
 
