@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 7.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBSTORE", "WEBSTORE\WEBSTORE.csproj", "{4F97A840-6B7F-484E-B127-D4A19F79C3D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9E0C6C0-9310-421E-AF21-3BF763F239C4}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F97A840-6B7F-484E-B127-D4A19F79C3D0}.Debug|x86.Build.0 = Debug|x86
+		{4F97A840-6B7F-484E-B127-D4A19F79C3D0}.Debug|x86.ActiveCfg = Debug|x86
+		{4F97A840-6B7F-484E-B127-D4A19F79C3D0}.Release|x86.Build.0 = Release|x86
+		{4F97A840-6B7F-484E-B127-D4A19F79C3D0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

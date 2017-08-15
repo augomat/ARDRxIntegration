@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6732ADF4-0F25-4C71-A978-51991BD60006}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WEBSTORE</RootNamespace>
+    <AssemblyName>WEBSTORE</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>b00ccb8e-467d-4524-9320-e11af4ab42a7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Libs.Util" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Test" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+    <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>368374b4-64fe-4966-b186-30de673d3eff</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>34c2a986-52e3-447f-8bd8-af2628fab87f</id>
+    </Compile>
+    <Compile Include="WEBSTORE.cs">
+      <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
+    </Compile>
+    <Compile Include="Script1.cs">
+      <id>7f348f70-9c35-4043-96f4-a0957bf372a9</id>
+    </Compile>
+    <Compile Include="Script2.cs">
+      <id>8d73486a-009f-42f1-bc9e-54619d53109c</id>
+    </Compile>
+    <Compile Include="Script3.cs">
+      <id>4f5a99e9-23fb-4039-9d0f-c0877386efd9</id>
+    </Compile>
+    <Compile Include="Script4.cs">
+      <id>a87c2281-b828-4bf8-8126-24cf9ded3290</id>
+    </Compile>
+    <Compile Include="Script5.cs">
+      <id>26c8a31f-fb46-4a28-b30d-4184f55f1bf6</id>
+    </Compile>
+    <Compile Include="Script6.cs">
+      <id>aee17a11-89a1-4945-b781-7e0ddd5e298c</id>
+    </Compile>
+    <Compile Include="Script7.cs">
+      <id>a3fd46a5-21bb-48cb-8453-160e06ac65f2</id>
+    </Compile>
+    <Compile Include="Script8.cs">
+      <id>8c166dd3-6560-4f3f-83dc-b58e7dd81e97</id>
+    </Compile>
+    <Compile Include="Script9.cs">
+      <id>0cb6547c-1ce6-46b3-b756-532d23af8f77</id>
+    </Compile>
+    <Compile Include="Script10.cs">
+      <id>e5a83cc0-0f48-4ab3-9db6-56fe2546c6c7</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>0ada242f-b10f-4287-a1dd-4811d4ea9dd4</id>
+    </None>
+    <None Include="WEBSTORERepository.rximg">
+      <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
+      <DependentUpon>SingleArDconfigTestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>741aae69-5bec-4f66-8cb7-7d7fd8c94b1c</id>
+    </None>
+    <None Include="WEBSTORERepository.rxrep">
+      <id>b00ccb8e-467d-4524-9320-e11af4ab42a7</id>
+      <repoid>27029f27-b8d7-49ba-be3b-cd248430bdcf</repoid>
+      <reporootid>62e9010b-f791-4bef-89ba-51e8eac460f6</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WEBSTORE.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>602226a2-a58a-44af-b080-82cc19c4aa0a</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
