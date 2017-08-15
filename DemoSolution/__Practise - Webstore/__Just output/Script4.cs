@@ -7,6 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -25,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script4.
     /// </summary>
-    [TestModule("17aab616-c0aa-44b5-a3da-f3bfc621510a", ModuleType.UserCode, 1)]
+    [TestModule("94d35f61-0b28-4991-ba6d-c5d689aa4600", ModuleType.UserCode, 1)]
     public class Script4 : ITestModule
     {
         /// <summary>
@@ -51,6 +52,8 @@ namespace WEBSTORE
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Open Browser");
 Report.Info("Started Executing Script4 : Open Browser");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Open Browser,Pass,'''','','','','',''," + Environment.NewLine);
             Host.Current.OpenBrowser("http://grid-tools-downloads.com/Will/TMF/index.php", "firefox", "", true, true, true, true, true);
             Report.Info("Finished Executing Script4 : Open Browser");
 TestReport.EndTestModule();
@@ -58,6 +61,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
 Report.Info("Started Executing Script4 : Confirm page has loaded");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Confirm page has loaded,Pass,'''','','','','',''," + Environment.NewLine);
 Validate.Attribute(repo.WEBSTORE.Page1_Product_Catalog.Header_PRODUCTCATALOGInfo, "InnerText", "Product Catalog");
 Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
@@ -65,6 +70,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Select Product");
 Report.Info("Started Executing Script4 : Select Product");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Select Product,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page1_Product_Catalog.ComboBox_ProductSelection.Element.SetAttributeValue("TagValue", "1");
 Report.Info("Finished Executing Script4 : Select Product");
 TestReport.EndTestModule();
@@ -72,6 +79,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Order Product");
 Report.Info("Started Executing Script4 : Click Order Product");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Click Order Product,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page1_Product_Catalog.Button_OrderProduct.Click();
 Report.Info("Finished Executing Script4 : Click Order Product");
 TestReport.EndTestModule();
@@ -79,6 +88,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
 Report.Info("Started Executing Script4 : Confirm page has loaded");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Confirm page has loaded,Pass,'''','','','','',''," + Environment.NewLine);
 Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.Header_DELIVERYLOCATIONInfo, "InnerText", "Delivery Location");
 Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
@@ -86,6 +97,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Email Address");
 Report.Info("Started Executing Script4 : Enter Email Address");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Email Address,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N1_Email.Click();
 repo.WEBSTORE.Page2_Delivery_Location.N1_Email.PressKeys("william.guastalla@ca.com");
 Report.Info("Finished Executing Script4 : Enter Email Address");
@@ -94,6 +107,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Confirmed Email Address");
 Report.Info("Started Executing Script4 : Enter Confirmed Email Address");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Confirmed Email Address,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmail.PressKeys("william.guastalla@ca.com");
 Report.Info("Finished Executing Script4 : Enter Confirmed Email Address");
 TestReport.EndTestModule();
@@ -101,6 +116,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Name");
 Report.Info("Started Executing Script4 : Enter Name");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Name,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N3_Name.PressKeys("William Guastalla");
 Report.Info("Finished Executing Script4 : Enter Name");
 TestReport.EndTestModule();
@@ -108,6 +125,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Address Line 1");
 Report.Info("Started Executing Script4 : Enter Address Line 1");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Address Line 1,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N4_AddressLine1.PressKeys("10 Oasis Business Park Stanton Harcourt");
 Report.Info("Finished Executing Script4 : Enter Address Line 1");
 TestReport.EndTestModule();
@@ -115,6 +134,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Address Line 2");
 Report.Info("Started Executing Script4 : Enter Address Line 2");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Address Line 2,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N5_AddressLine2.PressKeys("Eynsham Oxford");
 Report.Info("Finished Executing Script4 : Enter Address Line 2");
 TestReport.EndTestModule();
@@ -122,6 +143,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter County");
 Report.Info("Started Executing Script4 : Enter County");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter County,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N6_County.PressKeys("Oxfordshire");
 Report.Info("Finished Executing Script4 : Enter County");
 TestReport.EndTestModule();
@@ -129,6 +152,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Post Code");
 Report.Info("Started Executing Script4 : Enter Post Code");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Post Code,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N7_PostCode.PressKeys("OX294TP");
 Report.Info("Finished Executing Script4 : Enter Post Code");
 TestReport.EndTestModule();
@@ -136,6 +161,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Country");
 Report.Info("Started Executing Script4 : Enter Country");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Country,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N8_Country.Element.SetAttributeValue("TagValue", "England");
 Report.Info("Finished Executing Script4 : Enter Country");
 TestReport.EndTestModule();
@@ -143,6 +170,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Save Shipping");
 Report.Info("Started Executing Script4 : Click Save Shipping");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Click Save Shipping,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.Button_SaveShipping.Click();
 Report.Info("Finished Executing Script4 : Click Save Shipping");
 TestReport.EndTestModule();
@@ -150,6 +179,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
 Report.Info("Started Executing Script4 : Confirm page has loaded");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Confirm page has loaded,Pass,'''','','','','',''," + Environment.NewLine);
 Validate.Attribute(repo.WEBSTORE.Page3_Shipping_Specification.Header_SHIPPINGSPECIFICATIONInfo, "InnerText", "Shipping Specification");
 Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
@@ -157,6 +188,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Continue");
 Report.Info("Started Executing Script4 : Click Continue");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Click Continue,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page3_Shipping_Specification.Button_Continue.Click();
 Report.Info("Finished Executing Script4 : Click Continue");
 TestReport.EndTestModule();
@@ -164,6 +197,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
 Report.Info("Started Executing Script4 : Confirm page has loaded");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Confirm page has loaded,Pass,'''','','','','',''," + Environment.NewLine);
 Validate.Attribute(repo.WEBSTORE.Page4_Payment_Details.Header_PAYMENTDETAILSInfo, "InnerText", "Payment Details");
 Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
@@ -171,6 +206,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Card Type");
 Report.Info("Started Executing Script4 : Enter Card Type");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Card Type,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page4_Payment_Details.N1_CardType.Element.SetAttributeValue("TagValue", "VISA");
 Report.Info("Finished Executing Script4 : Enter Card Type");
 TestReport.EndTestModule();
@@ -178,6 +215,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Enter Card Number");
 Report.Info("Started Executing Script4 : Enter Card Number");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Enter Card Number,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page4_Payment_Details.N2_CardNo.PressKeys("1111222233334444");
 Report.Info("Finished Executing Script4 : Enter Card Number");
 TestReport.EndTestModule();
@@ -185,6 +224,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Complete Purchase");
 Report.Info("Started Executing Script4 : Click Complete Purchase");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Click Complete Purchase,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Page4_Payment_Details.Button_CompletePurchase.Click();
 Report.Info("Finished Executing Script4 : Click Complete Purchase");
 TestReport.EndTestModule();
@@ -192,6 +233,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
 Report.Info("Started Executing Script4 : Confirm page has loaded");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Confirm page has loaded,Pass,'''','','','','',''," + Environment.NewLine);
 Validate.Attribute(repo.WEBSTORE.Page5_Order_Finalised.Header_ORDERFINALISEDInfo, "InnerText", "Order Finalised");
 Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
@@ -199,6 +242,8 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Home");
 Report.Info("Started Executing Script4 : Click Home");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Click Home,Pass,'''','','','','',''," + Environment.NewLine);
 repo.WEBSTORE.Navigation.Home.Click();
 Report.Info("Finished Executing Script4 : Click Home");
 TestReport.EndTestModule();
