@@ -1067,7 +1067,7 @@ namespace WEBSTORE
         [RepositoryFolder("b80788e5-e019-415e-b9a8-6349a4b942af")]
         public partial class Page5_Order_FinalisedFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _orderfinalisedInfo;
+            RepoItemInfo _header_orderfinalisedInfo;
             RepoItemInfo _info_estimateddeliverytimeInfo;
             RepoItemInfo _info_totalcostInfo;
 
@@ -1077,7 +1077,7 @@ namespace WEBSTORE
             public Page5_Order_FinalisedFolder(RepoGenBaseFolder parentFolder) :
                     base("Page5_Order_Finalised", "", parentFolder, 0, null, false, "b80788e5-e019-415e-b9a8-6349a4b942af", "")
             {
-                _orderfinalisedInfo = new RepoItemInfo(this, "ORDERFINALISED", "element[2]/element[1]/text[@accessiblename='ORDER FINALISED']", 30000, null, "768b928b-66b4-43f7-969c-e2880441fd91");
+                _header_orderfinalisedInfo = new RepoItemInfo(this, "Header_ORDERFINALISED", "element[2]/element[1]/text[@accessiblename='ORDER FINALISED']", 30000, null, "768b928b-66b4-43f7-969c-e2880441fd91");
                 _info_estimateddeliverytimeInfo = new RepoItemInfo(this, "Info_EstimatedDeliveryTime", "element[2]/element[2]/text[@accessiblename~'^Estimated\\ delivery\\ time\\ -']", 30000, null, "0e74daed-82a6-4f0a-bd9e-751f18c1e7d9");
                 _info_totalcostInfo = new RepoItemInfo(this, "Info_TotalCost", "element[2]/element[3]/text[@accessiblename='Total cost: 855.00']", 30000, null, "583399b2-5689-4d80-afeb-9ee93527c50b");
             }
@@ -1095,26 +1095,26 @@ namespace WEBSTORE
             }
 
             /// <summary>
-            /// The ORDERFINALISED item.
+            /// The Header_ORDERFINALISED item.
             /// </summary>
             [RepositoryItem("768b928b-66b4-43f7-969c-e2880441fd91")]
-            public virtual Ranorex.Text ORDERFINALISED
+            public virtual Ranorex.Text Header_ORDERFINALISED
             {
                 get
                 {
-                    return _orderfinalisedInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _header_orderfinalisedInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The ORDERFINALISED item info.
+            /// The Header_ORDERFINALISED item info.
             /// </summary>
             [RepositoryItemInfo("768b928b-66b4-43f7-969c-e2880441fd91")]
-            public virtual RepoItemInfo ORDERFINALISEDInfo
+            public virtual RepoItemInfo Header_ORDERFINALISEDInfo
             {
                 get
                 {
-                    return _orderfinalisedInfo;
+                    return _header_orderfinalisedInfo;
                 }
             }
 

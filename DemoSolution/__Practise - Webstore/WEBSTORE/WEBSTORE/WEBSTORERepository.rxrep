@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="WEBSTORERepository"
+﻿<repository
 id="d399a665-6f01-4d60-8211-114914c5c543"
+name="WEBSTORERepository"
 rxversion="7.1">
 	<codegen
 	classname="WEBSTORERepository"
@@ -301,7 +300,7 @@ rxversion="7.1">
 					addcaps="text,accessible"
 					capname="text"
 					id="768b928b-66b4-43f7-969c-e2880441fd91"
-					name="ORDERFINALISED"
+					name="Header_ORDERFINALISED"
 					refimgid="3368208d-9076-48e1-b09a-9ecb5fc9845b"
 					searchtimeout="30000ms">
 						/form[@title='Mozilla Firefox']/container[@accessiblerole='Grouping']//container[@accessiblename~'^http://grid-tools-downloa']/element[2]/element[1]/text[@accessiblename='ORDER FINALISED']
