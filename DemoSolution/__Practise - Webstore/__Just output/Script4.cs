@@ -25,7 +25,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script4.
     /// </summary>
-    [TestModule("6ea9b9d6-c5b4-49d2-bc83-1dd137253579", ModuleType.UserCode, 1)]
+    [TestModule("d9f5697d-3122-48e4-a5aa-74ba5bedf8de", ModuleType.UserCode, 1)]
     public class Script4 : ITestModule
     {
         /// <summary>
@@ -76,21 +76,59 @@ Report.Info("Finished Executing Script4 : Click Order Product");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
+TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
+Report.Info("Started Executing Script4 : Confirm page has loaded");
+Validate.Attribute(repo.MozillaFirefox.WebStore.Page2_Delivery_Location.Header_DELIVERYLOCATIONInfo, "AccessibleName", "DELIVERY LOCATION");
+Report.Info("Finished Executing Script4 : Confirm page has loaded");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Save Shipping");
 Report.Info("Started Executing Script4 : Click Save Shipping");
+repo.MozillaFirefox.WebStore.Page2_Delivery_Location.Button_SaveShipping.Click();
 Report.Info("Finished Executing Script4 : Click Save Shipping");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
+TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
+Report.Info("Started Executing Script4 : Confirm page has loaded");
+Validate.Attribute(repo.MozillaFirefox.WebStore.Page3_Shipping_Specification.Header_SHIPPINGSPECIFICATIONInfo, "AccessibleName", "SHIPPING SPECIFICATION");
+Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Continue");
 Report.Info("Started Executing Script4 : Click Continue");
+repo.MozillaFirefox.WebStore.Page3_Shipping_Specification.Button_Continue.Click();
 Report.Info("Finished Executing Script4 : Click Continue");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
+TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
+Report.Info("Started Executing Script4 : Confirm page has loaded");
+Validate.Attribute(repo.MozillaFirefox.WebStore.Page4_Payment_Details.Header_PAYMENTDETAILSInfo, "AccessibleName", "PAYMENT DETAILS");
+Report.Info("Finished Executing Script4 : Confirm page has loaded");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
 TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Complete Purchase");
 Report.Info("Started Executing Script4 : Click Complete Purchase");
+repo.MozillaFirefox.WebStore.Page4_Payment_Details.Button_CompletePurchase.Click();
 Report.Info("Finished Executing Script4 : Click Complete Purchase");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
+TestReport.BeginTestModule("Script4 : Test Cases 4 - Confirm page has loaded");
+Report.Info("Started Executing Script4 : Confirm page has loaded");
+Validate.Attribute(repo.MozillaFirefox.WebStore.Page5_Order_Finalised.Header_ORDERFINALISEDInfo, "AccessibleName", "ORDER FINALISED");
+Report.Info("Finished Executing Script4 : Confirm page has loaded");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
+TestReport.BeginTestModule("Script4 : Test Cases 4 - Click Home");
+Report.Info("Started Executing Script4 : Click Home");
+repo.MozillaFirefox.WebStore.HOME.Click();
+Report.Info("Finished Executing Script4 : Click Home");
 TestReport.EndTestModule();
 // End Block
 // Begin Block

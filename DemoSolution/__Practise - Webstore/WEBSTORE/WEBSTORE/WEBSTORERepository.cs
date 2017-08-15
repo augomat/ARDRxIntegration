@@ -29,6 +29,7 @@ namespace WEBSTORE
         static WEBSTORERepository instance = new WEBSTORERepository();
         WEBSTORERepositoryFolders.MozillaFirefoxAppFolder _mozillafirefox;
         WEBSTORERepositoryFolders.DropdownAppFolder _dropdown;
+        WEBSTORERepositoryFolders.WEBSTOREAppFolder _webstore;
 
         /// <summary>
         /// Gets the singleton class instance representing the WEBSTORERepository element repository.
@@ -47,6 +48,7 @@ namespace WEBSTORE
         {
             _mozillafirefox = new WEBSTORERepositoryFolders.MozillaFirefoxAppFolder(this);
             _dropdown = new WEBSTORERepositoryFolders.DropdownAppFolder(this);
+            _webstore = new WEBSTORERepositoryFolders.WEBSTOREAppFolder(this);
         }
 
 #region Variables
@@ -81,6 +83,15 @@ namespace WEBSTORE
         public virtual WEBSTORERepositoryFolders.DropdownAppFolder Dropdown
         {
             get { return _dropdown; }
+        }
+
+        /// <summary>
+        /// The WEBSTORE folder.
+        /// </summary>
+        [RepositoryFolder("60df01b4-1fb1-485a-9f92-860c3837fcf6")]
+        public virtual WEBSTORERepositoryFolders.WEBSTOREAppFolder WEBSTORE
+        {
+            get { return _webstore; }
         }
     }
 
@@ -1257,6 +1268,1359 @@ namespace WEBSTORE
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WEBSTOREAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("60df01b4-1fb1-485a-9f92-860c3837fcf6")]
+        public partial class WEBSTOREAppFolder : RepoGenBaseFolder
+        {
+            WEBSTORERepositoryFolders.Page1_Product_CatalogFolder1 _page1_product_catalog;
+            WEBSTORERepositoryFolders.Page2_Delivery_LocationFolder1 _page2_delivery_location;
+            WEBSTORERepositoryFolders.Page3_Shipping_SpecificationFolder1 _page3_shipping_specification;
+            WEBSTORERepositoryFolders.Page4_Payment_DetailsFolder1 _page4_payment_details;
+            WEBSTORERepositoryFolders.Page5_Order_FinalisedFolder1 _page5_order_finalised;
+            WEBSTORERepositoryFolders.Page_AboutPageFolder1 _page_aboutpage;
+            WEBSTORERepositoryFolders.NavigationFolder _navigation;
+
+            /// <summary>
+            /// Creates a new WEBSTORE  folder.
+            /// </summary>
+            public WEBSTOREAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WEBSTORE", "/dom[@domain='grid-tools-downloads.com']", parentFolder, 30000, null, false, "60df01b4-1fb1-485a-9f92-860c3837fcf6", "")
+            {
+                _page1_product_catalog = new WEBSTORERepositoryFolders.Page1_Product_CatalogFolder1(this);
+                _page2_delivery_location = new WEBSTORERepositoryFolders.Page2_Delivery_LocationFolder1(this);
+                _page3_shipping_specification = new WEBSTORERepositoryFolders.Page3_Shipping_SpecificationFolder1(this);
+                _page4_payment_details = new WEBSTORERepositoryFolders.Page4_Payment_DetailsFolder1(this);
+                _page5_order_finalised = new WEBSTORERepositoryFolders.Page5_Order_FinalisedFolder1(this);
+                _page_aboutpage = new WEBSTORERepositoryFolders.Page_AboutPageFolder1(this);
+                _navigation = new WEBSTORERepositoryFolders.NavigationFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("60df01b4-1fb1-485a-9f92-860c3837fcf6")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("60df01b4-1fb1-485a-9f92-860c3837fcf6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Page1_Product_Catalog folder.
+            /// </summary>
+            [RepositoryFolder("01919c1b-5080-49c7-b40c-87679aaa074c")]
+            public virtual WEBSTORERepositoryFolders.Page1_Product_CatalogFolder1 Page1_Product_Catalog
+            {
+                get { return _page1_product_catalog; }
+            }
+
+            /// <summary>
+            /// The Page2_Delivery_Location folder.
+            /// </summary>
+            [RepositoryFolder("15c38801-3752-42c3-ba09-942ffdefbb07")]
+            public virtual WEBSTORERepositoryFolders.Page2_Delivery_LocationFolder1 Page2_Delivery_Location
+            {
+                get { return _page2_delivery_location; }
+            }
+
+            /// <summary>
+            /// The Page3_Shipping_Specification folder.
+            /// </summary>
+            [RepositoryFolder("c5ae84af-8335-4715-a6c8-388f4b6570b9")]
+            public virtual WEBSTORERepositoryFolders.Page3_Shipping_SpecificationFolder1 Page3_Shipping_Specification
+            {
+                get { return _page3_shipping_specification; }
+            }
+
+            /// <summary>
+            /// The Page4_Payment_Details folder.
+            /// </summary>
+            [RepositoryFolder("76c6e193-9436-485f-b5f5-03998fe10c8d")]
+            public virtual WEBSTORERepositoryFolders.Page4_Payment_DetailsFolder1 Page4_Payment_Details
+            {
+                get { return _page4_payment_details; }
+            }
+
+            /// <summary>
+            /// The Page5_Order_Finalised folder.
+            /// </summary>
+            [RepositoryFolder("c62f9283-8e02-44d4-8129-6e463335abdc")]
+            public virtual WEBSTORERepositoryFolders.Page5_Order_FinalisedFolder1 Page5_Order_Finalised
+            {
+                get { return _page5_order_finalised; }
+            }
+
+            /// <summary>
+            /// The Page_AboutPage folder.
+            /// </summary>
+            [RepositoryFolder("8090b791-4bff-48b5-9872-a8052ef30836")]
+            public virtual WEBSTORERepositoryFolders.Page_AboutPageFolder1 Page_AboutPage
+            {
+                get { return _page_aboutpage; }
+            }
+
+            /// <summary>
+            /// The Navigation folder.
+            /// </summary>
+            [RepositoryFolder("601af354-6e49-4a71-bf69-a31122441407")]
+            public virtual WEBSTORERepositoryFolders.NavigationFolder Navigation
+            {
+                get { return _navigation; }
+            }
+        }
+
+        /// <summary>
+        /// The Page1_Product_CatalogFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("01919c1b-5080-49c7-b40c-87679aaa074c")]
+        public partial class Page1_Product_CatalogFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _header_productcatalogInfo;
+            RepoItemInfo _button_orderproductInfo;
+            RepoItemInfo _combobox_productselectionInfo;
+
+            /// <summary>
+            /// Creates a new Page1_Product_Catalog  folder.
+            /// </summary>
+            public Page1_Product_CatalogFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page1_Product_Catalog", "", parentFolder, 0, null, false, "01919c1b-5080-49c7-b40c-87679aaa074c", "")
+            {
+                _header_productcatalogInfo = new RepoItemInfo(this, "Header_PRODUCTCATALOG", ".//div[#'layout']/?/?/h1[@innertext='Product Catalog']", 30000, null, "c5c4237d-5eca-4c43-8f21-36859c8101de");
+                _button_orderproductInfo = new RepoItemInfo(this, "Button_OrderProduct", ".//div[#'layout']//form[@action='javascript:validateFormOnSubmit(this);']/fieldset/div[4]/button[@innertext='Order Product']", 30000, null, "15419669-afa1-479b-8ced-025114e81d5a");
+                _combobox_productselectionInfo = new RepoItemInfo(this, "ComboBox_ProductSelection", ".//select[#'productSelection']", 30000, null, "781c7b01-9348-4875-8e01-f4dd75c15dfe");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("01919c1b-5080-49c7-b40c-87679aaa074c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_PRODUCTCATALOG item.
+            /// </summary>
+            [RepositoryItem("c5c4237d-5eca-4c43-8f21-36859c8101de")]
+            public virtual Ranorex.H1Tag Header_PRODUCTCATALOG
+            {
+                get
+                {
+                    return _header_productcatalogInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_PRODUCTCATALOG item info.
+            /// </summary>
+            [RepositoryItemInfo("c5c4237d-5eca-4c43-8f21-36859c8101de")]
+            public virtual RepoItemInfo Header_PRODUCTCATALOGInfo
+            {
+                get
+                {
+                    return _header_productcatalogInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button_OrderProduct item.
+            /// </summary>
+            [RepositoryItem("15419669-afa1-479b-8ced-025114e81d5a")]
+            public virtual Ranorex.ButtonTag Button_OrderProduct
+            {
+                get
+                {
+                    return _button_orderproductInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button_OrderProduct item info.
+            /// </summary>
+            [RepositoryItemInfo("15419669-afa1-479b-8ced-025114e81d5a")]
+            public virtual RepoItemInfo Button_OrderProductInfo
+            {
+                get
+                {
+                    return _button_orderproductInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ComboBox_ProductSelection item.
+            /// </summary>
+            [RepositoryItem("781c7b01-9348-4875-8e01-f4dd75c15dfe")]
+            public virtual Ranorex.SelectTag ComboBox_ProductSelection
+            {
+                get
+                {
+                    return _combobox_productselectionInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ComboBox_ProductSelection item info.
+            /// </summary>
+            [RepositoryItemInfo("781c7b01-9348-4875-8e01-f4dd75c15dfe")]
+            public virtual RepoItemInfo ComboBox_ProductSelectionInfo
+            {
+                get
+                {
+                    return _combobox_productselectionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Page2_Delivery_LocationFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("15c38801-3752-42c3-ba09-942ffdefbb07")]
+        public partial class Page2_Delivery_LocationFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _header_deliverylocationInfo;
+            RepoItemInfo _button_saveshippingInfo;
+            RepoItemInfo _n1_emailInfo;
+            RepoItemInfo _n2_confirmemailInfo;
+            RepoItemInfo _n3_nameInfo;
+            RepoItemInfo _n4_addressline1Info;
+            RepoItemInfo _n5_addressline2Info;
+            RepoItemInfo _n6_countyInfo;
+            RepoItemInfo _n7_postcodeInfo;
+            RepoItemInfo _n8_countryInfo;
+            RepoItemInfo _n1_emailerrorInfo;
+            RepoItemInfo _n2_confirmemailerrorInfo;
+            RepoItemInfo _n3_nameerrorInfo;
+            RepoItemInfo _n4_adr1errorInfo;
+            RepoItemInfo _n5_adr2errorInfo;
+            RepoItemInfo _n6_countyerrorInfo;
+            RepoItemInfo _n7_postcodeerrorInfo;
+            RepoItemInfo _n8_countryerrorInfo;
+
+            /// <summary>
+            /// Creates a new Page2_Delivery_Location  folder.
+            /// </summary>
+            public Page2_Delivery_LocationFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page2_Delivery_Location", "", parentFolder, 0, null, false, "15c38801-3752-42c3-ba09-942ffdefbb07", "")
+            {
+                _header_deliverylocationInfo = new RepoItemInfo(this, "Header_DELIVERYLOCATION", ".//div[#'layout']/?/?/h1[@innertext='Delivery Location']", 30000, null, "029deb8b-a274-45cc-ae67-0606dfc3fdd0");
+                _button_saveshippingInfo = new RepoItemInfo(this, "Button_SaveShipping", ".//div[#'layout']//form[@name='MasterForm']/?/?/button[@innertext='Save Shipping']", 30000, null, "fd7af09d-e890-45a4-ba92-73355484f647");
+                _n1_emailInfo = new RepoItemInfo(this, "N1_Email", ".//input[#'Email']", 30000, null, "fb67b84c-0918-4571-af69-44843fa6936d");
+                _n2_confirmemailInfo = new RepoItemInfo(this, "N2_ConfirmEmail", ".//input[#'ConfirmEmail']", 30000, null, "a9a00d9a-e1ff-46e4-ad7b-044c6e396bbc");
+                _n3_nameInfo = new RepoItemInfo(this, "N3_Name", ".//input[#'name']", 30000, null, "729e7013-a2d9-49f9-9418-f819b00f211b");
+                _n4_addressline1Info = new RepoItemInfo(this, "N4_AddressLine1", ".//input[#'line1']", 30000, null, "cf3c89b7-487d-4024-91db-0f5b969bcc27");
+                _n5_addressline2Info = new RepoItemInfo(this, "N5_AddressLine2", ".//input[#'line2']", 30000, null, "1b70a087-0514-486e-b978-8f33bcf86ec1");
+                _n6_countyInfo = new RepoItemInfo(this, "N6_County", ".//input[#'county']", 30000, null, "611bfd04-dfa6-428e-87fb-2a7993032777");
+                _n7_postcodeInfo = new RepoItemInfo(this, "N7_PostCode", ".//input[#'post_code']", 30000, null, "cb75cf75-9a6d-4985-9049-9b9312018893");
+                _n8_countryInfo = new RepoItemInfo(this, "N8_Country", ".//select[#'country']", 30000, null, "dc196570-6fee-4401-9530-c2f7090f1dc6");
+                _n1_emailerrorInfo = new RepoItemInfo(this, "N1_EmailError", ".//span[#'EmailError']", 30000, null, "6d582ac7-2d3c-45fe-accf-669d60c71138");
+                _n2_confirmemailerrorInfo = new RepoItemInfo(this, "N2_ConfirmEmailError", ".//span[#'ConfirmEmailError']", 30000, null, "9e7610d9-f158-43d4-8aac-6a0d4d3697a8");
+                _n3_nameerrorInfo = new RepoItemInfo(this, "N3_NameError", ".//span[#'NameError']", 30000, null, "2ffb010e-d05b-472f-bcb2-0419e69fb365");
+                _n4_adr1errorInfo = new RepoItemInfo(this, "N4_Adr1Error", ".//span[#'Adr1Error']", 30000, null, "98f81d78-f6a4-42f4-81dc-df14db2e45fd");
+                _n5_adr2errorInfo = new RepoItemInfo(this, "N5_Adr2Error", ".//span[#'Adr2Error']", 30000, null, "c7db093e-8372-4025-9f3b-80e167949d63");
+                _n6_countyerrorInfo = new RepoItemInfo(this, "N6_CountyError", ".//span[#'CountyError']", 30000, null, "01009bce-dcc7-42a5-a087-63ba10753670");
+                _n7_postcodeerrorInfo = new RepoItemInfo(this, "N7_PostCodeError", ".//span[#'PostCodeError']", 30000, null, "e77e20ac-427a-4a6a-acf1-357535347b18");
+                _n8_countryerrorInfo = new RepoItemInfo(this, "N8_CountryError", ".//span[#'CountryError']", 30000, null, "c1965e7d-3082-4012-ab58-be3844bc6912");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("15c38801-3752-42c3-ba09-942ffdefbb07")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_DELIVERYLOCATION item.
+            /// </summary>
+            [RepositoryItem("029deb8b-a274-45cc-ae67-0606dfc3fdd0")]
+            public virtual Ranorex.H1Tag Header_DELIVERYLOCATION
+            {
+                get
+                {
+                    return _header_deliverylocationInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_DELIVERYLOCATION item info.
+            /// </summary>
+            [RepositoryItemInfo("029deb8b-a274-45cc-ae67-0606dfc3fdd0")]
+            public virtual RepoItemInfo Header_DELIVERYLOCATIONInfo
+            {
+                get
+                {
+                    return _header_deliverylocationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button_SaveShipping item.
+            /// </summary>
+            [RepositoryItem("fd7af09d-e890-45a4-ba92-73355484f647")]
+            public virtual Ranorex.ButtonTag Button_SaveShipping
+            {
+                get
+                {
+                    return _button_saveshippingInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button_SaveShipping item info.
+            /// </summary>
+            [RepositoryItemInfo("fd7af09d-e890-45a4-ba92-73355484f647")]
+            public virtual RepoItemInfo Button_SaveShippingInfo
+            {
+                get
+                {
+                    return _button_saveshippingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_Email item.
+            /// </summary>
+            [RepositoryItem("fb67b84c-0918-4571-af69-44843fa6936d")]
+            public virtual Ranorex.InputTag N1_Email
+            {
+                get
+                {
+                    return _n1_emailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_Email item info.
+            /// </summary>
+            [RepositoryItemInfo("fb67b84c-0918-4571-af69-44843fa6936d")]
+            public virtual RepoItemInfo N1_EmailInfo
+            {
+                get
+                {
+                    return _n1_emailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N2_ConfirmEmail item.
+            /// </summary>
+            [RepositoryItem("a9a00d9a-e1ff-46e4-ad7b-044c6e396bbc")]
+            public virtual Ranorex.InputTag N2_ConfirmEmail
+            {
+                get
+                {
+                    return _n2_confirmemailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N2_ConfirmEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("a9a00d9a-e1ff-46e4-ad7b-044c6e396bbc")]
+            public virtual RepoItemInfo N2_ConfirmEmailInfo
+            {
+                get
+                {
+                    return _n2_confirmemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N3_Name item.
+            /// </summary>
+            [RepositoryItem("729e7013-a2d9-49f9-9418-f819b00f211b")]
+            public virtual Ranorex.InputTag N3_Name
+            {
+                get
+                {
+                    return _n3_nameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N3_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("729e7013-a2d9-49f9-9418-f819b00f211b")]
+            public virtual RepoItemInfo N3_NameInfo
+            {
+                get
+                {
+                    return _n3_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N4_AddressLine1 item.
+            /// </summary>
+            [RepositoryItem("cf3c89b7-487d-4024-91db-0f5b969bcc27")]
+            public virtual Ranorex.InputTag N4_AddressLine1
+            {
+                get
+                {
+                    return _n4_addressline1Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N4_AddressLine1 item info.
+            /// </summary>
+            [RepositoryItemInfo("cf3c89b7-487d-4024-91db-0f5b969bcc27")]
+            public virtual RepoItemInfo N4_AddressLine1Info
+            {
+                get
+                {
+                    return _n4_addressline1Info;
+                }
+            }
+
+            /// <summary>
+            /// The N5_AddressLine2 item.
+            /// </summary>
+            [RepositoryItem("1b70a087-0514-486e-b978-8f33bcf86ec1")]
+            public virtual Ranorex.InputTag N5_AddressLine2
+            {
+                get
+                {
+                    return _n5_addressline2Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N5_AddressLine2 item info.
+            /// </summary>
+            [RepositoryItemInfo("1b70a087-0514-486e-b978-8f33bcf86ec1")]
+            public virtual RepoItemInfo N5_AddressLine2Info
+            {
+                get
+                {
+                    return _n5_addressline2Info;
+                }
+            }
+
+            /// <summary>
+            /// The N6_County item.
+            /// </summary>
+            [RepositoryItem("611bfd04-dfa6-428e-87fb-2a7993032777")]
+            public virtual Ranorex.InputTag N6_County
+            {
+                get
+                {
+                    return _n6_countyInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N6_County item info.
+            /// </summary>
+            [RepositoryItemInfo("611bfd04-dfa6-428e-87fb-2a7993032777")]
+            public virtual RepoItemInfo N6_CountyInfo
+            {
+                get
+                {
+                    return _n6_countyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N7_PostCode item.
+            /// </summary>
+            [RepositoryItem("cb75cf75-9a6d-4985-9049-9b9312018893")]
+            public virtual Ranorex.InputTag N7_PostCode
+            {
+                get
+                {
+                    return _n7_postcodeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N7_PostCode item info.
+            /// </summary>
+            [RepositoryItemInfo("cb75cf75-9a6d-4985-9049-9b9312018893")]
+            public virtual RepoItemInfo N7_PostCodeInfo
+            {
+                get
+                {
+                    return _n7_postcodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N8_Country item.
+            /// </summary>
+            [RepositoryItem("dc196570-6fee-4401-9530-c2f7090f1dc6")]
+            public virtual Ranorex.SelectTag N8_Country
+            {
+                get
+                {
+                    return _n8_countryInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N8_Country item info.
+            /// </summary>
+            [RepositoryItemInfo("dc196570-6fee-4401-9530-c2f7090f1dc6")]
+            public virtual RepoItemInfo N8_CountryInfo
+            {
+                get
+                {
+                    return _n8_countryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_EmailError item.
+            /// </summary>
+            [RepositoryItem("6d582ac7-2d3c-45fe-accf-669d60c71138")]
+            public virtual Ranorex.SpanTag N1_EmailError
+            {
+                get
+                {
+                    return _n1_emailerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_EmailError item info.
+            /// </summary>
+            [RepositoryItemInfo("6d582ac7-2d3c-45fe-accf-669d60c71138")]
+            public virtual RepoItemInfo N1_EmailErrorInfo
+            {
+                get
+                {
+                    return _n1_emailerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N2_ConfirmEmailError item.
+            /// </summary>
+            [RepositoryItem("9e7610d9-f158-43d4-8aac-6a0d4d3697a8")]
+            public virtual Ranorex.SpanTag N2_ConfirmEmailError
+            {
+                get
+                {
+                    return _n2_confirmemailerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N2_ConfirmEmailError item info.
+            /// </summary>
+            [RepositoryItemInfo("9e7610d9-f158-43d4-8aac-6a0d4d3697a8")]
+            public virtual RepoItemInfo N2_ConfirmEmailErrorInfo
+            {
+                get
+                {
+                    return _n2_confirmemailerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N3_NameError item.
+            /// </summary>
+            [RepositoryItem("2ffb010e-d05b-472f-bcb2-0419e69fb365")]
+            public virtual Ranorex.SpanTag N3_NameError
+            {
+                get
+                {
+                    return _n3_nameerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N3_NameError item info.
+            /// </summary>
+            [RepositoryItemInfo("2ffb010e-d05b-472f-bcb2-0419e69fb365")]
+            public virtual RepoItemInfo N3_NameErrorInfo
+            {
+                get
+                {
+                    return _n3_nameerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N4_Adr1Error item.
+            /// </summary>
+            [RepositoryItem("98f81d78-f6a4-42f4-81dc-df14db2e45fd")]
+            public virtual Ranorex.SpanTag N4_Adr1Error
+            {
+                get
+                {
+                    return _n4_adr1errorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N4_Adr1Error item info.
+            /// </summary>
+            [RepositoryItemInfo("98f81d78-f6a4-42f4-81dc-df14db2e45fd")]
+            public virtual RepoItemInfo N4_Adr1ErrorInfo
+            {
+                get
+                {
+                    return _n4_adr1errorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N5_Adr2Error item.
+            /// </summary>
+            [RepositoryItem("c7db093e-8372-4025-9f3b-80e167949d63")]
+            public virtual Ranorex.SpanTag N5_Adr2Error
+            {
+                get
+                {
+                    return _n5_adr2errorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N5_Adr2Error item info.
+            /// </summary>
+            [RepositoryItemInfo("c7db093e-8372-4025-9f3b-80e167949d63")]
+            public virtual RepoItemInfo N5_Adr2ErrorInfo
+            {
+                get
+                {
+                    return _n5_adr2errorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N6_CountyError item.
+            /// </summary>
+            [RepositoryItem("01009bce-dcc7-42a5-a087-63ba10753670")]
+            public virtual Ranorex.SpanTag N6_CountyError
+            {
+                get
+                {
+                    return _n6_countyerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N6_CountyError item info.
+            /// </summary>
+            [RepositoryItemInfo("01009bce-dcc7-42a5-a087-63ba10753670")]
+            public virtual RepoItemInfo N6_CountyErrorInfo
+            {
+                get
+                {
+                    return _n6_countyerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N7_PostCodeError item.
+            /// </summary>
+            [RepositoryItem("e77e20ac-427a-4a6a-acf1-357535347b18")]
+            public virtual Ranorex.SpanTag N7_PostCodeError
+            {
+                get
+                {
+                    return _n7_postcodeerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N7_PostCodeError item info.
+            /// </summary>
+            [RepositoryItemInfo("e77e20ac-427a-4a6a-acf1-357535347b18")]
+            public virtual RepoItemInfo N7_PostCodeErrorInfo
+            {
+                get
+                {
+                    return _n7_postcodeerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N8_CountryError item.
+            /// </summary>
+            [RepositoryItem("c1965e7d-3082-4012-ab58-be3844bc6912")]
+            public virtual Ranorex.SpanTag N8_CountryError
+            {
+                get
+                {
+                    return _n8_countryerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N8_CountryError item info.
+            /// </summary>
+            [RepositoryItemInfo("c1965e7d-3082-4012-ab58-be3844bc6912")]
+            public virtual RepoItemInfo N8_CountryErrorInfo
+            {
+                get
+                {
+                    return _n8_countryerrorInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Page3_Shipping_SpecificationFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("c5ae84af-8335-4715-a6c8-388f4b6570b9")]
+        public partial class Page3_Shipping_SpecificationFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _header_shippingspecificationInfo;
+            RepoItemInfo _button_continueInfo;
+            RepoItemInfo _n1_totalInfo;
+
+            /// <summary>
+            /// Creates a new Page3_Shipping_Specification  folder.
+            /// </summary>
+            public Page3_Shipping_SpecificationFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page3_Shipping_Specification", "", parentFolder, 0, null, false, "c5ae84af-8335-4715-a6c8-388f4b6570b9", "")
+            {
+                _header_shippingspecificationInfo = new RepoItemInfo(this, "Header_SHIPPINGSPECIFICATION", ".//div[#'layout']/?/?/h1[@innertext='Shipping Specification']", 30000, null, "41df306c-2245-4460-8f94-30002dd36aa6");
+                _button_continueInfo = new RepoItemInfo(this, "Button_Continue", ".//div[#'layout']//form[@action='http://grid-tools-downloads.com/Will/TMF/payment_details.php']/?/?/button[@innertext='Continue']", 30000, null, "66db7a95-17ee-41e1-9849-63e017c26c96");
+                _n1_totalInfo = new RepoItemInfo(this, "N1_Total", ".//div[#'layout']//form[@action='http://grid-tools-downloads.com/Will/TMF/payment_details.php']/h2[@innertext~'Total:']", 30000, null, "3c8976ae-674c-48a4-9015-9f4d6209113d");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c5ae84af-8335-4715-a6c8-388f4b6570b9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_SHIPPINGSPECIFICATION item.
+            /// </summary>
+            [RepositoryItem("41df306c-2245-4460-8f94-30002dd36aa6")]
+            public virtual Ranorex.H1Tag Header_SHIPPINGSPECIFICATION
+            {
+                get
+                {
+                    return _header_shippingspecificationInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_SHIPPINGSPECIFICATION item info.
+            /// </summary>
+            [RepositoryItemInfo("41df306c-2245-4460-8f94-30002dd36aa6")]
+            public virtual RepoItemInfo Header_SHIPPINGSPECIFICATIONInfo
+            {
+                get
+                {
+                    return _header_shippingspecificationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button_Continue item.
+            /// </summary>
+            [RepositoryItem("66db7a95-17ee-41e1-9849-63e017c26c96")]
+            public virtual Ranorex.ButtonTag Button_Continue
+            {
+                get
+                {
+                    return _button_continueInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button_Continue item info.
+            /// </summary>
+            [RepositoryItemInfo("66db7a95-17ee-41e1-9849-63e017c26c96")]
+            public virtual RepoItemInfo Button_ContinueInfo
+            {
+                get
+                {
+                    return _button_continueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_Total item.
+            /// </summary>
+            [RepositoryItem("3c8976ae-674c-48a4-9015-9f4d6209113d")]
+            public virtual Ranorex.H2Tag N1_Total
+            {
+                get
+                {
+                    return _n1_totalInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_Total item info.
+            /// </summary>
+            [RepositoryItemInfo("3c8976ae-674c-48a4-9015-9f4d6209113d")]
+            public virtual RepoItemInfo N1_TotalInfo
+            {
+                get
+                {
+                    return _n1_totalInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Page4_Payment_DetailsFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("76c6e193-9436-485f-b5f5-03998fe10c8d")]
+        public partial class Page4_Payment_DetailsFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _n1_cardtypeInfo;
+            RepoItemInfo _n2_cardnoInfo;
+            RepoItemInfo _n1_paymentcardtypeerrorInfo;
+            RepoItemInfo _n2_cardnoerrorInfo;
+            RepoItemInfo _n3_totalamountInfo;
+            RepoItemInfo _button_completepurchaseInfo;
+            RepoItemInfo _header_paymentdetailsInfo;
+
+            /// <summary>
+            /// Creates a new Page4_Payment_Details  folder.
+            /// </summary>
+            public Page4_Payment_DetailsFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page4_Payment_Details", "", parentFolder, 0, null, false, "76c6e193-9436-485f-b5f5-03998fe10c8d", "")
+            {
+                _n1_cardtypeInfo = new RepoItemInfo(this, "N1_CardType", ".//select[#'cardType']", 30000, null, "85effc6d-cf2d-4b97-adbf-4d13318f514e");
+                _n2_cardnoInfo = new RepoItemInfo(this, "N2_CardNo", ".//input[#'cardNo']", 30000, null, "f1ebe3a5-dd0a-4ce0-9291-25c0d72f1b19");
+                _n1_paymentcardtypeerrorInfo = new RepoItemInfo(this, "N1_PaymentCardTypeError", ".//span[#'payment_CardTypeError']", 30000, null, "ad7b56be-b0e5-40d7-8ae8-3f156437de3d");
+                _n2_cardnoerrorInfo = new RepoItemInfo(this, "N2_CardNoError", ".//span[#'cardNo_Error']", 30000, null, "2af4689f-f4d9-4c71-9601-82eaebd00458");
+                _n3_totalamountInfo = new RepoItemInfo(this, "N3_TotalAmount", ".//div[#'layout']//form[@name='MasterForm']/fieldset/?/?/b[@innertext='Total Amount : £ ']", 30000, null, "6b4f55c2-eb50-40d7-bbc6-4b7684d520d7");
+                _button_completepurchaseInfo = new RepoItemInfo(this, "Button_CompletePurchase", ".//div[#'layout']//form[@name='MasterForm']/?/?/button[@innertext='Complete Purchase']", 30000, null, "d26e07d7-33ac-4a69-b340-b4e844c468e9");
+                _header_paymentdetailsInfo = new RepoItemInfo(this, "Header_PAYMENTDETAILS", ".//div[#'layout']/?/?/h1[@innertext='Payment Details']", 30000, null, "02202c0b-5ec9-48e5-a04b-7a06c10cfbf9");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("76c6e193-9436-485f-b5f5-03998fe10c8d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_CardType item.
+            /// </summary>
+            [RepositoryItem("85effc6d-cf2d-4b97-adbf-4d13318f514e")]
+            public virtual Ranorex.SelectTag N1_CardType
+            {
+                get
+                {
+                    return _n1_cardtypeInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_CardType item info.
+            /// </summary>
+            [RepositoryItemInfo("85effc6d-cf2d-4b97-adbf-4d13318f514e")]
+            public virtual RepoItemInfo N1_CardTypeInfo
+            {
+                get
+                {
+                    return _n1_cardtypeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N2_CardNo item.
+            /// </summary>
+            [RepositoryItem("f1ebe3a5-dd0a-4ce0-9291-25c0d72f1b19")]
+            public virtual Ranorex.InputTag N2_CardNo
+            {
+                get
+                {
+                    return _n2_cardnoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N2_CardNo item info.
+            /// </summary>
+            [RepositoryItemInfo("f1ebe3a5-dd0a-4ce0-9291-25c0d72f1b19")]
+            public virtual RepoItemInfo N2_CardNoInfo
+            {
+                get
+                {
+                    return _n2_cardnoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_PaymentCardTypeError item.
+            /// </summary>
+            [RepositoryItem("ad7b56be-b0e5-40d7-8ae8-3f156437de3d")]
+            public virtual Ranorex.SpanTag N1_PaymentCardTypeError
+            {
+                get
+                {
+                    return _n1_paymentcardtypeerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_PaymentCardTypeError item info.
+            /// </summary>
+            [RepositoryItemInfo("ad7b56be-b0e5-40d7-8ae8-3f156437de3d")]
+            public virtual RepoItemInfo N1_PaymentCardTypeErrorInfo
+            {
+                get
+                {
+                    return _n1_paymentcardtypeerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N2_CardNoError item.
+            /// </summary>
+            [RepositoryItem("2af4689f-f4d9-4c71-9601-82eaebd00458")]
+            public virtual Ranorex.SpanTag N2_CardNoError
+            {
+                get
+                {
+                    return _n2_cardnoerrorInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N2_CardNoError item info.
+            /// </summary>
+            [RepositoryItemInfo("2af4689f-f4d9-4c71-9601-82eaebd00458")]
+            public virtual RepoItemInfo N2_CardNoErrorInfo
+            {
+                get
+                {
+                    return _n2_cardnoerrorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N3_TotalAmount item.
+            /// </summary>
+            [RepositoryItem("6b4f55c2-eb50-40d7-bbc6-4b7684d520d7")]
+            public virtual Ranorex.BTag N3_TotalAmount
+            {
+                get
+                {
+                    return _n3_totalamountInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N3_TotalAmount item info.
+            /// </summary>
+            [RepositoryItemInfo("6b4f55c2-eb50-40d7-bbc6-4b7684d520d7")]
+            public virtual RepoItemInfo N3_TotalAmountInfo
+            {
+                get
+                {
+                    return _n3_totalamountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button_CompletePurchase item.
+            /// </summary>
+            [RepositoryItem("d26e07d7-33ac-4a69-b340-b4e844c468e9")]
+            public virtual Ranorex.ButtonTag Button_CompletePurchase
+            {
+                get
+                {
+                    return _button_completepurchaseInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button_CompletePurchase item info.
+            /// </summary>
+            [RepositoryItemInfo("d26e07d7-33ac-4a69-b340-b4e844c468e9")]
+            public virtual RepoItemInfo Button_CompletePurchaseInfo
+            {
+                get
+                {
+                    return _button_completepurchaseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_PAYMENTDETAILS item.
+            /// </summary>
+            [RepositoryItem("02202c0b-5ec9-48e5-a04b-7a06c10cfbf9")]
+            public virtual Ranorex.H1Tag Header_PAYMENTDETAILS
+            {
+                get
+                {
+                    return _header_paymentdetailsInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_PAYMENTDETAILS item info.
+            /// </summary>
+            [RepositoryItemInfo("02202c0b-5ec9-48e5-a04b-7a06c10cfbf9")]
+            public virtual RepoItemInfo Header_PAYMENTDETAILSInfo
+            {
+                get
+                {
+                    return _header_paymentdetailsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Page5_Order_FinalisedFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("c62f9283-8e02-44d4-8129-6e463335abdc")]
+        public partial class Page5_Order_FinalisedFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _header_orderfinalisedInfo;
+            RepoItemInfo _n1_estimateddeliverytimeInfo;
+            RepoItemInfo _n2_totalcostInfo;
+            RepoItemInfo _n3_deliveryaddressInfo;
+
+            /// <summary>
+            /// Creates a new Page5_Order_Finalised  folder.
+            /// </summary>
+            public Page5_Order_FinalisedFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page5_Order_Finalised", "", parentFolder, 0, null, false, "c62f9283-8e02-44d4-8129-6e463335abdc", "")
+            {
+                _header_orderfinalisedInfo = new RepoItemInfo(this, "Header_ORDERFINALISED", ".//div[#'layout']/?/?/h1[@innertext='Order Finalised']", 30000, null, "7a305f21-a56a-47ee-bad7-ff825efeaced");
+                _n1_estimateddeliverytimeInfo = new RepoItemInfo(this, "N1_EstimatedDeliveryTime", ".//div[#'layout']//b[@innertext~'^Estimated\\ delivery\\ time\\ -']", 30000, null, "4e7b86b3-b8d7-4ded-9b21-d9e96b979c32");
+                _n2_totalcostInfo = new RepoItemInfo(this, "N2_TotalCost", ".//div[#'layout']//b[@innertext~'Total cost:']", 30000, null, "fcd11048-1bfa-4c2a-9f93-b325c468f652");
+                _n3_deliveryaddressInfo = new RepoItemInfo(this, "N3_DeliveryAddress", ".//div[#'layout']//b[@innertext~'^Delivery\\ Address:']", 30000, null, "ab74d865-95f9-4942-be24-081004a94d3c");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c62f9283-8e02-44d4-8129-6e463335abdc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_ORDERFINALISED item.
+            /// </summary>
+            [RepositoryItem("7a305f21-a56a-47ee-bad7-ff825efeaced")]
+            public virtual Ranorex.H1Tag Header_ORDERFINALISED
+            {
+                get
+                {
+                    return _header_orderfinalisedInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_ORDERFINALISED item info.
+            /// </summary>
+            [RepositoryItemInfo("7a305f21-a56a-47ee-bad7-ff825efeaced")]
+            public virtual RepoItemInfo Header_ORDERFINALISEDInfo
+            {
+                get
+                {
+                    return _header_orderfinalisedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N1_EstimatedDeliveryTime item.
+            /// </summary>
+            [RepositoryItem("4e7b86b3-b8d7-4ded-9b21-d9e96b979c32")]
+            public virtual Ranorex.BTag N1_EstimatedDeliveryTime
+            {
+                get
+                {
+                    return _n1_estimateddeliverytimeInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N1_EstimatedDeliveryTime item info.
+            /// </summary>
+            [RepositoryItemInfo("4e7b86b3-b8d7-4ded-9b21-d9e96b979c32")]
+            public virtual RepoItemInfo N1_EstimatedDeliveryTimeInfo
+            {
+                get
+                {
+                    return _n1_estimateddeliverytimeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N2_TotalCost item.
+            /// </summary>
+            [RepositoryItem("fcd11048-1bfa-4c2a-9f93-b325c468f652")]
+            public virtual Ranorex.BTag N2_TotalCost
+            {
+                get
+                {
+                    return _n2_totalcostInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N2_TotalCost item info.
+            /// </summary>
+            [RepositoryItemInfo("fcd11048-1bfa-4c2a-9f93-b325c468f652")]
+            public virtual RepoItemInfo N2_TotalCostInfo
+            {
+                get
+                {
+                    return _n2_totalcostInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N3_DeliveryAddress item.
+            /// </summary>
+            [RepositoryItem("ab74d865-95f9-4942-be24-081004a94d3c")]
+            public virtual Ranorex.BTag N3_DeliveryAddress
+            {
+                get
+                {
+                    return _n3_deliveryaddressInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N3_DeliveryAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("ab74d865-95f9-4942-be24-081004a94d3c")]
+            public virtual RepoItemInfo N3_DeliveryAddressInfo
+            {
+                get
+                {
+                    return _n3_deliveryaddressInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Page_AboutPageFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("8090b791-4bff-48b5-9872-a8052ef30836")]
+        public partial class Page_AboutPageFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _header_aboutInfo;
+
+            /// <summary>
+            /// Creates a new Page_AboutPage  folder.
+            /// </summary>
+            public Page_AboutPageFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Page_AboutPage", "", parentFolder, 0, null, false, "8090b791-4bff-48b5-9872-a8052ef30836", "")
+            {
+                _header_aboutInfo = new RepoItemInfo(this, "Header_ABOUT", ".//div[#'layout']/?/?/h1[@innertext='Game Rules']", 30000, null, "da49ca8a-d0f1-434e-9f98-6e17619e3bc0");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8090b791-4bff-48b5-9872-a8052ef30836")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Header_ABOUT item.
+            /// </summary>
+            [RepositoryItem("da49ca8a-d0f1-434e-9f98-6e17619e3bc0")]
+            public virtual Ranorex.H1Tag Header_ABOUT
+            {
+                get
+                {
+                    return _header_aboutInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Header_ABOUT item info.
+            /// </summary>
+            [RepositoryItemInfo("da49ca8a-d0f1-434e-9f98-6e17619e3bc0")]
+            public virtual RepoItemInfo Header_ABOUTInfo
+            {
+                get
+                {
+                    return _header_aboutInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NavigationFolder folder.
+        /// </summary>
+        [RepositoryFolder("601af354-6e49-4a71-bf69-a31122441407")]
+        public partial class NavigationFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _webstore_headerInfo;
+            RepoItemInfo _webstore_sloganInfo;
+            RepoItemInfo _homeInfo;
+            RepoItemInfo _aboutInfo;
+
+            /// <summary>
+            /// Creates a new Navigation  folder.
+            /// </summary>
+            public NavigationFolder(RepoGenBaseFolder parentFolder) :
+                    base("Navigation", "", parentFolder, 0, null, false, "601af354-6e49-4a71-bf69-a31122441407", "")
+            {
+                _webstore_headerInfo = new RepoItemInfo(this, "Webstore_Header", ".//div[#'layout']//h1[@innertext='CA WebStore']", 30000, null, "a59a390a-a6c9-4f68-a9d1-5aab6c923013");
+                _webstore_sloganInfo = new RepoItemInfo(this, "Webstore_Slogan", ".//div[#'layout']//h2[@innertext~'^For\\ all\\ your\\ everyday\\ nee']", 30000, null, "32e1a13c-dbbf-4884-9ab6-783f68a40819");
+                _homeInfo = new RepoItemInfo(this, "Home", ".//div[#'layout']//nav/ul/?/?/a[@innertext='Home']", 30000, null, "c72e500d-6698-4eab-9cb4-bcebf76ba962");
+                _aboutInfo = new RepoItemInfo(this, "About", ".//div[#'layout']//nav/ul/?/?/a[@innertext='About']", 30000, null, "ded82793-7603-41bf-8cdb-5dfd8df51328");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("601af354-6e49-4a71-bf69-a31122441407")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Webstore_Header item.
+            /// </summary>
+            [RepositoryItem("a59a390a-a6c9-4f68-a9d1-5aab6c923013")]
+            public virtual Ranorex.H1Tag Webstore_Header
+            {
+                get
+                {
+                    return _webstore_headerInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Webstore_Header item info.
+            /// </summary>
+            [RepositoryItemInfo("a59a390a-a6c9-4f68-a9d1-5aab6c923013")]
+            public virtual RepoItemInfo Webstore_HeaderInfo
+            {
+                get
+                {
+                    return _webstore_headerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Webstore_Slogan item.
+            /// </summary>
+            [RepositoryItem("32e1a13c-dbbf-4884-9ab6-783f68a40819")]
+            public virtual Ranorex.H2Tag Webstore_Slogan
+            {
+                get
+                {
+                    return _webstore_sloganInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Webstore_Slogan item info.
+            /// </summary>
+            [RepositoryItemInfo("32e1a13c-dbbf-4884-9ab6-783f68a40819")]
+            public virtual RepoItemInfo Webstore_SloganInfo
+            {
+                get
+                {
+                    return _webstore_sloganInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Home item.
+            /// </summary>
+            [RepositoryItem("c72e500d-6698-4eab-9cb4-bcebf76ba962")]
+            public virtual Ranorex.ATag Home
+            {
+                get
+                {
+                    return _homeInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Home item info.
+            /// </summary>
+            [RepositoryItemInfo("c72e500d-6698-4eab-9cb4-bcebf76ba962")]
+            public virtual RepoItemInfo HomeInfo
+            {
+                get
+                {
+                    return _homeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The About item.
+            /// </summary>
+            [RepositoryItem("ded82793-7603-41bf-8cdb-5dfd8df51328")]
+            public virtual Ranorex.ATag About
+            {
+                get
+                {
+                    return _aboutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The About item info.
+            /// </summary>
+            [RepositoryItemInfo("ded82793-7603-41bf-8cdb-5dfd8df51328")]
+            public virtual RepoItemInfo AboutInfo
+            {
+                get
+                {
+                    return _aboutInfo;
                 }
             }
         }
