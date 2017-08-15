@@ -34,6 +34,7 @@ namespace WEBSTORE
             
             
             Validate.Attribute(repo.WEBSTORE.Page1_Product_Catalog.Header_PRODUCTCATALOGInfo, "InnerText", "Product Catalog");
+                        Validate.Attribute(repo.WEBSTORE.Page3_Shipping_Specification.N1_Total "InnerText", "Total: £855.00 ");
         }
 
     }
