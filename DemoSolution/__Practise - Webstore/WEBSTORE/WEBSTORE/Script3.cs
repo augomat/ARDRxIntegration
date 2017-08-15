@@ -25,7 +25,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script3.
     /// </summary>
-    [TestModule("a45c91e2-820d-4cdd-8e8a-2cf272803abb", ModuleType.UserCode, 1)]
+    [TestModule("9d0cc219-7344-4713-88a0-c20622d5a3f9", ModuleType.UserCode, 1)]
     public class Script3 : ITestModule
     {
         /// <summary>
@@ -64,22 +64,15 @@ TestReport.EndTestModule();
 // Begin Block
 TestReport.BeginTestModule("Script3 : Test Cases 3 - Confirm page has loaded");
 Report.Info("Started Executing Script3 : Confirm page has loaded");
-Validate.Attribute(repo.MozillaFirefox.HttpGridToolsDownloadsComWillTMF.PRODUCTCATALOGInfo, "AccessibleName", "PRODUCT CATALOG");
+Validate.Attribute(repo.MozillaFirefox.WebStore.Page1_Product_Catalog.Header_PRODUCTCATALOGInfo, "AccessibleName", "PRODUCT CATALOG");
 Report.Info("Finished Executing Script3 : Confirm page has loaded");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
 TestReport.BeginTestModule("Script3 : Test Cases 3 - Click Order Product");
 Report.Info("Started Executing Script3 : Click Order Product");
-repo.MozillaFirefox.HttpGridToolsDownloadsComWillTMF1.OrderProduct.Click();
+repo.MozillaFirefox.WebStore.Page1_Product_Catalog.Button_OrderProduct.Click();
 Report.Info("Finished Executing Script3 : Click Order Product");
-TestReport.EndTestModule();
-// End Block
-// Begin Block
-TestReport.BeginTestModule("Script3 : Test Cases 3 - Confirm page has loaded");
-Report.Info("Started Executing Script3 : Confirm page has loaded");
-Validate.Attribute(Info, "AccessibleName", "DELIVERY LOCATION");
-Report.Info("Finished Executing Script3 : Confirm page has loaded");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
@@ -89,36 +82,15 @@ Report.Info("Finished Executing Script3 : Click Save Shipping");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script3 : Test Cases 3 - Confirm page has loaded");
-Report.Info("Started Executing Script3 : Confirm page has loaded");
-Validate.Attribute(Info, "AccessibleName", "SHIPPING SPECIFICATION");
-Report.Info("Finished Executing Script3 : Confirm page has loaded");
-TestReport.EndTestModule();
-// End Block
-// Begin Block
 TestReport.BeginTestModule("Script3 : Test Cases 3 - Click Continue");
 Report.Info("Started Executing Script3 : Click Continue");
 Report.Info("Finished Executing Script3 : Click Continue");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script3 : Test Cases 3 - Confirm page has loaded");
-Report.Info("Started Executing Script3 : Confirm page has loaded");
-Validate.Attribute(Info, "AccessibleName", "PAYMENT DETAILS");
-Report.Info("Finished Executing Script3 : Confirm page has loaded");
-TestReport.EndTestModule();
-// End Block
-// Begin Block
 TestReport.BeginTestModule("Script3 : Test Cases 3 - Click Complete Purchase");
 Report.Info("Started Executing Script3 : Click Complete Purchase");
 Report.Info("Finished Executing Script3 : Click Complete Purchase");
-TestReport.EndTestModule();
-// End Block
-// Begin Block
-TestReport.BeginTestModule("Script3 : Test Cases 3 - Confirm page has loaded");
-Report.Info("Started Executing Script3 : Confirm page has loaded");
-Validate.Attribute(Info, "AccessibleName", "ORDER FINALISED");
-Report.Info("Finished Executing Script3 : Confirm page has loaded");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
