@@ -25,7 +25,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script10.
     /// </summary>
-    [TestModule("60ca9030-17e9-41ef-960d-9fe7a51f6036", ModuleType.UserCode, 1)]
+    [TestModule("3be4f269-89ee-41e3-a427-cc7148e8afab", ModuleType.UserCode, 1)]
     public class Script10 : ITestModule
     {
         /// <summary>
@@ -101,7 +101,6 @@ TestReport.EndTestModule();
 // End Block
 
 		// End Test Case
-		TestReport.EndTestModule();
         	}
         	catch (Exception) {
         		TestReport.EndTestModule();

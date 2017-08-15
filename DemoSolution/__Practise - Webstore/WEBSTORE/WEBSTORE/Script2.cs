@@ -25,7 +25,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script2.
     /// </summary>
-    [TestModule("702ae3af-6b3e-442b-a46c-7aa9c94f1294", ModuleType.UserCode, 1)]
+    [TestModule("ff7c33e8-8ea9-4135-9c45-965a54b3e0b3", ModuleType.UserCode, 1)]
     public class Script2 : ITestModule
     {
         /// <summary>
@@ -101,7 +101,6 @@ TestReport.EndTestModule();
 // End Block
 
 		// End Test Case
-		TestReport.EndTestModule();
         	}
         	catch (Exception) {
         		TestReport.EndTestModule();
