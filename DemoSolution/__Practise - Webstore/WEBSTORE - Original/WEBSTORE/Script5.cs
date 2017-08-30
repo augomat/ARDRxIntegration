@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script5.
     /// </summary>
-    [TestModule("0f6c2e76-22f2-44fb-a007-457337693fe6", ModuleType.UserCode, 1)]
+    [TestModule("b0a5938c-eb55-4e4f-82f3-113829f2beb9", ModuleType.UserCode, 1)]
     public class Script5 : ITestModule
     {
         /// <summary>

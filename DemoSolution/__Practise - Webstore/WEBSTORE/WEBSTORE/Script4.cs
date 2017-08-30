@@ -54,7 +54,7 @@ TestReport.BeginTestModule("Script4 : Test Cases 4 - Open Browser");
 Report.Info("Started Executing Script4 : Open Browser");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "NA_NA_NA_NA_4d55f2ee46e5457bb84f042bd154594d,Open Browser,Pass,'''','','','','',''," + Environment.NewLine);
-            Host.Current.OpenBrowser("http://grid-tools-downloads.com/Will/TMF/index.php", "firefox", "", true, true, true, true, true);
+            Host.Current.OpenBrowser("http://grid-tools-downloads.com/Will/TMF/index.php", "chrome", "", true, true, true, true, true);
             Report.Info("Finished Executing Script4 : Open Browser");
 TestReport.EndTestModule();
 // End Block

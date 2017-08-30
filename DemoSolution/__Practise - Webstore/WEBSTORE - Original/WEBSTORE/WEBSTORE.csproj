@@ -80,13 +80,40 @@
       <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
     <Compile Include="Script1.cs">
-      <id>a138b929-d725-4ee5-9231-23fa29519692</id>
+      <id>a56be143-5099-47bf-acd3-e74bfc858925</id>
+    </Compile>
+    <Compile Include="Script2.cs">
+      <id>cbc1a0c9-25cf-4e03-ba86-5be433567014</id>
+    </Compile>
+    <Compile Include="Script3.cs">
+      <id>4e287f7b-abc7-4896-9626-46ada01c2137</id>
+    </Compile>
+    <Compile Include="Script4.cs">
+      <id>ae7a3082-e691-44b8-a4c0-b5611861324f</id>
+    </Compile>
+    <Compile Include="Script5.cs">
+      <id>b0a5938c-eb55-4e4f-82f3-113829f2beb9</id>
+    </Compile>
+    <Compile Include="Script6.cs">
+      <id>7e1675ae-f4d0-4360-adce-078bf3d312b4</id>
+    </Compile>
+    <Compile Include="Script7.cs">
+      <id>396562b4-c1b9-4987-a83d-b5158d69fd6d</id>
+    </Compile>
+    <Compile Include="Script8.cs">
+      <id>1887f03c-3e31-427a-ac88-3d17d822377c</id>
+    </Compile>
+    <Compile Include="Script9.cs">
+      <id>27e75328-1e3a-41d3-833c-8239c4cba793</id>
+    </Compile>
+    <Compile Include="Script10.cs">
+      <id>a62535bb-9395-4a5a-a85b-1fb28c28d632</id>
     </Compile>
     <Compile Include="WEBSTORERepository.cs">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
       <DependentUpon>WEBSTORERepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>17cf12af-40ff-46a3-9095-0cd1cffc3b8a</id>
+      <id>28c46052-3047-4043-8047-40bdbe309792</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>

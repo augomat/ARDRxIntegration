@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script3.
     /// </summary>
-    [TestModule("f289a9db-ef0c-4e43-8f2c-f2daf43bbced", ModuleType.UserCode, 1)]
+    [TestModule("4e287f7b-abc7-4896-9626-46ada01c2137", ModuleType.UserCode, 1)]
     public class Script3 : ITestModule
     {
         /// <summary>
