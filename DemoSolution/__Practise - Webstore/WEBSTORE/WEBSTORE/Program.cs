@@ -41,6 +41,9 @@ namespace WEBSTORE
 	Delay.SpeedFactor = 0;
 	// ---------------------------------------------------------------------------
             
+	
+	System.IO.File.Delete(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv");
+	
 	TestReport.BeginTestSuite("WEBSTORE");
            	
 	TestReport.BeginSmartFolderContainer("FLOWCHART", "Flowchart");

@@ -80,40 +80,40 @@
       <id>c5ba56be-ae91-4807-85b2-f939f418bef9</id>
     </Compile>
     <Compile Include="Script1.cs">
-      <id>f8df7079-6999-4259-8381-5948bc278b59</id>
+      <id>eaaba5d5-d10c-47f1-9b27-a128dfd4fd4e</id>
     </Compile>
     <Compile Include="Script2.cs">
-      <id>6911ec46-714e-4ab5-93a7-e9ef2b6bba17</id>
+      <id>cce3c739-8cf5-4f52-8830-94151d39312a</id>
     </Compile>
     <Compile Include="Script3.cs">
-      <id>f289a9db-ef0c-4e43-8f2c-f2daf43bbced</id>
+      <id>5ae73b14-690d-4c79-881c-39ac23bd2570</id>
     </Compile>
     <Compile Include="Script4.cs">
-      <id>94d35f61-0b28-4991-ba6d-c5d689aa4600</id>
+      <id>63758365-a6cc-409d-ba0b-8fb4ae5e3177</id>
     </Compile>
     <Compile Include="Script5.cs">
-      <id>0f6c2e76-22f2-44fb-a007-457337693fe6</id>
+      <id>59b2d276-7e55-41e4-a24f-ea0704049c8e</id>
     </Compile>
     <Compile Include="Script6.cs">
-      <id>f4800db5-f7f6-430c-b742-be8ab7df31b4</id>
+      <id>cc839700-e81a-4ac4-b13c-82d369e60df1</id>
     </Compile>
     <Compile Include="Script7.cs">
-      <id>8a36c91f-d5b6-4994-8347-196decb7b1cf</id>
+      <id>59369c27-303b-4da8-b2a7-f032a1e47340</id>
     </Compile>
     <Compile Include="Script8.cs">
-      <id>b98e00d5-8fb6-46df-8090-4065a19a5686</id>
+      <id>de7ed694-0ca5-4fef-a03a-4176868f87aa</id>
     </Compile>
     <Compile Include="Script9.cs">
-      <id>29e29768-b8bb-4181-87ed-788b2954b29c</id>
+      <id>5f09d957-14d4-4034-928a-3c86dce198fb</id>
     </Compile>
     <Compile Include="Script10.cs">
-      <id>4c3fada0-1be9-4356-a61e-5be4f82a7d8f</id>
+      <id>64dfabee-2ec3-4a0c-803b-98ab9155e725</id>
     </Compile>
     <Compile Include="WEBSTORERepository.cs">
       <BoundTo>b00ccb8e-467d-4524-9320-e11af4ab42a7</BoundTo>
       <DependentUpon>WEBSTORERepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>24aa4772-564b-4f49-8fcc-526c40458b43</id>
+      <id>d4b0c8d4-d31b-4eec-97fb-611ef96864aa</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
