@@ -1,0 +1,16 @@
+Name,Description,Default Value
+BrowserImageCol,From Automation Layer: Default,Browsers
+BrowserURL,From Automation Layer: Default,
+Classname,From Automation Layer: Ranorex - Program Script,Script~ROWNUM~
+KeyboardImageCol,From Automation Layer: Default,Keyboard
+N1_CardType,,
+N2_CardNumber,,1111222233334444
+ObjectRepositoryGUID,,@guid()@
+PageName,,Payment Details
+PageNextImage,,btn_CompletePurchase
+Pathname,From Automation Layer: Ranorex - Program Script,ARD_^Classname^
+ProjectName,,ExampleProject
+RefreshButtonImageCol,From Automation Layer: Default,Refresh
+ResultOutputPath,From Automation Layer: Ranorex - Program Script,
+Set Card Type,,
+TestCaseGUID,,@guid()@

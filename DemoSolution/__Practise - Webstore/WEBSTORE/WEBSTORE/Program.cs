@@ -21,6 +21,7 @@ using Ranorex.Core.Testing;
 
 using System.Reflection;
 
+
 namespace WEBSTORE
 {
     class Program
@@ -43,6 +44,8 @@ namespace WEBSTORE
             
 	
 	System.IO.File.Delete(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv");
+	
+	string currentDT = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz");
 	
 	TestReport.BeginTestSuite("WEBSTORE");
            	
