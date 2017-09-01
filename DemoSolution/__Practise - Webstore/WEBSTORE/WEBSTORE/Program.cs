@@ -21,7 +21,6 @@ using Ranorex.Core.Testing;
 
 using System.Reflection;
 
-
 namespace WEBSTORE
 {
     class Program
@@ -41,11 +40,9 @@ namespace WEBSTORE
 	Keyboard.DefaultKeyPressTime = 20;
 	Delay.SpeedFactor = 0;
 	// ---------------------------------------------------------------------------
-            
-	
+            	
 	System.IO.File.Delete(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv");
-	
-	string currentDT = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz");
+	System.IO.File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "TestCaseName,StepName,TestStatus,RunDetails,RunDate" + Environment.NewLine);
 	
 	TestReport.BeginTestSuite("WEBSTORE");
            	
