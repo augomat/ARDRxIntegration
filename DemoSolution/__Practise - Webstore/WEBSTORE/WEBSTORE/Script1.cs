@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script1.
     /// </summary>
-    [TestModule("a316150a-1d0c-42d6-a602-0a4f77ebb7dc", ModuleType.UserCode, 1)]
+    [TestModule("4e0a625a-83ef-4d7c-ab90-559227d3d1a9", ModuleType.UserCode, 1)]
     public class Script1 : ITestModule
     {
         /// <summary>
@@ -100,6 +100,7 @@ Report.Info("Started Executing Script1 : Enter Email Address");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Email Address,Passed,Automation Step: 5," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N1_Email.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N1_Email.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
 repo.WEBSTORE.Page2_Delivery_Location.N1_Email.PressKeys("william.guastalla@ca.com");
 Report.Info("Finished Executing Script1 : Enter Email Address");
 TestReport.EndTestModule();
@@ -108,26 +109,24 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Confirmed Email Address");
 Report.Info("Started Executing Script1 : Enter Confirmed Email Address");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Confirmed Email Address,Passed,Automation Step: 7," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmail.PressKeys("william.guastalla@ca.com");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Confirmed Email Address,Passed,Automation Step: 8," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmail.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmail.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
+repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmail.PressKeys("other.email@ca.com");
 Report.Info("Finished Executing Script1 : Enter Confirmed Email Address");
 TestReport.EndTestModule();
 // End Block
-// Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Name");
-Report.Info("Started Executing Script1 : Enter Name");
-// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Name,Passed,Automation Step: 8," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N3_Name.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N3_Name.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
 repo.WEBSTORE.Page2_Delivery_Location.N3_Name.PressKeys("William Guastalla");
-Report.Info("Finished Executing Script1 : Enter Name");
-TestReport.EndTestModule();
-// End Block
 // Begin Block
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Address Line 1");
 Report.Info("Started Executing Script1 : Enter Address Line 1");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Address Line 1,Passed,Automation Step: 9," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page2_Delivery_Location.N4_AddressLine1.PressKeys("10 Oasis Business Park Stanton Harcourt");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Address Line 1,Passed,Automation Step: 14," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N4_AddressLine1.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N4_AddressLine1.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
+repo.WEBSTORE.Page2_Delivery_Location.N4_AddressLine1.PressKeys("43a,34,23");
 Report.Info("Finished Executing Script1 : Enter Address Line 1");
 TestReport.EndTestModule();
 // End Block
@@ -135,8 +134,10 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Address Line 2");
 Report.Info("Started Executing Script1 : Enter Address Line 2");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Address Line 2,Passed,Automation Step: 10," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page2_Delivery_Location.N5_AddressLine2.PressKeys("Eynsham Oxford");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Address Line 2,Passed,Automation Step: 17," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N5_AddressLine2.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N5_AddressLine2.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
+repo.WEBSTORE.Page2_Delivery_Location.N5_AddressLine2.PressKeys("");
 Report.Info("Finished Executing Script1 : Enter Address Line 2");
 TestReport.EndTestModule();
 // End Block
@@ -144,7 +145,9 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter County");
 Report.Info("Started Executing Script1 : Enter County");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter County,Passed,Automation Step: 11," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter County,Passed,Automation Step: 20," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N6_County.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N6_County.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
 repo.WEBSTORE.Page2_Delivery_Location.N6_County.PressKeys("Oxfordshire");
 Report.Info("Finished Executing Script1 : Enter County");
 TestReport.EndTestModule();
@@ -153,8 +156,10 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Post Code");
 Report.Info("Started Executing Script1 : Enter Post Code");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Post Code,Passed,Automation Step: 12," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page2_Delivery_Location.N7_PostCode.PressKeys("OX294TP");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Post Code,Passed,Automation Step: 23," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+repo.WEBSTORE.Page2_Delivery_Location.N7_PostCode.Click();
+repo.WEBSTORE.Page2_Delivery_Location.N7_PostCode.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
+repo.WEBSTORE.Page2_Delivery_Location.N7_PostCode.PressKeys("M242912");
 Report.Info("Finished Executing Script1 : Enter Post Code");
 TestReport.EndTestModule();
 // End Block
@@ -162,7 +167,7 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Country");
 Report.Info("Started Executing Script1 : Enter Country");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Country,Passed,Automation Step: 13," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Country,Passed,Automation Step: 26," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.N8_Country.Element.SetAttributeValue("TagValue", "England");
 Report.Info("Finished Executing Script1 : Enter Country");
 TestReport.EndTestModule();
@@ -171,79 +176,88 @@ TestReport.EndTestModule();
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Click Save Shipping");
 Report.Info("Started Executing Script1 : Click Save Shipping");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Save Shipping,Passed,Automation Step: 14," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Save Shipping,Passed,Automation Step: 27," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
 repo.WEBSTORE.Page2_Delivery_Location.Button_SaveShipping.Click();
 Report.Info("Finished Executing Script1 : Click Save Shipping");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Confirm Shipping Specification page has loaded");
-Report.Info("Started Executing Script1 : Confirm Shipping Specification page has loaded");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Email Address");
+Report.Info("Started Executing Script1 : Check Email Address");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Confirm Shipping Specification page has loaded,Passed,Automation Step: 15," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page3_Shipping_Specification.Header_SHIPPINGSPECIFICATIONInfo, "InnerText", "Shipping Specification");
-Report.Info("Finished Executing Script1 : Confirm Shipping Specification page has loaded");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Email Address,Passed,Automation Step: 28," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N1_EmailErrorInfo, "InnerText", "");
+Report.Info("Finished Executing Script1 : Check Email Address");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Click Continue");
-Report.Info("Started Executing Script1 : Click Continue");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Confirmed Email Address");
+Report.Info("Started Executing Script1 : Check Confirmed Email Address");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Continue,Passed,Automation Step: 16," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page3_Shipping_Specification.Button_Continue.Click();
-Report.Info("Finished Executing Script1 : Click Continue");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Confirmed Email Address,Passed,Automation Step: 29," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N2_ConfirmEmailErrorInfo, "InnerText", "The Confirm Email field must match the Email field");
+Report.Info("Finished Executing Script1 : Check Confirmed Email Address");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Confirm Payment Details page has loaded");
-Report.Info("Started Executing Script1 : Confirm Payment Details page has loaded");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Name");
+Report.Info("Started Executing Script1 : Check Name");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Confirm Payment Details page has loaded,Passed,Automation Step: 17," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page4_Payment_Details.Header_PAYMENTDETAILSInfo, "InnerText", "Payment Details");
-Report.Info("Finished Executing Script1 : Confirm Payment Details page has loaded");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Name,Passed,Automation Step: 30," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", "");
+Report.Info("Finished Executing Script1 : Check Name");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Card Type");
-Report.Info("Started Executing Script1 : Enter Card Type");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Address Line 1");
+Report.Info("Started Executing Script1 : Check Address Line 1");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Card Type,Passed,Automation Step: 18," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page4_Payment_Details.N1_CardType.Element.SetAttributeValue("TagValue", "MasterCard (£2.00 Charge)");
-Report.Info("Finished Executing Script1 : Enter Card Type");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Address Line 1,Passed,Automation Step: 31," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N4_Adr1ErrorInfo, "InnerText", " - The Address Line 1 field can only contain letters, numbers, and spaces");
+Report.Info("Finished Executing Script1 : Check Address Line 1");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Enter Card Number");
-Report.Info("Started Executing Script1 : Enter Card Number");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Address Line 2");
+Report.Info("Started Executing Script1 : Check Address Line 2");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Enter Card Number,Passed,Automation Step: 19," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page4_Payment_Details.N2_CardNo.PressKeys("1111222233334444");
-Report.Info("Finished Executing Script1 : Enter Card Number");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Address Line 2,Passed,Automation Step: 32," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "");
+Report.Info("Finished Executing Script1 : Check Address Line 2");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Click Complete Purchase");
-Report.Info("Started Executing Script1 : Click Complete Purchase");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check County");
+Report.Info("Started Executing Script1 : Check County");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Complete Purchase,Passed,Automation Step: 20," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-repo.WEBSTORE.Page4_Payment_Details.Button_CompletePurchase.Click();
-Report.Info("Finished Executing Script1 : Click Complete Purchase");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check County,Passed,Automation Step: 33," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N6_CountyErrorInfo, "InnerText", "");
+Report.Info("Finished Executing Script1 : Check County");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
-TestReport.BeginTestModule("Script1 : Test Cases 1 - Confirm Order Finalised page has loaded");
-Report.Info("Started Executing Script1 : Confirm Order Finalised page has loaded");
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Post Code");
+Report.Info("Started Executing Script1 : Check Post Code");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Confirm Order Finalised page has loaded,Passed,Automation Step: 21," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page5_Order_Finalised.Header_ORDERFINALISEDInfo, "InnerText", "Order Finalised");
-Report.Info("Finished Executing Script1 : Confirm Order Finalised page has loaded");
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Post Code,Passed,Automation Step: 34," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N7_PostCodeErrorInfo, "InnerText", "Please enter a valid UK postcode (OX294TP is a valid UK postcode)");
+Report.Info("Finished Executing Script1 : Check Post Code");
+TestReport.EndTestModule();
+// End Block
+// Begin Block
+TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Country");
+Report.Info("Started Executing Script1 : Check Country");
+// Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Country,Passed,Automation Step: 35," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "- The Country field cannot be empty");
+Report.Info("Finished Executing Script1 : Check Country");
 TestReport.EndTestModule();
 // End Block
 // Begin Block
 TestReport.BeginTestModule("Script1 : Test Cases 1 - Click Home");
 Report.Info("Started Executing Script1 : Click Home");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
-File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Home,Passed,Automation Step: 22," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
+File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Click Home,Passed,Automation Step: 36," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
 repo.WEBSTORE.Navigation.Home.Click();
 Report.Info("Finished Executing Script1 : Click Home");
 TestReport.EndTestModule();
