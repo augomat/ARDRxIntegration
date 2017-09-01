@@ -28,8 +28,6 @@ namespace WEBSTORE
     {
         static WEBSTORERepository instance = new WEBSTORERepository();
         WEBSTORERepositoryFolders.WEBSTOREAppFolder _webstore;
-        WEBSTORERepositoryFolders.GridToolsDownloadsComWillTMFIndexAppFolder _gridtoolsdownloadscomwilltmfindex;
-        WEBSTORERepositoryFolders.SourceTreeAppFolder _sourcetree;
 
         /// <summary>
         /// Gets the singleton class instance representing the WEBSTORERepository element repository.
@@ -47,8 +45,6 @@ namespace WEBSTORE
             : base("WEBSTORERepository", "/", null, 0, false, "065034de-eca3-4561-a3a1-b06d88c4e9a9", ".\\RepositoryImages\\WEBSTORERepository065034de.rximgres")
         {
             _webstore = new WEBSTORERepositoryFolders.WEBSTOREAppFolder(this);
-            _gridtoolsdownloadscomwilltmfindex = new WEBSTORERepositoryFolders.GridToolsDownloadsComWillTMFIndexAppFolder(this);
-            _sourcetree = new WEBSTORERepositoryFolders.SourceTreeAppFolder(this);
         }
 
 #region Variables
@@ -74,24 +70,6 @@ namespace WEBSTORE
         public virtual WEBSTORERepositoryFolders.WEBSTOREAppFolder WEBSTORE
         {
             get { return _webstore; }
-        }
-
-        /// <summary>
-        /// The GridToolsDownloadsComWillTMFIndex folder.
-        /// </summary>
-        [RepositoryFolder("8e48b1f8-7c79-4358-8ced-d26480f25837")]
-        public virtual WEBSTORERepositoryFolders.GridToolsDownloadsComWillTMFIndexAppFolder GridToolsDownloadsComWillTMFIndex
-        {
-            get { return _gridtoolsdownloadscomwilltmfindex; }
-        }
-
-        /// <summary>
-        /// The SourceTree folder.
-        /// </summary>
-        [RepositoryFolder("134dad80-2b11-4c63-92b1-b8ba8b9f943e")]
-        public virtual WEBSTORERepositoryFolders.SourceTreeAppFolder SourceTree
-        {
-            get { return _sourcetree; }
         }
     }
 
@@ -1476,138 +1454,6 @@ namespace WEBSTORE
                 get
                 {
                     return _aboutInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The GridToolsDownloadsComWillTMFIndexAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("8e48b1f8-7c79-4358-8ced-d26480f25837")]
-        public partial class GridToolsDownloadsComWillTMFIndexAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _element302845992Info;
-
-            /// <summary>
-            /// Creates a new GridToolsDownloadsComWillTMFIndex  folder.
-            /// </summary>
-            public GridToolsDownloadsComWillTMFIndexAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("GridToolsDownloadsComWillTMFIndex", "/form[@title~'^grid-tools-downloads\\.com/']", parentFolder, 30000, null, true, "8e48b1f8-7c79-4358-8ced-d26480f25837", "")
-            {
-                _element302845992Info = new RepoItemInfo(this, "Element302845992", "element[@controlid='302845992']", 30000, null, "afb2b2a2-d779-449c-ae75-856117574cf2");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("8e48b1f8-7c79-4358-8ced-d26480f25837")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("8e48b1f8-7c79-4358-8ced-d26480f25837")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Element302845992 item.
-            /// </summary>
-            [RepositoryItem("afb2b2a2-d779-449c-ae75-856117574cf2")]
-            public virtual Ranorex.Unknown Element302845992
-            {
-                get
-                {
-                    return _element302845992Info.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Element302845992 item info.
-            /// </summary>
-            [RepositoryItemInfo("afb2b2a2-d779-449c-ae75-856117574cf2")]
-            public virtual RepoItemInfo Element302845992Info
-            {
-                get
-                {
-                    return _element302845992Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The SourceTreeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("134dad80-2b11-4c63-92b1-b8ba8b9f943e")]
-        public partial class SourceTreeAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _somelistInfo;
-
-            /// <summary>
-            /// Creates a new SourceTree  folder.
-            /// </summary>
-            public SourceTreeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("SourceTree", "/form[@title='SourceTree']", parentFolder, 30000, null, true, "134dad80-2b11-4c63-92b1-b8ba8b9f943e", "")
-            {
-                _somelistInfo = new RepoItemInfo(this, "SomeList", "container[@automationid='LayoutRoot']/tabpagelist[@automationid='RepoSTDragableTabControl']//tabpage[@title='Log / History']/container/container[1]/grip/list/?/?/list", 30000, null, "5ad91b5f-ec36-42bf-982f-38f25171a428");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("134dad80-2b11-4c63-92b1-b8ba8b9f943e")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("134dad80-2b11-4c63-92b1-b8ba8b9f943e")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeList item.
-            /// </summary>
-            [RepositoryItem("5ad91b5f-ec36-42bf-982f-38f25171a428")]
-            public virtual Ranorex.List SomeList
-            {
-                get
-                {
-                    return _somelistInfo.CreateAdapter<Ranorex.List>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeList item info.
-            /// </summary>
-            [RepositoryItemInfo("5ad91b5f-ec36-42bf-982f-38f25171a428")]
-            public virtual RepoItemInfo SomeListInfo
-            {
-                get
-                {
-                    return _somelistInfo;
                 }
             }
         }
