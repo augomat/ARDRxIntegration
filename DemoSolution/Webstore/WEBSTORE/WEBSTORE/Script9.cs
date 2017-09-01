@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script9.
     /// </summary>
-    [TestModule("bea5bc55-615b-4bf5-8915-4410d0a7601a", ModuleType.UserCode, 1)]
+    [TestModule("67669e1f-96ea-4c2b-81ce-c46b3213d9e4", ModuleType.UserCode, 1)]
     public class Script9 : ITestModule
     {
         /// <summary>

@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script14.
     /// </summary>
-    [TestModule("8481c32e-4628-4234-b50d-70a472a691f0", ModuleType.UserCode, 1)]
+    [TestModule("2ed02c14-5d32-4536-af0b-d107603ce74b", ModuleType.UserCode, 1)]
     public class Script14 : ITestModule
     {
         /// <summary>

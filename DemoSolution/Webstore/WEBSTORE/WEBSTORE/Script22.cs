@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script22.
     /// </summary>
-    [TestModule("cafeffe3-144e-4b88-941a-2a3afe641dd4", ModuleType.UserCode, 1)]
+    [TestModule("384dabaa-f6ee-4cc5-8c9a-cbaa28c5c045", ModuleType.UserCode, 1)]
     public class Script22 : ITestModule
     {
         /// <summary>

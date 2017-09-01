@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script5.
     /// </summary>
-    [TestModule("81f7899e-8b4e-4632-bb88-7a29a13818a4", ModuleType.UserCode, 1)]
+    [TestModule("d103a1b4-e79e-4732-b42c-2bd00d5d10f7", ModuleType.UserCode, 1)]
     public class Script5 : ITestModule
     {
         /// <summary>
@@ -203,7 +203,7 @@ TestReport.BeginTestModule("Script5 : Test Cases 5 - Check Name");
 Report.Info("Started Executing Script5 : Check Name");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 5,Check Name,Passed,Automation Step: 29," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters. ");
 Report.Info("Finished Executing Script5 : Check Name");
 TestReport.EndTestModule();
 // End Block

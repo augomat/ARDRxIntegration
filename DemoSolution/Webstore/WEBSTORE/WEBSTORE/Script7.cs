@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script7.
     /// </summary>
-    [TestModule("799c8b3e-f752-4a2d-8f80-92425bb73b9b", ModuleType.UserCode, 1)]
+    [TestModule("cfec0101-f987-41eb-9a9b-21da8c85bb29", ModuleType.UserCode, 1)]
     public class Script7 : ITestModule
     {
         /// <summary>
@@ -212,7 +212,7 @@ TestReport.BeginTestModule("Script7 : Test Cases 7 - Check Name");
 Report.Info("Started Executing Script7 : Check Name");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 7,Check Name,Passed,Automation Step: 30," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters. ");
 Report.Info("Finished Executing Script7 : Check Name");
 TestReport.EndTestModule();
 // End Block
@@ -230,7 +230,7 @@ TestReport.BeginTestModule("Script7 : Test Cases 7 - Check Address Line 2");
 Report.Info("Started Executing Script7 : Check Address Line 2");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 7,Check Address Line 2,Passed,Automation Step: 32," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces. ");
 Report.Info("Finished Executing Script7 : Check Address Line 2");
 TestReport.EndTestModule();
 // End Block
@@ -257,7 +257,7 @@ TestReport.BeginTestModule("Script7 : Test Cases 7 - Check Country");
 Report.Info("Started Executing Script7 : Check Country");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 7,Check Country,Passed,Automation Step: 35," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "- The Country field cannot be empty");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "");
 Report.Info("Finished Executing Script7 : Check Country");
 TestReport.EndTestModule();
 // End Block

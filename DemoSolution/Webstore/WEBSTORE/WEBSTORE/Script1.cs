@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script1.
     /// </summary>
-    [TestModule("4e0a625a-83ef-4d7c-ab90-559227d3d1a9", ModuleType.UserCode, 1)]
+    [TestModule("95b786db-048b-40a7-a9f9-251ae68e5eff", ModuleType.UserCode, 1)]
     public class Script1 : ITestModule
     {
         /// <summary>
@@ -249,7 +249,7 @@ TestReport.BeginTestModule("Script1 : Test Cases 1 - Check Country");
 Report.Info("Started Executing Script1 : Check Country");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 1,Check Country,Passed,Automation Step: 35," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "- The Country field cannot be empty");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "");
 Report.Info("Finished Executing Script1 : Check Country");
 TestReport.EndTestModule();
 // End Block

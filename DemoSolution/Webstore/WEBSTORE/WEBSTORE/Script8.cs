@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script8.
     /// </summary>
-    [TestModule("af7bf430-09a3-4948-9385-83d3670b88a2", ModuleType.UserCode, 1)]
+    [TestModule("e6ff3410-9a33-4c12-bc63-b3deaba45a6e", ModuleType.UserCode, 1)]
     public class Script8 : ITestModule
     {
         /// <summary>
@@ -221,7 +221,7 @@ TestReport.BeginTestModule("Script8 : Test Cases 8 - Check Address Line 2");
 Report.Info("Started Executing Script8 : Check Address Line 2");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 8,Check Address Line 2,Passed,Automation Step: 31," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces. ");
 Report.Info("Finished Executing Script8 : Check Address Line 2");
 TestReport.EndTestModule();
 // End Block

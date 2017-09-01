@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script4.
     /// </summary>
-    [TestModule("43ff930f-580d-44a6-8390-9d28ca43a13a", ModuleType.UserCode, 1)]
+    [TestModule("b23d4f29-9254-47db-91f5-d23b560c3199", ModuleType.UserCode, 1)]
     public class Script4 : ITestModule
     {
         /// <summary>
@@ -230,7 +230,7 @@ TestReport.BeginTestModule("Script4 : Test Cases 4 - Check Address Line 2");
 Report.Info("Started Executing Script4 : Check Address Line 2");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 4,Check Address Line 2,Passed,Automation Step: 32," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N5_Adr2ErrorInfo, "InnerText", "- The Address Line 2 field must be either empty or only contain letters, numbers and spaces. ");
 Report.Info("Finished Executing Script4 : Check Address Line 2");
 TestReport.EndTestModule();
 // End Block
@@ -257,7 +257,7 @@ TestReport.BeginTestModule("Script4 : Test Cases 4 - Check Country");
 Report.Info("Started Executing Script4 : Check Country");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 4,Check Country,Passed,Automation Step: 35," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "- The Country field cannot be empty");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "");
 Report.Info("Finished Executing Script4 : Check Country");
 TestReport.EndTestModule();
 // End Block

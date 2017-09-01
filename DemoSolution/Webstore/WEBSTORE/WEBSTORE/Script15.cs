@@ -26,7 +26,7 @@ namespace WEBSTORE
     /// <summary>
     /// Description of Script15.
     /// </summary>
-    [TestModule("5ec42c4e-4518-4ef1-bed7-cc0514a555ca", ModuleType.UserCode, 1)]
+    [TestModule("40d7dc5e-cdad-4872-8ec6-0b7f089cf815", ModuleType.UserCode, 1)]
     public class Script15 : ITestModule
     {
         /// <summary>
@@ -212,7 +212,7 @@ TestReport.BeginTestModule("Script15 : Test Cases 15 - Check Name");
 Report.Info("Started Executing Script15 : Check Name");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 15,Check Name,Passed,Automation Step: 30," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters.");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N3_NameErrorInfo, "InnerText", " - The Name field cannot contain numbers or special characters. ");
 Report.Info("Finished Executing Script15 : Check Name");
 TestReport.EndTestModule();
 // End Block
@@ -257,7 +257,7 @@ TestReport.BeginTestModule("Script15 : Test Cases 15 - Check Country");
 Report.Info("Started Executing Script15 : Check Country");
 // Results Format: Path Guid, Block Guid, Result (pass/fail), Result, Resolved Test Data, Execution time, Stack Trace, Exception, Notes, Image
 File.AppendAllText(Environment.CurrentDirectory + "\\" + "WEBSTORE" + ".csv", "Test Cases 15,Check Country,Passed,Automation Step: 35," + System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz") + Environment.NewLine);
-Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "- The Country field cannot be empty");
+Validate.Attribute(repo.WEBSTORE.Page2_Delivery_Location.N8_CountryErrorInfo, "InnerText", "");
 Report.Info("Finished Executing Script15 : Check Country");
 TestReport.EndTestModule();
 // End Block
