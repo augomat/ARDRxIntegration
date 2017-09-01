@@ -1,0 +1,43 @@
+Name,Description,Default Value
+BrowserImageCol,From Automation Layer: Default,Browsers
+BrowserURL,From Automation Layer: Default,
+Classname,From Automation Layer: Ranorex - Program Script,Script~ROWNUM~
+KeyboardImageCol,From Automation Layer: Default,Keyboard
+Page1_NextText,,Order Product
+Page1_PageName,,Product Catalog
+Page1_ProductIndex,,0
+Page1_ProductType,TRUE,TRUE
+Page2_N1_EmailField,,william.guastalla@ca.com
+Page2_N2_ConfirmEmailField,,william.guastalla@ca.com
+Page2_N3_NameField,,William Guastalla
+Page2_N4_Address1Field,,10 Oasis Business Park Stanton Harcourt
+Page2_N5_Address2Field,,Eynsham Oxford
+Page2_N6_CountyField,,Oxfordshire
+Page2_N7_PostCodeField,,OX294TP
+Page2_N8_CountryField,,England
+Page2_PageName,,Delivery Location
+Page2_PageNextImage,,SaveShipping
+Page3_PageName,,Shipping Specification
+Page3_PageNextImage,,SaveShipping
+Page4_N1_CardType,,
+Page4_N2_CardNumber,,1.11E+15
+Page4_PageName,,Payment Details
+Page4_PageNextImage,,btn_CompletePurchase
+Page5_PageName,,Order Finalised
+Pathname,From Automation Layer: Ranorex - Program Script,ARD_^Classname^
+ProjectName,,WEBSTORE
+RefreshButtonImageCol,From Automation Layer: Default,Refresh
+ResultOutputPath,From Automation Layer: Ranorex - Program Script,
+TestCaseGUID,,00000000-0000-0000-0000-000000000000
+,,
+,,
+Page2_Error_N1_EmailField,Error next to the email field,Enter a valid email. The Email field cannot be empty.
+Page2_Error_N2_ConfirmEmailField,Error next to the confirm email field,The Confirm Email field must match the Email field
+Page2_Error_N3_NameField,Error next to the name field,- The Name field cannot be empty
+Page2_Error_N4_Address1Field,Error next to the address 1 field,"- The Address Line 1 field cannot be empty - The Address Line 1 field can only contain letters, numbers, and spaces"
+Page2_Error_N5_Address2Field,Error next to the address 2 field,"- The Address Line 2 field must be either empty or only contain letters, numbers and spaces."
+Page2_Error_N6_CountyField,Error next to the county field,- The County field cannot be empty.
+Page2_Error_N7_PostCodeField,Error next to the postcode field,Please enter a valid UK postcode (OX294TP is a valid UK postcode)
+Page2_Error_N8_CountryField,Error next to the country combo,- The Country field cannot be empty
+Page4_Error_N1_CardType,Error next to the cardtype combo,The Card Type cannot be empty
+Page4_N2_CardNumber,Error next to the cardnumber field,The Card Number cannot have less that 16 characters.

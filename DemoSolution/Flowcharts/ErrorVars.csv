@@ -1,0 +1,11 @@
+Name,Description,Default Value
+Page2_Error_N1_EmailField,Error next to the email field,Enter a valid email. The Email field cannot be empty.
+Page2_Error_N2_ConfirmEmailField,Error next to the confirm email field,The Confirm Email field must match the Email field
+Page2_Error_N3_NameField,Error next to the name field,- The Name field cannot be empty
+Page2_Error_N4_Address1Field,Error next to the address 1 field,"- The Address Line 1 field cannot be empty - The Address Line 1 field can only contain letters, numbers, and spaces"
+Page2_Error_N5_Address2Field,Error next to the address 2 field,"- The Address Line 2 field must be either empty or only contain letters, numbers and spaces."
+Page2_Error_N6_CountyField,Error next to the county field,- The County field cannot be empty.
+Page2_Error_N7_PostCodeField,Error next to the postcode field,Please enter a valid UK postcode (OX294TP is a valid UK postcode)
+Page2_Error_N8_CountryField,Error next to the country combo,- The Country field cannot be empty
+Page4_Error_N1_CardType,Error next to the cardtype combo,The Card Type cannot be empty
+Page4_Error_N2_CardNumber,Error next to the cardnumber field,The Card Number cannot have less that 16 characters.
